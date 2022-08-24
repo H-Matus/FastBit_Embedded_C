@@ -1,0 +1,2048 @@
+2022-08-18 16:45:05,424 [INFO] Activator:176 - 
+
+
+2022-08-18 16:45:05,429 [INFO] Activator:177 - !SESSION log4j initialized
+2022-08-18 16:54:37,263 [INFO] Activator:176 - 
+
+
+2022-08-18 16:54:37,266 [INFO] Activator:177 - !SESSION log4j initialized
+2022-08-18 16:58:22,145 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903
+2022-08-18 16:58:22,166 [INFO] DbMcusXml:68 - Set database path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/mcu/
+2022-08-18 16:58:22,171 [INFO] DbBoardsPdsc:54 - Set plugin database path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/boardmanager/
+2022-08-18 16:58:22,172 [INFO] DbMcus:264 - Set plugin images path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/
+2022-08-18 16:58:22,172 [INFO] DbBoards:232 - Set plugin images path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/
+2022-08-18 16:58:22,175 [INFO] APIGFXSelector:72 - Set database path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/mcu/
+2022-08-18 16:58:22,226 [ERROR] ApiFinderProperties:197 - Copy problem with src file : C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\db\plugins\mcufinder\mcu\csand target file : C:\Users\henrikass\.stmcufinder\plugins\mcufinder\mcu\cs
+2022-08-18 16:58:22,728 [WARN] ApiFinderProperties:106 - C:\Users\henrikass\.stmcufinder\plugins\mcufinder\mcu\mcuFinder.mfd doesn't exist
+2022-08-18 16:58:22,732 [INFO] DbMcusAds:72 - Set database path to: C:\Users\henrikass\.stmcufinder\plugins\mcufinder//mcu/
+2022-08-18 16:58:22,734 [INFO] DbMcusDocs:92 - Set database path to: C:\Users\henrikass\.stmcufinder\plugins\mcufinder//mcu/
+2022-08-18 16:58:22,737 [INFO] DbMcusJson:59 - Set database path to: C:\Users\henrikass\.stmcufinder\plugins\mcufinder//mcu/
+2022-08-18 16:58:22,738 [INFO] DbBoardsDocs:84 - Set database path to: C:\Users\henrikass\.stmcufinder\plugins\mcufinder//mcu/
+2022-08-18 16:58:22,739 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\henrikass\.stmcufinder\plugins\mcufinder//mcu/
+2022-08-18 16:58:22,784 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\henrikass\.stmcufinder\plugins\mcufinder//mcu/cs/
+2022-08-18 16:58:22,909 [INFO] RulesReader:52 - Compatibility file has been processed (156 Rules)
+2022-08-18 16:58:23,069 [INFO] MicroXplorer:521 - Detected Java Version = 1.8.0_202
+2022-08-18 16:58:23,070 [INFO] DbMcusXml:68 - Set database path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/mcu/
+2022-08-18 16:58:23,070 [INFO] DbBoardsPdsc:54 - Set plugin database path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/boardmanager/
+2022-08-18 16:58:23,071 [INFO] DbMcus:264 - Set plugin images path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/
+2022-08-18 16:58:23,071 [INFO] DbBoards:232 - Set plugin images path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/
+2022-08-18 16:58:23,071 [INFO] APIGFXSelector:72 - Set database path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/mcu/
+2022-08-18 16:58:23,071 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\henrikass\.stmcufinder\plugins\mcufinder/ => C:\Users\henrikass\.stmcufinder\plugins\mcufinder
+2022-08-18 16:58:23,071 [INFO] DbMcusAds:72 - Set database path to: C:\Users\henrikass\.stmcufinder\plugins\mcufinder//mcu/
+2022-08-18 16:58:23,071 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\henrikass\.stmcufinder\plugins\mcufinder/ => C:\Users\henrikass\.stmcufinder\plugins\mcufinder
+2022-08-18 16:58:23,072 [INFO] DbMcusDocs:92 - Set database path to: C:\Users\henrikass\.stmcufinder\plugins\mcufinder//mcu/
+2022-08-18 16:58:23,072 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\henrikass\.stmcufinder\plugins\mcufinder/ => C:\Users\henrikass\.stmcufinder\plugins\mcufinder
+2022-08-18 16:58:23,072 [INFO] DbMcusJson:59 - Set database path to: C:\Users\henrikass\.stmcufinder\plugins\mcufinder//mcu/
+2022-08-18 16:58:23,072 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\henrikass\.stmcufinder\plugins\mcufinder/ => C:\Users\henrikass\.stmcufinder\plugins\mcufinder
+2022-08-18 16:58:23,073 [INFO] DbBoardsDocs:84 - Set database path to: C:\Users\henrikass\.stmcufinder\plugins\mcufinder//mcu/
+2022-08-18 16:58:23,073 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\henrikass\.stmcufinder\plugins\mcufinder/ => C:\Users\henrikass\.stmcufinder\plugins\mcufinder
+2022-08-18 16:58:23,073 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\henrikass\.stmcufinder\plugins\mcufinder//mcu/
+2022-08-18 16:58:23,073 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\henrikass\.stmcufinder\plugins\mcufinder/ => C:\Users\henrikass\.stmcufinder\plugins\mcufinder
+2022-08-18 16:58:23,073 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\henrikass\.stmcufinder\plugins\mcufinder/ => C:\Users\henrikass\.stmcufinder\plugins\mcufinder
+2022-08-18 16:58:23,073 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\henrikass\.stmcufinder\plugins\mcufinder//mcu/cs/
+2022-08-18 16:58:23,196 [INFO] MainPanel:211 - HeapMemory: 646971392
+2022-08-18 16:58:23,310 [INFO] DbMcusXml:68 - Set database path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/mcu/
+2022-08-18 16:58:23,310 [INFO] DbBoardsPdsc:54 - Set plugin database path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/boardmanager/
+2022-08-18 16:58:23,310 [INFO] DbMcus:264 - Set plugin images path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/
+2022-08-18 16:58:23,310 [INFO] DbBoards:232 - Set plugin images path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/
+2022-08-18 16:58:23,311 [INFO] APIGFXSelector:72 - Set database path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/mcu/
+2022-08-18 16:58:23,312 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\henrikass\.stmcufinder\plugins\mcufinder/ => C:\Users\henrikass\.stmcufinder\plugins\mcufinder
+2022-08-18 16:58:23,312 [INFO] DbMcusAds:72 - Set database path to: C:\Users\henrikass\.stmcufinder\plugins\mcufinder//mcu/
+2022-08-18 16:58:23,312 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\henrikass\.stmcufinder\plugins\mcufinder/ => C:\Users\henrikass\.stmcufinder\plugins\mcufinder
+2022-08-18 16:58:23,312 [INFO] DbMcusDocs:92 - Set database path to: C:\Users\henrikass\.stmcufinder\plugins\mcufinder//mcu/
+2022-08-18 16:58:23,312 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\henrikass\.stmcufinder\plugins\mcufinder/ => C:\Users\henrikass\.stmcufinder\plugins\mcufinder
+2022-08-18 16:58:23,313 [INFO] DbMcusJson:59 - Set database path to: C:\Users\henrikass\.stmcufinder\plugins\mcufinder//mcu/
+2022-08-18 16:58:23,313 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\henrikass\.stmcufinder\plugins\mcufinder/ => C:\Users\henrikass\.stmcufinder\plugins\mcufinder
+2022-08-18 16:58:23,313 [INFO] DbBoardsDocs:84 - Set database path to: C:\Users\henrikass\.stmcufinder\plugins\mcufinder//mcu/
+2022-08-18 16:58:23,313 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\henrikass\.stmcufinder\plugins\mcufinder/ => C:\Users\henrikass\.stmcufinder\plugins\mcufinder
+2022-08-18 16:58:23,313 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\henrikass\.stmcufinder\plugins\mcufinder//mcu/
+2022-08-18 16:58:23,314 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\henrikass\.stmcufinder\plugins\mcufinder/ => C:\Users\henrikass\.stmcufinder\plugins\mcufinder
+2022-08-18 16:58:23,314 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\henrikass\.stmcufinder\plugins\mcufinder/ => C:\Users\henrikass\.stmcufinder\plugins\mcufinder
+2022-08-18 16:58:23,315 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\henrikass\.stmcufinder\plugins\mcufinder//mcu/cs/
+2022-08-18 16:58:23,345 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903
+2022-08-18 16:58:23,348 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=]
+2022-08-18 16:58:23,351 [INFO] PluginManage:292 - Check plugin analytics
+2022-08-18 16:58:23,372 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2022-08-18 16:58:23,373 [INFO] PluginManage:292 - Check plugin clock
+2022-08-18 16:58:23,402 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2022-08-18 16:58:23,402 [INFO] PluginManage:292 - Check plugin ddr
+2022-08-18 16:58:23,408 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2022-08-18 16:58:23,408 [INFO] PluginManage:292 - Check plugin filemanager
+2022-08-18 16:58:23,557 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2022-08-18 16:58:23,557 [INFO] PluginManage:292 - Check plugin ipmanager
+2022-08-18 16:58:23,574 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2022-08-18 16:58:23,575 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2022-08-18 16:58:23,596 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2022-08-18 16:58:23,596 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2022-08-18 16:58:23,638 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2022-08-18 16:58:23,639 [INFO] PluginManage:292 - Check plugin power
+2022-08-18 16:58:23,663 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2022-08-18 16:58:23,663 [INFO] PluginManage:292 - Check plugin projectmanager
+2022-08-18 16:58:23,679 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2022-08-18 16:58:23,680 [INFO] PluginManage:292 - Check plugin thirdparty
+2022-08-18 16:58:23,730 [INFO] ThirdPartyDb:294 - Open Third Party DataBase File (C:/Users/henrikass/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 0 ms. number of Sw pack : 0
+2022-08-18 16:58:23,744 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2022-08-18 16:58:23,745 [INFO] PluginManage:292 - Check plugin tools
+2022-08-18 16:58:23,770 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2022-08-18 16:58:23,770 [INFO] PluginManage:292 - Check plugin updater
+2022-08-18 16:58:23,785 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2022-08-18 16:58:23,785 [INFO] PluginManage:265 - PluginManage : Loaded plugins [12]
+2022-08-18 16:58:24,069 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2022-08-18 16:58:24,220 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:24,221 [INFO] PluginManager:200 - loadIPPluginJar : add adc
+2022-08-18 16:58:24,247 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:24,247 [INFO] PluginManager:200 - loadIPPluginJar : add aes
+2022-08-18 16:58:24,288 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:24,289 [INFO] PluginManager:200 - loadIPPluginJar : add can
+2022-08-18 16:58:24,310 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:24,310 [INFO] PluginManager:200 - loadIPPluginJar : add comp
+2022-08-18 16:58:24,338 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:24,338 [INFO] PluginManager:200 - loadIPPluginJar : add cryp
+2022-08-18 16:58:24,368 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:24,369 [INFO] PluginManager:200 - loadIPPluginJar : add dfsdm
+2022-08-18 16:58:24,386 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:24,387 [INFO] PluginManager:200 - loadIPPluginJar : add dma
+2022-08-18 16:58:24,406 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:24,406 [INFO] PluginManager:200 - loadIPPluginJar : add fatfs
+2022-08-18 16:58:24,459 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:24,460 [INFO] PluginManager:200 - loadIPPluginJar : add fmc
+2022-08-18 16:58:24,478 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:24,479 [INFO] PluginManager:200 - loadIPPluginJar : add freertos
+2022-08-18 16:58:24,503 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:24,503 [INFO] PluginManager:200 - loadIPPluginJar : add genericplugin
+2022-08-18 16:58:24,590 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:24,590 [INFO] PluginManager:200 - loadIPPluginJar : add gfxmmu
+2022-08-18 16:58:24,725 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:24,726 [INFO] PluginManager:200 - loadIPPluginJar : add gfxsimulator
+2022-08-18 16:58:24,858 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:24,858 [INFO] PluginManager:200 - loadIPPluginJar : add gic
+2022-08-18 16:58:24,874 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:24,874 [INFO] PluginManager:200 - loadIPPluginJar : add gpio
+2022-08-18 16:58:24,904 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:24,904 [INFO] PluginManager:200 - loadIPPluginJar : add hash
+2022-08-18 16:58:24,958 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:24,959 [INFO] PluginManager:200 - loadIPPluginJar : add i2c
+2022-08-18 16:58:25,003 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:25,003 [INFO] PluginManager:200 - loadIPPluginJar : add i2s
+2022-08-18 16:58:25,138 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:25,138 [INFO] PluginManager:200 - loadIPPluginJar : add ipddr
+2022-08-18 16:58:25,175 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:25,176 [INFO] PluginManager:200 - loadIPPluginJar : add ltdc
+2022-08-18 16:58:25,193 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:25,194 [INFO] PluginManager:200 - loadIPPluginJar : add mdma
+2022-08-18 16:58:25,210 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:25,211 [INFO] PluginManager:200 - loadIPPluginJar : add nvic
+2022-08-18 16:58:25,246 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:25,246 [INFO] PluginManager:200 - loadIPPluginJar : add opamp
+2022-08-18 16:58:25,305 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:25,305 [INFO] PluginManager:200 - loadIPPluginJar : add pdm2pcm
+2022-08-18 16:58:25,326 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:25,329 [INFO] PluginManager:200 - loadIPPluginJar : add plateformsettings
+2022-08-18 16:58:25,357 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:25,358 [INFO] PluginManager:200 - loadIPPluginJar : add quadspi
+2022-08-18 16:58:25,376 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:25,377 [INFO] PluginManager:200 - loadIPPluginJar : add resmgrutility
+2022-08-18 16:58:25,434 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:25,434 [INFO] PluginManager:200 - loadIPPluginJar : add sai
+2022-08-18 16:58:25,475 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:25,476 [INFO] PluginManager:200 - loadIPPluginJar : add spi
+2022-08-18 16:58:25,510 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:25,510 [INFO] PluginManager:200 - loadIPPluginJar : add stm32_wpan
+2022-08-18 16:58:25,536 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:25,536 [INFO] PluginManager:200 - loadIPPluginJar : add tim
+2022-08-18 16:58:25,597 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:25,598 [INFO] PluginManager:200 - loadIPPluginJar : add touchsensing
+2022-08-18 16:58:25,623 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:25,624 [INFO] PluginManager:200 - loadIPPluginJar : add tracer_emb
+2022-08-18 16:58:25,648 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:25,650 [INFO] PluginManager:200 - loadIPPluginJar : add ts
+2022-08-18 16:58:25,673 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:25,673 [INFO] PluginManager:200 - loadIPPluginJar : add tsc
+2022-08-18 16:58:25,695 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:25,695 [INFO] PluginManager:200 - loadIPPluginJar : add ucpd
+2022-08-18 16:58:25,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2022-08-18 16:58:25,740 [INFO] PluginManager:200 - loadIPPluginJar : add usart
+2022-08-18 16:58:26,505 [INFO] BoardConnectionPanel:217 - [DDR PANEL] osNameString: Windows
+2022-08-18 16:58:26,743 [FATAL] Updater:277 - Updater called before beeing initialized
+2022-08-18 16:58:26,744 [ERROR] IntegrityCheckThread:230 - Cannot obtain thirdParties list 21
+2022-08-18 16:58:26,744 [ERROR] IntegrityCheckThread:99 - Unexpected exception IntegrityCheckThread Thread: Updater error
+2022-08-18 16:58:26,745 [INFO] ThirdPartyDb:264 - Close Third Party DataBase File (C:/Users/henrikass/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2022-08-18 16:58:26,972 [FATAL] Updater:277 - Updater called before beeing initialized
+2022-08-18 16:58:27,630 [FATAL] Updater:277 - Updater called before beeing initialized
+2022-08-18 16:58:27,647 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2022-08-18 16:58:27,648 [FATAL] Updater:277 - Updater called before beeing initialized
+2022-08-18 16:58:27,656 [INFO] MainDdrPanel:82 - [DDR PANEL] SETTER - Set cubeProgrammerPath to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.0.0.201904021149\tools\bin
+2022-08-18 16:58:27,691 [INFO] Updater:860 - Updater Version found : 5.3.0
+2022-08-18 16:58:27,708 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903
+2022-08-18 16:58:27,761 [INFO] MainUpdater:445 - Copy updater definitions from MX database
+2022-08-18 16:58:27,848 [INFO] MainUpdater:478 - Copy flag file definitions from MX database
+2022-08-18 16:58:27,861 [INFO] MainUpdater:494 - Copy thirdparty index definitions from MX database
+2022-08-18 16:58:27,877 [INFO] MainUpdater:513 - Copy default thirdparty db definitions from MX database
+2022-08-18 16:58:27,977 [INFO] MainUpdater:2040 - connection check result : 10
+2022-08-18 16:58:27,977 [INFO] MainUpdater:2607 - Updater definition file requires update
+2022-08-18 16:58:27,979 [INFO] MainUpdater:229 - Updater Check For Update Now.
+2022-08-18 16:58:27,980 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.30
+2022-08-18 16:58:28,145 [INFO] ServerAccessManage:347 - Download File updaters.zip
+2022-08-18 16:58:28,166 [INFO] FileExtend:191 - Unzip File : updaters.zip
+2022-08-18 16:58:28,167 [INFO] FileExtend:206 - Standard Zip Deflate
+2022-08-18 16:58:29,300 [INFO] FileExtend:191 - Unzip File : updaters.zip
+2022-08-18 16:58:29,301 [INFO] FileExtend:206 - Standard Zip Deflate
+2022-08-18 16:58:30,240 [INFO] ServerAccessManage:347 - Download File PacksControlFlags.xml
+2022-08-18 16:58:30,344 [INFO] ServerAccessManage:347 - Download File cubemx.pidx
+2022-08-18 16:58:30,501 [INFO] ServerAccessManage:347 - Download File STMicroelectronics.FP-ATR-ASTRA1.pdsc
+2022-08-18 16:58:30,555 [INFO] ServerAccessManage:347 - Download File STMicroelectronics.X-CUBE-AI.pdsc
+2022-08-18 16:58:30,783 [INFO] ServerAccessManage:347 - Download File STMicroelectronics.X-CUBE-ALS.pdsc
+2022-08-18 16:58:30,981 [INFO] ServerAccessManage:347 - Download File STMicroelectronics.X-CUBE-BLE1.pdsc
+2022-08-18 16:58:31,673 [ERROR] ServerAccessManage:941 - Problem, file not found on Server
+2022-08-18 16:58:31,689 [INFO] ServerAccessManage:347 - Download File STMicroelectronics.X-CUBE-BLE2.pdsc
+2022-08-18 16:58:31,824 [INFO] ServerAccessManage:347 - Download File STMicroelectronics.X-CUBE-BLEMGR.pdsc
+2022-08-18 16:58:31,924 [INFO] ServerAccessManage:347 - Download File STMicroelectronics.X-CUBE-DISPLAY.pdsc
+2022-08-18 16:58:32,337 [INFO] ServerAccessManage:347 - Download File STMicroelectronics.X-CUBE-EEPRMA1.pdsc
+2022-08-18 16:58:32,597 [INFO] ServerAccessManage:347 - Download File STMicroelectronics.X-CUBE-GNSS1.pdsc
+2022-08-18 16:58:32,752 [ERROR] ServerAccessManage:941 - Problem, file not found on Server
+2022-08-18 16:58:32,799 [ERROR] ServerAccessManage:941 - Problem, file not found on Server
+2022-08-18 16:58:32,845 [ERROR] ServerAccessManage:941 - Problem, file not found on Server
+2022-08-18 16:58:32,898 [ERROR] ServerAccessManage:941 - Problem, file not found on Server
+2022-08-18 16:58:32,966 [ERROR] ServerAccessManage:941 - Problem, file not found on Server
+2022-08-18 16:58:33,010 [ERROR] ServerAccessManage:941 - Problem, file not found on Server
+2022-08-18 16:58:33,073 [INFO] ServerAccessManage:347 - Download File STMicroelectronics.X-CUBE-ISPU.pdsc
+2022-08-18 16:58:33,116 [INFO] ServerAccessManage:347 - Download File STMicroelectronics.X-CUBE-MEMS1.pdsc
+2022-08-18 16:58:33,455 [INFO] ServerAccessManage:347 - Download File STMicroelectronics.X-CUBE-NFC4.pdsc
+2022-08-18 16:58:34,118 [INFO] ServerAccessManage:347 - Download File STMicroelectronics.X-CUBE-NFC7.pdsc
+2022-08-18 16:58:34,222 [INFO] ServerAccessManage:347 - Download File STMicroelectronics.X-CUBE-SFXS2LP1.pdsc
+2022-08-18 16:58:34,359 [INFO] ServerAccessManage:347 - Download File STMicroelectronics.X-CUBE-SUBG2.pdsc
+2022-08-18 16:58:34,913 [INFO] ServerAccessManage:347 - Download File STMicroelectronics.X-CUBE-TOF1.pdsc
+2022-08-18 16:58:35,043 [ERROR] ServerAccessManage:941 - Problem, file not found on Server
+2022-08-18 16:58:35,065 [INFO] ServerAccessManage:347 - Download File STMicroelectronics.X-CUBE-TOUCHGFX.pdsc
+2022-08-18 16:58:35,285 [INFO] ServerAccessManage:347 - Download File STMicroelectronics.X-CUBE-ALGOBUILD.pdsc
+2022-08-18 16:58:35,597 [INFO] ServerAccessManage:347 - Download File STMicroelectronics.X-CUBE-AZRTOS-H7.pdsc
+2022-08-18 16:58:35,918 [INFO] ServerAccessManage:347 - Download File STMicroelectronics.X-CUBE-AZRTOS-F4.pdsc
+2022-08-18 16:58:36,019 [INFO] ServerAccessManage:347 - Download File STMicroelectronics.X-CUBE-AZRTOS-F7.pdsc
+2022-08-18 16:58:36,095 [INFO] MainUpdater:2040 - connection check result : 10
+2022-08-18 16:58:36,096 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Successfull proxy connection.
+2022-08-18 16:58:36,171 [INFO] ServerAccessManage:347 - Download File STMicroelectronics.X-CUBE-AZRTOS-L4.pdsc
+2022-08-18 16:58:36,356 [INFO] ServerAccessManage:347 - Download File STMicroelectronics.X-CUBE-AZRTOS-L5.pdsc
+2022-08-18 16:58:36,375 [INFO] McuFinderGlobals:40 - Set McuFinder mode to 2 (CubeIDE integrated)
+2022-08-18 16:58:36,397 [INFO] FinderPluginLoader:85 - Searching for filters in installed packs
+2022-08-18 16:58:36,400 [INFO] DbMcusXml:106 - Load MCU database from C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/mcu/families.xml
+2022-08-18 16:58:36,520 [INFO] ServerAccessManage:347 - Download File STMicroelectronics.X-CUBE-AZRTOS-G0.pdsc
+2022-08-18 16:58:36,758 [INFO] ServerAccessManage:347 - Download File STMicroelectronics.X-CUBE-AZRTOS-G4.pdsc
+2022-08-18 16:58:36,979 [INFO] ServerAccessManage:347 - Download File STMicroelectronics.X-CUBE-AZRTOS-WL.pdsc
+2022-08-18 16:58:37,612 [INFO] DbMcusJson:87 - JSON generation date=Fri Jun 21 11:28:09 BST 2019 (1561112889)
+2022-08-18 16:58:37,780 [INFO] ServerAccessManage:347 - Download File wolfSSL.I-CUBE-wolfSSL.pdsc
+2022-08-18 16:58:39,476 [INFO] DbMcus:193 - Found 1496 MCUs (1455 are supported by CubeMX, 1455 are visible in CubeMX)
+2022-08-18 16:58:39,477 [INFO] ApiDb:147 - User favorites file not found: C:\Users\henrikass/.stm32cubeide/favorites.mcus.txt
+2022-08-18 16:58:39,477 [INFO] DbMcus:205 - Set 0 / 0 favorites MCUs
+2022-08-18 16:58:40,309 [INFO] DbMcusAds:130 - JSON generation date=Wed Feb 20 16:46:15 GMT 2019 (1550681175)
+2022-08-18 16:58:40,310 [WARN] McuDetailPanel:183 - Failed to get advertising image, set to default
+2022-08-18 16:58:41,073 [INFO] DbMcusDocs:126 - JSON generation date=Fri Jun 21 11:28:09 BST 2019 (1561112889)
+2022-08-18 16:58:41,339 [INFO] DbMcusDocs:61 - Found 503 MCUs documents
+2022-08-18 16:58:41,341 [INFO] ApiDb:186 - Save user favorites file C:\Users\henrikass/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2022-08-18 16:58:41,342 [INFO] ApiDb:191 - User favorites MCUs=[]
+2022-08-18 16:58:41,342 [INFO] DbMcusXml:106 - Load MCU database from C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/mcu/families.xml
+2022-08-18 16:58:41,888 [INFO] DbMcusJson:87 - JSON generation date=Fri Jun 21 11:28:09 BST 2019 (1561112889)
+2022-08-18 16:58:42,651 [INFO] DbMcus:193 - Found 1496 MCUs (1455 are supported by CubeMX, 1455 are visible in CubeMX)
+2022-08-18 16:58:42,652 [INFO] ApiDb:158 - Load user favorites file C:\Users\henrikass/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2022-08-18 16:58:42,653 [INFO] ApiDb:163 - User favorites MCUs=[]
+2022-08-18 16:58:42,653 [INFO] DbMcus:205 - Set 0 / 0 favorites MCUs
+2022-08-18 16:58:42,724 [INFO] McuFilterPanel:282 - Update 0 favorites MCUs
+2022-08-18 16:58:42,967 [INFO] DbBoardsDocs:118 - JSON generation date=Fri Jun 21 11:28:09 BST 2019 (1561112889)
+2022-08-18 16:58:42,994 [INFO] DbBoardsPdsc:92 - Found 18 items
+2022-08-18 16:58:43,013 [INFO] DbBoardsPdsc:92 - Found 9 items
+2022-08-18 16:58:43,031 [INFO] DbBoardsPdsc:92 - Found 27 items
+2022-08-18 16:58:43,045 [INFO] DbBoardsPdsc:92 - Found 1 items
+2022-08-18 16:58:43,064 [INFO] DbBoardsPdsc:92 - Found 37 items
+2022-08-18 16:58:43,089 [INFO] DbBoardsPdsc:92 - Found 37 items
+2022-08-18 16:58:43,104 [ERROR] ServerAccessManage:941 - Problem, file not found on Server
+2022-08-18 16:58:43,105 [INFO] DbBoardsPdsc:92 - Found 1 items
+2022-08-18 16:58:43,187 [INFO] DbBoardsJson:79 - JSON generation date=Thu Jul 04 15:02:38 BST 2019 (1562248958)
+2022-08-18 16:58:43,201 [INFO] DbBoards:120 - Found 130 boards (129 are supported by CubeMX)
+2022-08-18 16:58:43,206 [INFO] DbBoardsDocs:118 - JSON generation date=Fri Jun 21 11:28:09 BST 2019 (1561112889)
+2022-08-18 16:58:43,216 [INFO] DbBoardsDocs:57 - Found 151 boards documents
+2022-08-18 16:58:43,218 [WARN] DbBoards:130 - board NUCLEO-H743ZI2 has no document id list !
+2022-08-18 16:58:43,219 [WARN] DbBoards:130 - board NUCLEO-G031K8 has no document id list !
+2022-08-18 16:58:43,221 [WARN] DbBoards:130 - board P-NUCLEO-WB55-Nucleo has no document id list !
+2022-08-18 16:58:43,221 [WARN] DbBoards:130 - board P-NUCLEO-WB55-USBDongle has no document id list !
+2022-08-18 16:58:43,222 [WARN] DbBoards:130 - board P-NUCLEO-WB55 has no document id list !
+2022-08-18 16:58:43,222 [WARN] DbBoards:130 - board STM32F401C-DISCO has no document id list !
+2022-08-18 16:58:43,223 [WARN] DbBoards:130 - board STM32F769I-DISC1 has no document id list !
+2022-08-18 16:58:43,224 [WARN] DbBoards:130 - board B-G474E-DPOW1 has no document id list !
+2022-08-18 16:58:43,224 [WARN] DbBoards:130 - board STM32F7308-DISCO has no document id list !
+2022-08-18 16:58:43,225 [WARN] DbBoards:130 - board STM32L-DISCOVERY has no document id list !
+2022-08-18 16:58:43,226 [WARN] DbBoards:130 - board STM32G0316-DISCO has no document id list !
+2022-08-18 16:58:43,227 [WARN] DbBoards:130 - board STM32H747I-DISC1 has no document id list !
+2022-08-18 16:58:43,227 [WARN] DbBoards:130 - board STM32MP157A-DK1 has no document id list !
+2022-08-18 16:58:43,228 [WARN] DbBoards:130 - board STM32303C-EVAL has no document id list !
+2022-08-18 16:58:43,229 [WARN] DbBoards:130 - board STM32L152D-EVAL has no document id list !
+2022-08-18 16:58:43,230 [WARN] DbBoards:130 - board STM32H743I-EVAL2 has no document id list !
+2022-08-18 16:58:43,230 [WARN] DbBoards:130 - board STM32H753I-EVAL2 has no document id list !
+2022-08-18 16:58:43,230 [WARN] DbBoards:130 - board STM32H747I-EVAL has no document id list !
+2022-08-18 16:58:43,231 [WARN] DbBoards:130 - board STM32H757I-EVAL has no document id list !
+2022-08-18 16:58:43,231 [WARN] DbBoards:130 - board STM32G474E-EVAL1 has no document id list !
+2022-08-18 16:58:43,232 [WARN] DbBoards:130 - board STEVAL-MKSBOX1V1 has no document id list !
+2022-08-18 16:58:43,954 [ERROR] ServerAccessManage:941 - Problem, file not found on Server
+2022-08-18 16:58:44,781 [INFO] ApiDb:147 - User favorites file not found: C:\Users\henrikass/.stm32cubeide/favorites.boards.txt
+2022-08-18 16:58:44,781 [INFO] DbBoards:209 - Set 0 / 0 favorites Boards
+2022-08-18 16:58:44,783 [INFO] DbBoardsDocs:57 - Found 302 boards documents
+2022-08-18 16:58:44,784 [INFO] ApiDb:186 - Save user favorites file C:\Users\henrikass/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2022-08-18 16:58:44,784 [INFO] ApiDb:191 - User favorites Boards=[]
+2022-08-18 16:58:44,788 [INFO] DbBoardsPdsc:92 - Found 18 items
+2022-08-18 16:58:44,790 [INFO] DbBoardsPdsc:92 - Found 9 items
+2022-08-18 16:58:44,793 [INFO] DbBoardsPdsc:92 - Found 27 items
+2022-08-18 16:58:44,795 [INFO] DbBoardsPdsc:92 - Found 1 items
+2022-08-18 16:58:44,801 [INFO] DbBoardsPdsc:92 - Found 37 items
+2022-08-18 16:58:44,806 [INFO] DbBoardsPdsc:92 - Found 37 items
+2022-08-18 16:58:44,808 [INFO] DbBoardsPdsc:92 - Found 1 items
+2022-08-18 16:58:44,816 [ERROR] ServerAccessManage:941 - Problem, file not found on Server
+2022-08-18 16:58:44,823 [INFO] DbBoardsJson:79 - JSON generation date=Thu Jul 04 15:02:38 BST 2019 (1562248958)
+2022-08-18 16:58:44,828 [INFO] DbBoards:120 - Found 130 boards (129 are supported by CubeMX)
+2022-08-18 16:58:44,828 [WARN] DbBoards:130 - board NUCLEO-H743ZI2 has no document id list !
+2022-08-18 16:58:44,829 [WARN] DbBoards:130 - board NUCLEO-G031K8 has no document id list !
+2022-08-18 16:58:44,829 [WARN] DbBoards:130 - board P-NUCLEO-WB55-Nucleo has no document id list !
+2022-08-18 16:58:44,829 [WARN] DbBoards:130 - board P-NUCLEO-WB55-USBDongle has no document id list !
+2022-08-18 16:58:44,829 [WARN] DbBoards:130 - board P-NUCLEO-WB55 has no document id list !
+2022-08-18 16:58:44,829 [WARN] DbBoards:130 - board STM32F401C-DISCO has no document id list !
+2022-08-18 16:58:44,830 [WARN] DbBoards:130 - board STM32F769I-DISC1 has no document id list !
+2022-08-18 16:58:44,830 [WARN] DbBoards:130 - board B-G474E-DPOW1 has no document id list !
+2022-08-18 16:58:44,830 [WARN] DbBoards:130 - board STM32F7308-DISCO has no document id list !
+2022-08-18 16:58:44,830 [WARN] DbBoards:130 - board STM32L-DISCOVERY has no document id list !
+2022-08-18 16:58:44,830 [WARN] DbBoards:130 - board STM32G0316-DISCO has no document id list !
+2022-08-18 16:58:44,831 [WARN] DbBoards:130 - board STM32H747I-DISC1 has no document id list !
+2022-08-18 16:58:44,831 [WARN] DbBoards:130 - board STM32MP157A-DK1 has no document id list !
+2022-08-18 16:58:44,831 [WARN] DbBoards:130 - board STM32303C-EVAL has no document id list !
+2022-08-18 16:58:44,831 [WARN] DbBoards:130 - board STM32L152D-EVAL has no document id list !
+2022-08-18 16:58:44,831 [WARN] DbBoards:130 - board STM32H743I-EVAL2 has no document id list !
+2022-08-18 16:58:44,831 [WARN] DbBoards:130 - board STM32H753I-EVAL2 has no document id list !
+2022-08-18 16:58:44,832 [WARN] DbBoards:130 - board STM32H747I-EVAL has no document id list !
+2022-08-18 16:58:44,832 [WARN] DbBoards:130 - board STM32H757I-EVAL has no document id list !
+2022-08-18 16:58:44,832 [WARN] DbBoards:130 - board STM32G474E-EVAL1 has no document id list !
+2022-08-18 16:58:44,832 [WARN] DbBoards:130 - board STEVAL-MKSBOX1V1 has no document id list !
+2022-08-18 16:58:45,276 [INFO] ServerAccessManage:347 - Download File RoweBots.I-CUBE-UNISONRTOS.pdsc
+2022-08-18 16:58:45,501 [INFO] ApiDb:158 - Load user favorites file C:\Users\henrikass/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2022-08-18 16:58:45,501 [INFO] ApiDb:163 - User favorites Boards=[]
+2022-08-18 16:58:45,502 [INFO] DbBoards:209 - Set 0 / 0 favorites Boards
+2022-08-18 16:58:45,650 [INFO] McuFilterPanel:282 - Update 0 favorites MCUs
+2022-08-18 16:58:45,897 [WARN] BoardDetailPanel:182 - Failed to get advertising image, set to default
+2022-08-18 16:58:45,958 [INFO] DbMcusDocs:126 - JSON generation date=Fri Jun 21 11:28:09 BST 2019 (1561112889)
+2022-08-18 16:58:46,106 [INFO] DbMcusDocs:61 - Found 503 MCUs documents
+2022-08-18 16:58:46,108 [INFO] ApiDb:186 - Save user favorites file C:\Users\henrikass/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2022-08-18 16:58:46,108 [INFO] ApiDb:191 - User favorites MCUs=[]
+2022-08-18 16:58:46,109 [INFO] DbMcusXml:106 - Load MCU database from C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/mcu/families.xml
+2022-08-18 16:58:46,546 [ERROR] ServerAccessManage:941 - Problem, file not found on Server
+2022-08-18 16:58:46,584 [INFO] DbMcusJson:87 - JSON generation date=Fri Jun 21 11:28:09 BST 2019 (1561112889)
+2022-08-18 16:58:47,218 [INFO] DbMcus:193 - Found 1496 MCUs (1455 are supported by CubeMX, 1455 are visible in CubeMX)
+2022-08-18 16:58:47,219 [INFO] ApiDb:158 - Load user favorites file C:\Users\henrikass/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2022-08-18 16:58:47,220 [INFO] ApiDb:163 - User favorites MCUs=[]
+2022-08-18 16:58:47,220 [INFO] DbMcus:205 - Set 0 / 0 favorites MCUs
+2022-08-18 16:58:47,295 [INFO] McuFilterPanel:282 - Update 0 favorites MCUs
+2022-08-18 16:58:47,305 [ERROR] ServerAccessManage:941 - Problem, file not found on Server
+2022-08-18 16:58:47,507 [INFO] DbBoardsDocs:118 - JSON generation date=Fri Jun 21 11:28:09 BST 2019 (1561112889)
+2022-08-18 16:58:47,512 [INFO] DbBoardsDocs:57 - Found 151 boards documents
+2022-08-18 16:58:47,513 [INFO] ApiDb:186 - Save user favorites file C:\Users\henrikass/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2022-08-18 16:58:47,514 [INFO] ApiDb:191 - User favorites Boards=[]
+2022-08-18 16:58:47,519 [INFO] DbBoardsPdsc:92 - Found 18 items
+2022-08-18 16:58:47,521 [INFO] DbBoardsPdsc:92 - Found 9 items
+2022-08-18 16:58:47,525 [INFO] DbBoardsPdsc:92 - Found 27 items
+2022-08-18 16:58:47,538 [INFO] DbBoardsPdsc:92 - Found 1 items
+2022-08-18 16:58:47,544 [INFO] DbBoardsPdsc:92 - Found 37 items
+2022-08-18 16:58:47,551 [INFO] DbBoardsPdsc:92 - Found 37 items
+2022-08-18 16:58:47,552 [INFO] DbBoardsPdsc:92 - Found 1 items
+2022-08-18 16:58:47,594 [INFO] DbBoardsJson:79 - JSON generation date=Thu Jul 04 15:02:38 BST 2019 (1562248958)
+2022-08-18 16:58:47,602 [INFO] DbBoards:120 - Found 130 boards (129 are supported by CubeMX)
+2022-08-18 16:58:47,604 [WARN] DbBoards:130 - board NUCLEO-H743ZI2 has no document id list !
+2022-08-18 16:58:47,604 [WARN] DbBoards:130 - board NUCLEO-G031K8 has no document id list !
+2022-08-18 16:58:47,606 [WARN] DbBoards:130 - board P-NUCLEO-WB55-Nucleo has no document id list !
+2022-08-18 16:58:47,607 [WARN] DbBoards:130 - board P-NUCLEO-WB55-USBDongle has no document id list !
+2022-08-18 16:58:47,610 [WARN] DbBoards:130 - board P-NUCLEO-WB55 has no document id list !
+2022-08-18 16:58:47,611 [WARN] DbBoards:130 - board STM32F401C-DISCO has no document id list !
+2022-08-18 16:58:47,612 [WARN] DbBoards:130 - board STM32F769I-DISC1 has no document id list !
+2022-08-18 16:58:47,612 [WARN] DbBoards:130 - board B-G474E-DPOW1 has no document id list !
+2022-08-18 16:58:47,612 [WARN] DbBoards:130 - board STM32F7308-DISCO has no document id list !
+2022-08-18 16:58:47,613 [WARN] DbBoards:130 - board STM32L-DISCOVERY has no document id list !
+2022-08-18 16:58:47,613 [WARN] DbBoards:130 - board STM32G0316-DISCO has no document id list !
+2022-08-18 16:58:47,613 [WARN] DbBoards:130 - board STM32H747I-DISC1 has no document id list !
+2022-08-18 16:58:47,614 [WARN] DbBoards:130 - board STM32MP157A-DK1 has no document id list !
+2022-08-18 16:58:47,614 [WARN] DbBoards:130 - board STM32303C-EVAL has no document id list !
+2022-08-18 16:58:47,614 [WARN] DbBoards:130 - board STM32L152D-EVAL has no document id list !
+2022-08-18 16:58:47,615 [WARN] DbBoards:130 - board STM32H743I-EVAL2 has no document id list !
+2022-08-18 16:58:47,615 [WARN] DbBoards:130 - board STM32H753I-EVAL2 has no document id list !
+2022-08-18 16:58:47,616 [WARN] DbBoards:130 - board STM32H747I-EVAL has no document id list !
+2022-08-18 16:58:47,616 [WARN] DbBoards:130 - board STM32H757I-EVAL has no document id list !
+2022-08-18 16:58:47,616 [WARN] DbBoards:130 - board STM32G474E-EVAL1 has no document id list !
+2022-08-18 16:58:47,617 [WARN] DbBoards:130 - board STEVAL-MKSBOX1V1 has no document id list !
+2022-08-18 16:58:48,176 [ERROR] ServerAccessManage:941 - Problem, file not found on Server
+2022-08-18 16:58:48,440 [INFO] ApiDb:158 - Load user favorites file C:\Users\henrikass/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2022-08-18 16:58:48,441 [INFO] ApiDb:163 - User favorites Boards=[]
+2022-08-18 16:58:48,441 [INFO] DbBoards:209 - Set 0 / 0 favorites Boards
+2022-08-18 16:58:48,445 [INFO] BoardFilterPanel:211 - Update 0 favorites Boards
+2022-08-18 16:58:48,571 [INFO] BoardFilterPanel:211 - Update 0 favorites Boards
+2022-08-18 16:58:48,733 [INFO] CrossSelectorPresenter:1319 - Cross Selector saved comparison directory: C:\Users\henrikass\.stmcufinder\plugins\mcufinder\mcu\cs_comparisons_mx
+2022-08-18 16:58:49,037 [ERROR] ServerAccessManage:941 - Problem, file not found on Server
+2022-08-18 16:58:49,240 [INFO] ServerAccessManage:347 - Download File SEGGER.I-CUBE-embOS.pdsc
+2022-08-18 16:58:49,720 [INFO] ServerAccessManage:347 - Download File portGmbH.I-Cube-SoM-uGOAL.pdsc
+2022-08-18 16:58:50,230 [ERROR] ServerAccessManage:941 - Problem, file not found on Server
+2022-08-18 16:58:50,368 [ERROR] ServerAccessManage:941 - Problem, file not found on Server
+2022-08-18 16:58:50,486 [ERROR] ServerAccessManage:941 - Problem, file not found on Server
+2022-08-18 16:58:50,671 [INFO] ServerAccessManage:347 - Download File emotas.I-CUBE-CANOPEN.pdsc
+2022-08-18 16:58:51,362 [INFO] LoadServerUpdatesThread:272 - End of LoadServerUpdate Thread
+2022-08-18 16:58:51,365 [INFO] ThirdPartyDb:294 - Open Third Party DataBase File (C:/Users/henrikass/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 0 ms. number of Sw pack : 0
+2022-08-18 16:58:51,370 [WARN] PopulateThirdPartyThread:73 - Error populating pack: STMicroelectronics.FP-ATR-ASTRA1.pdsc
+2022-08-18 16:58:51,409 [INFO] CheckServerUpdateThread:121 - End of CheckServer Thread
+2022-08-18 16:58:51,416 [WARN] PopulateThirdPartyThread:73 - Error populating pack: STMicroelectronics.X-CUBE-ALS.pdsc
+2022-08-18 16:58:51,419 [WARN] PopulateThirdPartyThread:73 - Error populating pack: STMicroelectronics.X-CUBE-BLE1.pdsc
+2022-08-18 16:58:51,420 [WARN] PopulateThirdPartyThread:73 - Error populating pack: STMicroelectronics.X-CUBE-BLE2.pdsc
+2022-08-18 16:58:51,422 [WARN] PopulateThirdPartyThread:73 - Error populating pack: STMicroelectronics.X-CUBE-BLEMGR.pdsc
+2022-08-18 16:58:51,428 [WARN] PopulateThirdPartyThread:73 - Error populating pack: STMicroelectronics.X-CUBE-DISPLAY.pdsc
+2022-08-18 16:58:51,436 [WARN] PopulateThirdPartyThread:73 - Error populating pack: STMicroelectronics.X-CUBE-GNSS1.pdsc
+2022-08-18 16:58:51,624 [WARN] PopulateThirdPartyThread:73 - Error populating pack: STMicroelectronics.X-CUBE-SUBG2.pdsc
+2022-08-18 16:58:51,629 [WARN] PopulateThirdPartyThread:73 - Error populating pack: STMicroelectronics.X-CUBE-TOF1.pdsc
+2022-08-18 16:58:51,658 [WARN] PopulateThirdPartyThread:73 - Error populating pack: STMicroelectronics.X-CUBE-AZRTOS-H7.pdsc
+2022-08-18 16:58:51,665 [WARN] PopulateThirdPartyThread:73 - Error populating pack: STMicroelectronics.X-CUBE-AZRTOS-F4.pdsc
+2022-08-18 16:58:51,672 [WARN] PopulateThirdPartyThread:73 - Error populating pack: STMicroelectronics.X-CUBE-AZRTOS-F7.pdsc
+2022-08-18 16:58:51,678 [WARN] PopulateThirdPartyThread:73 - Error populating pack: STMicroelectronics.X-CUBE-AZRTOS-L4.pdsc
+2022-08-18 16:58:51,686 [WARN] PopulateThirdPartyThread:73 - Error populating pack: STMicroelectronics.X-CUBE-AZRTOS-L5.pdsc
+2022-08-18 16:58:51,695 [WARN] PopulateThirdPartyThread:73 - Error populating pack: STMicroelectronics.X-CUBE-AZRTOS-G0.pdsc
+2022-08-18 16:58:51,701 [WARN] PopulateThirdPartyThread:73 - Error populating pack: STMicroelectronics.X-CUBE-AZRTOS-G4.pdsc
+2022-08-18 16:58:51,705 [WARN] PopulateThirdPartyThread:73 - Error populating pack: STMicroelectronics.X-CUBE-AZRTOS-WL.pdsc
+2022-08-18 16:58:51,755 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,755 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,755 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,756 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,756 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,756 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,757 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,757 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,757 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,757 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,757 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,758 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,758 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,758 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,758 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,759 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,759 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,759 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,759 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,759 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,760 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,760 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,760 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,760 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,761 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,761 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,761 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,761 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,761 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,762 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,762 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,762 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,762 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,762 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,762 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,763 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,763 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,763 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,763 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,763 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,764 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,764 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,764 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,764 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,764 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,765 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,765 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,765 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,765 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,765 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,766 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,766 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,766 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,766 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,766 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,767 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,767 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,767 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,767 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,767 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,768 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,768 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,768 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,768 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,768 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,769 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,769 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,769 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,769 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,769 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,770 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,770 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,770 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,770 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,770 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,771 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,771 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,771 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,771 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,771 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,772 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,772 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,772 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,772 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,773 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,773 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,773 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,773 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,773 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,774 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,774 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,774 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,774 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,775 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,775 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,775 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,775 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,776 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,776 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,776 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,776 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,776 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,777 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,777 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,777 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,777 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,777 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,778 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,778 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,778 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,778 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,778 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,779 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,779 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,779 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,779 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,779 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,780 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,780 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,780 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,781 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,781 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,781 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,781 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,781 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,781 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,782 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,782 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,782 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,782 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,782 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,782 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,783 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,783 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,783 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,783 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,783 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,784 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,784 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,784 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,784 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,784 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,784 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,785 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,785 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,785 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,786 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,786 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,786 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,786 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,786 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,787 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,787 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,787 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,787 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,788 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,788 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,788 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,788 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,788 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,789 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,789 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,789 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,790 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,790 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,790 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,790 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,790 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,791 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,791 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,791 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,791 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,792 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,792 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,792 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,792 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,792 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,793 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,793 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,793 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,793 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,794 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,794 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,794 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,794 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,795 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,795 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,795 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,795 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,795 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,796 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,796 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,796 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,796 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,797 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,797 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,797 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,797 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,798 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,798 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,798 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,798 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,798 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,798 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,798 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,798 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,798 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,799 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,799 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,799 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,799 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,799 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,800 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,800 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,800 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,800 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,801 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,801 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,801 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,801 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,801 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,802 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,802 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,802 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,802 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,803 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,803 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,803 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,803 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,803 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,804 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,804 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,804 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,804 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,805 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,805 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,805 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,805 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,806 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,806 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,806 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,806 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,807 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,807 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,807 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,807 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,808 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,808 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,808 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,808 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,809 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,809 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,809 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,809 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,810 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,810 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,810 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,810 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,810 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,811 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,811 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,811 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,811 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,812 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,812 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,812 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,813 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,813 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,813 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,813 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,813 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,814 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,814 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,814 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,814 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,815 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,815 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,815 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,815 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,816 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,816 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,816 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,816 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,817 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,817 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,817 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,817 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,817 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,818 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,818 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,818 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,819 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,819 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,819 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,819 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,819 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,820 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,820 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,820 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,820 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,821 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,821 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,821 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,821 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,821 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,822 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,822 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,822 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,822 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,823 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,823 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,823 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,823 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,824 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,824 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,824 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,824 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,824 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,825 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,825 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,825 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,825 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,826 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,826 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,826 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,826 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,827 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,827 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,827 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,827 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,828 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,828 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,828 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,828 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,828 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,829 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,829 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,829 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,829 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,830 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,830 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,830 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,830 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,831 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,831 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,831 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,831 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,832 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,832 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,832 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,832 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,832 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,833 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,833 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,833 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,833 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,834 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,834 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,834 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,834 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,835 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,835 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,835 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,835 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,835 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,836 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,836 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,836 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,836 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,837 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,837 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,837 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,837 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,838 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,838 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,838 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,838 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,838 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,839 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,839 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,839 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,839 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,840 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,840 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,840 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,840 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,841 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,841 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,841 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,841 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,842 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,842 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,842 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,842 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,842 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,843 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,843 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,843 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,843 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,844 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,844 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,844 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,844 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,844 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,845 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,845 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,845 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,845 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,846 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,846 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,846 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,846 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,847 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,847 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,847 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,847 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,847 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,848 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,848 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,848 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,849 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,849 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,849 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,849 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,850 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,850 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,850 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,850 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,851 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,851 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,851 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,851 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,851 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,852 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,852 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,852 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,852 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,853 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,853 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,853 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,853 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,854 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,854 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,854 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,854 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,855 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,855 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,855 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,855 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,856 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,856 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,856 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,856 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,856 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,857 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,857 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,857 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,858 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,858 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,858 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,858 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,858 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,859 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,859 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,859 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,859 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,860 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,860 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,860 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,860 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,861 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,861 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,861 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,861 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,862 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,862 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,862 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,862 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,863 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,863 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,863 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,863 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,864 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,864 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,864 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,864 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,865 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,865 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,865 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,865 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,866 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,866 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,866 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,866 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,867 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,867 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,867 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,867 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,868 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,868 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,868 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,868 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,869 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,869 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,869 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,869 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,870 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,870 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,870 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,870 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,871 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,871 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,871 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,871 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,872 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,872 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,872 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,872 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,873 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,873 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,873 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,873 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,873 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,874 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,874 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,874 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,874 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,875 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,875 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,875 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,875 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,876 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,876 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,876 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,876 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,877 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,877 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,877 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,877 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,877 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,878 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,878 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,878 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,878 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,879 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,879 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,879 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,879 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,880 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,880 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,880 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,880 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,880 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,880 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,881 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,881 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,881 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,881 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,882 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,882 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,882 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,882 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,882 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,883 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,883 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,883 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,883 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,884 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,884 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,884 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,884 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,885 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,885 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,885 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,885 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,885 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,886 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,886 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,886 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,886 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,886 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,887 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,887 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,888 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,888 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,889 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,889 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,889 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,890 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,890 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,890 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,890 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,891 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,891 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,891 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,891 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,892 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,892 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,892 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,892 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,893 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,893 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,893 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,894 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,894 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,894 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,894 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,895 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,895 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,895 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,895 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,895 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,896 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,896 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,896 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,896 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,897 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,897 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,897 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,897 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,898 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,898 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,898 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,899 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,899 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,899 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,900 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,900 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,900 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,900 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,901 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,901 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,901 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,901 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,901 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,902 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,902 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,902 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,902 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,903 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,903 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,903 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,903 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,903 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,904 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,904 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,904 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,904 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,905 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,905 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,905 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,905 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,906 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,906 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,906 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,906 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,906 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,907 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,907 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,907 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,907 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,907 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,907 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,908 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,908 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,908 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,908 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,909 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,909 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,909 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,909 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,910 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,910 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,910 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,910 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,911 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,911 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,911 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,911 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,912 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,912 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,912 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,912 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,912 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,913 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,913 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,913 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,914 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,914 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,914 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,914 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,914 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,915 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,915 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,915 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,915 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,915 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,916 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,916 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,916 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,916 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,917 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,917 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,917 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,917 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,918 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,918 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,918 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,918 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,918 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,919 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,919 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,919 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,919 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,919 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,919 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,919 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,920 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,920 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,920 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,920 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,920 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,920 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,921 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,921 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,921 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,921 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,921 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,922 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,922 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,922 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,922 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,922 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,922 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,923 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,923 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,923 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,923 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,923 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,923 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,923 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,924 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,924 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,924 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,924 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,924 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,924 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,925 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,925 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,925 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,925 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,925 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,925 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,926 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,926 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,926 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,926 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,926 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,926 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,926 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,927 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,927 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,927 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,927 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,927 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,927 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,928 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,928 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,928 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,928 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,928 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,929 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,929 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,929 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,929 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,929 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,929 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,930 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,930 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,930 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,930 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,930 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,930 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,930 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,931 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,931 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,931 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,931 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,931 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,931 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,932 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,932 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,932 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,932 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,932 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,932 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,932 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,933 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,933 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,933 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,933 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,933 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,933 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,934 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,934 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,934 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,934 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,934 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,934 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,935 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,935 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,935 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,935 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,935 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,935 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,936 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,936 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,936 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,936 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,936 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,936 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,937 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,937 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,937 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,937 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,937 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,937 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,937 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,938 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,938 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,938 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,938 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,938 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,938 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,939 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,939 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,939 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,939 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,939 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,939 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,940 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,940 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,940 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,940 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,940 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,940 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,941 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,941 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,941 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,941 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,941 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,941 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,942 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,942 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,942 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,942 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,942 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,942 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,943 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,943 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,943 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,943 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,943 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,943 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,944 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,944 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,944 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,944 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,944 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,944 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,945 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,945 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,945 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,945 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,945 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,945 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,946 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,946 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,946 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,946 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,946 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,946 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,946 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,947 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,947 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,947 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,947 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,947 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,947 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,948 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,948 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,948 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,948 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,948 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,949 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,949 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,949 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,949 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,949 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,949 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,949 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,950 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,950 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,950 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,950 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,950 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,950 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,951 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,951 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,951 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,951 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,951 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,951 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,952 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,952 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,952 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,952 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,952 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,952 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,953 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,953 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,953 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,953 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,953 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,953 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,954 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,954 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,954 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,954 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,954 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,954 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,954 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,955 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,955 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,955 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,955 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,955 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,955 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,956 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,956 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,956 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,956 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,956 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,956 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,957 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,957 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,957 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,958 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,958 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,958 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,958 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,959 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,959 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,959 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,959 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,960 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,960 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,960 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,961 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,961 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,961 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,961 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,962 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,962 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,962 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,962 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,963 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,963 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,963 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,963 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,964 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,964 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,964 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,964 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,965 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,965 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,965 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,965 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,966 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,966 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,966 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,967 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,967 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,967 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,967 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,968 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,968 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,968 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,968 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,969 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,969 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,969 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,969 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,970 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,970 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,970 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,970 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,971 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,971 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,971 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,971 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,972 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,972 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,972 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,972 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,973 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,973 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,973 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,973 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,974 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,974 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,974 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,974 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,975 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,975 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,975 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,976 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,976 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,976 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,976 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,977 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,977 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,977 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,978 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,978 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,978 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,978 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,979 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,979 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,979 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,979 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,980 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,980 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,980 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,980 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,981 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,981 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,981 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,981 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,982 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,982 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,982 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,982 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,983 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,983 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,983 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,983 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,984 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,984 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,984 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,984 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,985 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,985 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,985 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,985 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,986 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,986 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,986 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,987 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,987 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,987 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,987 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,988 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,988 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,988 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,989 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,989 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,989 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,990 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,990 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,991 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,991 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,991 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,991 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,992 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,992 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,992 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,992 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,993 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,993 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,993 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,993 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,993 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,993 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,994 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,994 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,994 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,994 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,994 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,995 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,995 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,995 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,995 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,995 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,996 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,996 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,996 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,996 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,996 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,997 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,997 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,997 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,997 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,997 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,997 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,998 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,998 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,998 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,998 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,999 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,999 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,999 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:51,999 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,000 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,000 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,000 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,000 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,000 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,001 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,001 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,001 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,001 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,001 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,002 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,002 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,002 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,002 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,002 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,002 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,003 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,003 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,003 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,003 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,004 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,004 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,004 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,004 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,005 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,005 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,005 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,005 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,005 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,006 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,006 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,006 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,006 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,006 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,007 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,007 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,007 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,007 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,007 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,008 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,008 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,008 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,008 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,008 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,008 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,009 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,009 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,009 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,010 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,010 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,010 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,011 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,011 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,011 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,011 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,011 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,012 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,012 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,012 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,012 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,012 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,013 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,013 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,013 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,013 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,013 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,013 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,014 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,014 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,014 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,014 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,014 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,015 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,015 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,015 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,015 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,015 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,016 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,016 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,016 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,016 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,016 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,017 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,017 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,017 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,017 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,018 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,018 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,018 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,018 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,019 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,019 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,019 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,019 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,019 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,019 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,020 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,020 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,020 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,020 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,021 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,021 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,021 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,021 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,021 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,022 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,022 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,022 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,022 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,022 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,023 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,023 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,023 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,023 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,023 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,023 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,024 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,024 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,024 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,024 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,024 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,025 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,025 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,025 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,025 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,025 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,026 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,026 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,026 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,026 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,026 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,027 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,027 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,027 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,027 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,028 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,028 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,028 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,028 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,028 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,029 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,029 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,029 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,029 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,029 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,030 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,030 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,030 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,030 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,030 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,031 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,031 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,031 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,031 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,031 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,031 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,032 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,032 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,032 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,032 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,032 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,033 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,033 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,033 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,033 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,033 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,034 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,034 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,034 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,034 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,034 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,035 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,035 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,035 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,035 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,035 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,036 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,036 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,036 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,036 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,036 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,037 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,037 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,037 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,037 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,037 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,038 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,038 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,038 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,038 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,038 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,039 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,039 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,039 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,039 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,039 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,040 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,040 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,040 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,040 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,040 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,041 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,041 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,041 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,041 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,041 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,042 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,042 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,042 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,042 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,042 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,043 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,043 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,043 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,043 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,043 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,044 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,044 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,044 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,044 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,044 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,045 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,045 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,045 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,045 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,045 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,046 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,046 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,046 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,046 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,046 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,047 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,047 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,047 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,048 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,048 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,049 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,049 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,049 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,049 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,050 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,050 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,051 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,051 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,051 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,051 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,052 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,052 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,053 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,053 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,053 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,053 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,054 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,055 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,055 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,055 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,055 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,056 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,056 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,056 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,057 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,057 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,057 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,057 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,058 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,058 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,058 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,059 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,059 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,059 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,060 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,060 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,060 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,060 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,061 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,061 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,062 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,062 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,062 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,062 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,063 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,063 [WARN] ConditionMgr:787 - The TOptions attribute is not supported 
+2022-08-18 16:58:52,072 [WARN] PopulateThirdPartyThread:73 - Error populating pack: portGmbH.I-Cube-SoM-uGOAL.pdsc
+2022-08-18 16:58:52,074 [WARN] PopulateThirdPartyThread:73 - Error populating pack: emotas.I-CUBE-CANOPEN.pdsc
+2022-08-18 16:58:52,075 [INFO] PopulateThirdPartyThread:82 - Ending populate Thread
+2022-08-18 16:58:52,082 [INFO] ThirdPartyDb:264 - Close Third Party DataBase File (C:/Users/henrikass/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2022-08-18 16:58:52,162 [INFO] ThirdPartyDb:294 - Open Third Party DataBase File (C:/Users/henrikass/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 11 ms. number of Sw pack : 12
+2022-08-18 16:58:52,164 [INFO] Engine:435 - softwarePackList size : 12
+2022-08-18 16:58:52,177 [INFO] Engine:447 - compute dependency for SwPack X-CUBE-AI have been done, and update is requested
+2022-08-18 16:58:52,189 [INFO] Engine:447 - compute dependency for SwPack X-CUBE-EEPRMA1 have been done, and update is requested
+2022-08-18 16:58:52,196 [INFO] Engine:447 - compute dependency for SwPack X-CUBE-ISPU have been done, and update is requested
+2022-08-18 16:58:52,647 [INFO] Engine:447 - compute dependency for SwPack X-CUBE-MEMS1 have been done, and update is requested
+2022-08-18 16:58:52,665 [INFO] Engine:447 - compute dependency for SwPack X-CUBE-NFC4 have been done, and update is requested
+2022-08-18 16:58:52,679 [INFO] Engine:447 - compute dependency for SwPack X-CUBE-NFC7 have been done, and update is requested
+2022-08-18 16:58:52,693 [INFO] Engine:447 - compute dependency for SwPack X-CUBE-SFXS2LP1 have been done, and update is requested
+2022-08-18 16:58:52,700 [INFO] Engine:451 - compute dependency for SwPack X-CUBE-TOUCHGFX have been done, no update is requested
+2022-08-18 16:58:52,703 [INFO] Engine:447 - compute dependency for SwPack X-CUBE-ALGOBUILD have been done, and update is requested
+2022-08-18 16:58:52,711 [INFO] Engine:447 - compute dependency for SwPack I-CUBE-wolfSSL have been done, and update is requested
+2022-08-18 16:58:52,720 [INFO] Engine:451 - compute dependency for SwPack I-CUBE-UNISONRTOS have been done, no update is requested
+2022-08-18 16:58:52,738 [INFO] Engine:451 - compute dependency for SwPack I-CUBE-embOS have been done, no update is requested
+2022-08-18 16:58:52,738 [INFO] ThirdPartyDb:264 - Close Third Party DataBase File (C:/Users/henrikass/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2022-08-18 16:58:52,807 [INFO] ThirdPartyDb:294 - Open Third Party DataBase File (C:/Users/henrikass/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 13 ms. number of Sw pack : 12
+2022-08-18 16:58:52,810 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Software Pack is missing : STMicroelectronics.X-CUBE-AI.7.2.0
+2022-08-18 16:58:52,812 [ERROR] ThirdParty:732 - Engine buildDependencyDb : invalid pack or unsuported pack STMicroelectronics.X-CUBE-AI.7.2.0
+2022-08-18 16:58:52,815 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Software Pack is missing : STMicroelectronics.X-CUBE-EEPRMA1.3.1.1
+2022-08-18 16:58:52,816 [ERROR] ThirdParty:732 - Engine buildDependencyDb : invalid pack or unsuported pack STMicroelectronics.X-CUBE-EEPRMA1.3.1.1
+2022-08-18 16:58:52,819 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Software Pack is missing : STMicroelectronics.X-CUBE-ISPU.1.0.0
+2022-08-18 16:58:52,820 [ERROR] ThirdParty:732 - Engine buildDependencyDb : invalid pack or unsuported pack STMicroelectronics.X-CUBE-ISPU.1.0.0
+2022-08-18 16:58:52,824 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Software Pack is missing : STMicroelectronics.X-CUBE-MEMS1.9.3.0
+2022-08-18 16:58:52,824 [ERROR] ThirdParty:732 - Engine buildDependencyDb : invalid pack or unsuported pack STMicroelectronics.X-CUBE-MEMS1.9.3.0
+2022-08-18 16:58:52,828 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Software Pack is missing : STMicroelectronics.X-CUBE-NFC4.2.0.4
+2022-08-18 16:58:52,829 [ERROR] ThirdParty:732 - Engine buildDependencyDb : invalid pack or unsuported pack STMicroelectronics.X-CUBE-NFC4.2.0.4
+2022-08-18 16:58:52,832 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Software Pack is missing : STMicroelectronics.X-CUBE-NFC7.1.0.0
+2022-08-18 16:58:52,833 [ERROR] ThirdParty:732 - Engine buildDependencyDb : invalid pack or unsuported pack STMicroelectronics.X-CUBE-NFC7.1.0.0
+2022-08-18 16:58:52,836 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Software Pack is missing : STMicroelectronics.X-CUBE-SFXS2LP1.4.0.0
+2022-08-18 16:58:52,837 [ERROR] ThirdParty:732 - Engine buildDependencyDb : invalid pack or unsuported pack STMicroelectronics.X-CUBE-SFXS2LP1.4.0.0
+2022-08-18 16:58:52,841 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Software Pack is missing : STMicroelectronics.X-CUBE-TOUCHGFX.4.20.0
+2022-08-18 16:58:52,842 [ERROR] ThirdParty:732 - Engine buildDependencyDb : invalid pack or unsuported pack STMicroelectronics.X-CUBE-TOUCHGFX.4.20.0
+2022-08-18 16:58:52,846 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Software Pack is missing : STMicroelectronics.X-CUBE-ALGOBUILD.1.3.0
+2022-08-18 16:58:52,846 [ERROR] ThirdParty:732 - Engine buildDependencyDb : invalid pack or unsuported pack STMicroelectronics.X-CUBE-ALGOBUILD.1.3.0
+2022-08-18 16:58:52,848 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "Thread-17" java.lang.NullPointerException
+2022-08-18 16:58:52,849 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.microxplorer.plugins.thirdparty.ThirdParty.propertyChange(ThirdParty.java:703)
+2022-08-18 16:58:52,853 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.beans.PropertyChangeSupport.fire(PropertyChangeSupport.java:335)
+2022-08-18 16:58:52,857 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:327)
+2022-08-18 16:58:52,861 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:263)
+2022-08-18 16:58:52,864 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.microxplorer.plugins.thirdparty.engine.Engine.propertyChange(Engine.java:1003)
+2022-08-18 16:58:52,867 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.beans.PropertyChangeSupport.fire(PropertyChangeSupport.java:335)
+2022-08-18 16:58:52,870 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:327)
+2022-08-18 16:58:52,875 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:263)
+2022-08-18 16:58:52,879 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.microxplorer.plugins.thirdparty.engine.PopulateThirdPartyThread.run(PopulateThirdPartyThread.java:91)
+2022-08-18 17:01:14,613 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] withoutVersionV1.24.2
+2022-08-18 17:01:14,615 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] withoutVersionV1.24.1
+2022-08-18 17:01:14,617 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] withoutVersionV1.24.0
+2022-08-18 17:13:15,234 [INFO] MainUpdater:2040 - connection check result : 10
+2022-08-18 17:13:15,236 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Successfull proxy connection.
+2022-08-18 17:13:15,243 [INFO] McuFinderGlobals:40 - Set McuFinder mode to 2 (CubeIDE integrated)
+2022-08-18 17:13:15,244 [INFO] FinderPluginLoader:85 - Searching for filters in installed packs
+2022-08-18 17:13:16,143 [INFO] ServerAccessManage:347 - Download File 
+2022-08-18 17:13:16,213 [INFO] LoadUrlFilesThread:147 - End of LoadServerUrlFiles without Thread
+2022-08-18 17:13:16,251 [INFO] McuDetailPanel:180 - Set advertising image to C:/Users/henrikass/STM32Cube/Repository/\PRSTM32MP10219-01-med.jpg
+2022-08-18 17:13:16,578 [INFO] ServerAccessManage:347 - Download File mcusDocs.json
+2022-08-18 17:13:16,620 [INFO] LoadUrlFilesThread:129 - End of LoadUrlFiles Thread
+2022-08-18 17:13:16,976 [INFO] ServerAccessManage:347 - Download File mcusFeaturesAndDescription.json
+2022-08-18 17:13:17,904 [INFO] LoadUrlFilesThread:129 - End of LoadUrlFiles Thread
+2022-08-18 17:13:17,965 [INFO] ServerAccessManage:347 - Download File mcusAds.json
+2022-08-18 17:13:17,978 [INFO] LoadUrlFilesThread:129 - End of LoadUrlFiles Thread
+2022-08-18 17:13:18,028 [INFO] ServerAccessManage:347 - Download File boardsDocs.json
+2022-08-18 17:13:18,044 [INFO] LoadUrlFilesThread:129 - End of LoadUrlFiles Thread
+2022-08-18 17:13:18,083 [INFO] ServerAccessManage:347 - Download File boards.json
+2022-08-18 17:13:18,135 [INFO] LoadUrlFilesThread:129 - End of LoadUrlFiles Thread
+2022-08-18 17:13:18,323 [INFO] ServerAccessManage:347 - Download File crdb.zip
+2022-08-18 17:13:18,469 [INFO] FileExtend:191 - Unzip File : crdb.zip
+2022-08-18 17:13:18,471 [INFO] FileExtend:206 - Standard Zip Deflate
+2022-08-18 17:13:18,503 [INFO] LoadUrlFilesThread:129 - End of LoadUrlFiles Thread
+2022-08-18 17:13:18,510 [INFO] DbMcusDocs:126 - JSON generation date=Tue Nov 16 16:17:54 GMT 2021 (1637079474)
+2022-08-18 17:13:18,816 [INFO] DbMcusDocs:61 - Found 497 MCUs documents
+2022-08-18 17:13:18,817 [INFO] ApiDb:186 - Save user favorites file C:\Users\henrikass/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2022-08-18 17:13:18,817 [INFO] ApiDb:191 - User favorites MCUs=[]
+2022-08-18 17:13:18,818 [INFO] DbMcusXml:106 - Load MCU database from C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/mcu/families.xml
+2022-08-18 17:13:19,526 [INFO] DbMcusJson:87 - JSON generation date=Tue Nov 16 16:17:54 GMT 2021 (1637079474)
+2022-08-18 17:13:20,402 [INFO] DbMcus:193 - Found 1496 MCUs (1455 are supported by CubeMX, 1455 are visible in CubeMX)
+2022-08-18 17:13:20,403 [INFO] ApiDb:158 - Load user favorites file C:\Users\henrikass/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2022-08-18 17:13:20,403 [INFO] ApiDb:163 - User favorites MCUs=[]
+2022-08-18 17:13:20,403 [INFO] DbMcus:205 - Set 0 / 0 favorites MCUs
+2022-08-18 17:13:20,457 [INFO] McuFilterPanel:282 - Update 0 favorites MCUs
+2022-08-18 17:13:20,681 [INFO] DbBoardsDocs:118 - JSON generation date=Tue Nov 16 16:17:54 GMT 2021 (1637079474)
+2022-08-18 17:13:20,682 [INFO] DbBoardsDocs:57 - Found 151 boards documents
+2022-08-18 17:13:20,683 [INFO] ApiDb:186 - Save user favorites file C:\Users\henrikass/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2022-08-18 17:13:20,684 [INFO] ApiDb:191 - User favorites Boards=[]
+2022-08-18 17:13:20,688 [INFO] DbBoardsPdsc:92 - Found 18 items
+2022-08-18 17:13:20,690 [INFO] DbBoardsPdsc:92 - Found 9 items
+2022-08-18 17:13:20,691 [INFO] DbBoardsPdsc:92 - Found 27 items
+2022-08-18 17:13:20,693 [INFO] DbBoardsPdsc:92 - Found 1 items
+2022-08-18 17:13:20,695 [INFO] DbBoardsPdsc:92 - Found 37 items
+2022-08-18 17:13:20,699 [INFO] DbBoardsPdsc:92 - Found 37 items
+2022-08-18 17:13:20,701 [INFO] DbBoardsPdsc:92 - Found 1 items
+2022-08-18 17:13:20,749 [INFO] DbBoardsJson:79 - JSON generation date=Tue Nov 16 16:17:54 GMT 2021 (1637079474)
+2022-08-18 17:13:20,758 [INFO] DbBoards:120 - Found 164 boards (129 are supported by CubeMX)
+2022-08-18 17:13:20,759 [WARN] DbBoards:130 - board NUCLEO-H743ZI has no document id list !
+2022-08-18 17:13:20,760 [WARN] DbBoards:152 - board NUCLEO-G431KB / document id not found: 4457
+2022-08-18 17:13:20,760 [WARN] DbBoards:152 - board NUCLEO-G031K8 / document id not found: 4478
+2022-08-18 17:13:20,765 [WARN] DbBoards:130 - board P-NUCLEO-WB55-Nucleo has no document id list !
+2022-08-18 17:13:20,765 [WARN] DbBoards:130 - board P-NUCLEO-WB55-USBDongle has no document id list !
+2022-08-18 17:13:20,765 [WARN] DbBoards:152 - board P-NUCLEO-WB55 / document id not found: 4332
+2022-08-18 17:13:20,766 [WARN] DbBoards:152 - board P-NUCLEO-WB55 / document id not found: 4345
+2022-08-18 17:13:20,766 [WARN] DbBoards:152 - board STM32F0DISCOVERY / document id not found: 3400
+2022-08-18 17:13:20,767 [WARN] DbBoards:130 - board STM32F401C-DISCO has no document id list !
+2022-08-18 17:13:20,768 [WARN] DbBoards:130 - board STM32F769I-DISC1 has no document id list !
+2022-08-18 17:13:20,768 [WARN] DbBoards:152 - board STM32F723E-DISCO / document id not found: 4598
+2022-08-18 17:13:20,768 [WARN] DbBoards:152 - board B-G474E-DPOW1 / document id not found: 4463
+2022-08-18 17:13:20,769 [WARN] DbBoards:152 - board B-G474E-DPOW1 / document id not found: 4471
+2022-08-18 17:13:20,769 [WARN] DbBoards:152 - board B-G474E-DPOW1 / document id not found: 4480
+2022-08-18 17:13:20,769 [WARN] DbBoards:152 - board B-G474E-DPOW1 / document id not found: 4624
+2022-08-18 17:13:20,770 [WARN] DbBoards:152 - board B-G474E-DPOW1 / document id not found: 4625
+2022-08-18 17:13:20,770 [WARN] DbBoards:130 - board STM32F7308-DISCO has no document id list !
+2022-08-18 17:13:20,770 [WARN] DbBoards:152 - board STM32L0538-DISCO / document id not found: 3671
+2022-08-18 17:13:20,772 [WARN] DbBoards:130 - board STM32L-DISCOVERY has no document id list !
+2022-08-18 17:13:20,773 [WARN] DbBoards:152 - board STM32L496G-DISCO / document id not found: 4598
+2022-08-18 17:13:20,773 [WARN] DbBoards:152 - board STM32G0316-DISCO / document id not found: 4486
+2022-08-18 17:13:20,774 [WARN] DbBoards:152 - board STM32G0316-DISCO / document id not found: 4487
+2022-08-18 17:13:20,774 [WARN] DbBoards:157 - board STM32G0316-DISCO has no document !
+2022-08-18 17:13:20,775 [WARN] DbBoards:152 - board STM32H747I-DISCO / document id not found: 4598
+2022-08-18 17:13:20,775 [WARN] DbBoards:130 - board STM32H747I-DISC1 has no document id list !
+2022-08-18 17:13:20,775 [WARN] DbBoards:152 - board STM32H745I-DISCO / document id not found: 4598
+2022-08-18 17:13:20,775 [WARN] DbBoards:152 - board STM32H750B-DK / document id not found: 4598
+2022-08-18 17:13:20,776 [WARN] DbBoards:152 - board STM32L4R9I-DISCO / document id not found: 4598
+2022-08-18 17:13:20,776 [WARN] DbBoards:152 - board STM32303C-EVAL / document id not found: 3440
+2022-08-18 17:13:20,776 [WARN] DbBoards:152 - board STM32303C-EVAL / document id not found: 3441
+2022-08-18 17:13:20,777 [WARN] DbBoards:130 - board STM32439I-EVAL2 has no document id list !
+2022-08-18 17:13:20,777 [WARN] DbBoards:152 - board STM32L152D-EVAL / document id not found: 3392
+2022-08-18 17:13:20,777 [WARN] DbBoards:152 - board STM32L152D-EVAL / document id not found: 3396
+2022-08-18 17:13:20,778 [WARN] DbBoards:130 - board STM32H743I-EVAL2 has no document id list !
+2022-08-18 17:13:20,778 [WARN] DbBoards:130 - board STM32H753I-EVAL2 has no document id list !
+2022-08-18 17:13:20,778 [WARN] DbBoards:152 - board STM32H747I-EVAL / document id not found: 4460
+2022-08-18 17:13:20,779 [WARN] DbBoards:152 - board STM32H747I-EVAL / document id not found: 4462
+2022-08-18 17:13:20,780 [WARN] DbBoards:152 - board STM32H757I-EVAL / document id not found: 4460
+2022-08-18 17:13:20,780 [WARN] DbBoards:152 - board STM32H757I-EVAL / document id not found: 4462
+2022-08-18 17:13:20,781 [WARN] DbBoards:130 - board STM32G474E-EVAL1 has no document id list !
+2022-08-18 17:13:20,782 [WARN] DbBoards:130 - board STEVAL-MKSBOX1V1 has no document id list !
+2022-08-18 17:13:20,782 [WARN] DbBoards:152 - board STM32F7308-DK / document id not found: 4347
+2022-08-18 17:13:20,782 [WARN] DbBoards:152 - board STM32F7308-DK / document id not found: 4348
+2022-08-18 17:13:20,783 [WARN] DbBoards:152 - board B-L462E-CELL1 / document id not found: 16922
+2022-08-18 17:13:20,783 [WARN] DbBoards:152 - board B-L462E-CELL1 / document id not found: 18026
+2022-08-18 17:13:20,783 [WARN] DbBoards:157 - board B-L462E-CELL1 has no document !
+2022-08-18 17:13:20,783 [WARN] DbBoards:152 - board NUCLEO-L552ZE-Q / document id not found: 4505
+2022-08-18 17:13:20,783 [WARN] DbBoards:152 - board NUCLEO-WL55JC / document id not found: 4662
+2022-08-18 17:13:20,783 [WARN] DbBoards:152 - board NUCLEO-WL55JC / document id not found: 4663
+2022-08-18 17:13:20,784 [WARN] DbBoards:152 - board NUCLEO-WL55JC / document id not found: 4684
+2022-08-18 17:13:20,784 [WARN] DbBoards:157 - board NUCLEO-WL55JC has no document !
+2022-08-18 17:13:20,784 [WARN] DbBoards:152 - board STM32H735G-DK / document id not found: 4608
+2022-08-18 17:13:20,784 [WARN] DbBoards:152 - board STM32H735G-DK / document id not found: 4611
+2022-08-18 17:13:20,784 [WARN] DbBoards:152 - board STM32H735G-DK / document id not found: 4653
+2022-08-18 17:13:20,785 [WARN] DbBoards:157 - board STM32H735G-DK has no document !
+2022-08-18 17:13:20,785 [WARN] DbBoards:152 - board STM32H7B3I-DK / document id not found: 2958
+2022-08-18 17:13:20,785 [WARN] DbBoards:152 - board STM32H7B3I-DK / document id not found: 4503
+2022-08-18 17:13:20,785 [WARN] DbBoards:152 - board STM32H7B3I-DK / document id not found: 4504
+2022-08-18 17:13:20,786 [WARN] DbBoards:152 - board STM32H7B3I-DK / document id not found: 4598
+2022-08-18 17:13:20,786 [WARN] DbBoards:157 - board STM32H7B3I-DK has no document !
+2022-08-18 17:13:20,786 [WARN] DbBoards:152 - board STM32H7B3I-EVAL / document id not found: 4529
+2022-08-18 17:13:20,786 [WARN] DbBoards:152 - board STM32H7B3I-EVAL / document id not found: 4596
+2022-08-18 17:13:20,786 [WARN] DbBoards:157 - board STM32H7B3I-EVAL has no document !
+2022-08-18 17:13:20,787 [WARN] DbBoards:152 - board STM32L552E-EV / document id not found: 4493
+2022-08-18 17:13:20,787 [WARN] DbBoards:152 - board STM32L552E-EV / document id not found: 4509
+2022-08-18 17:13:20,787 [WARN] DbBoards:157 - board STM32L552E-EV has no document !
+2022-08-18 17:13:20,787 [WARN] DbBoards:152 - board STM32L562E-DK / document id not found: 4510
+2022-08-18 17:13:20,788 [WARN] DbBoards:152 - board STM32L562E-DK / document id not found: 4514
+2022-08-18 17:13:20,788 [WARN] DbBoards:152 - board STM32L562E-DK / document id not found: 4598
+2022-08-18 17:13:20,788 [WARN] DbBoards:157 - board STM32L562E-DK has no document !
+2022-08-18 17:13:20,789 [WARN] DbBoards:152 - board STM32L4P5G-DK / document id not found: 4526
+2022-08-18 17:13:20,789 [WARN] DbBoards:152 - board STM32L4P5G-DK / document id not found: 4527
+2022-08-18 17:13:20,789 [WARN] DbBoards:157 - board STM32L4P5G-DK has no document !
+2022-08-18 17:13:20,790 [WARN] DbBoards:152 - board STM32MP157D-DK1 / document id not found: 16755
+2022-08-18 17:13:20,790 [WARN] DbBoards:152 - board STM32MP157D-DK1 / document id not found: 18008
+2022-08-18 17:13:20,790 [WARN] DbBoards:157 - board STM32MP157D-DK1 has no document !
+2022-08-18 17:13:20,790 [WARN] DbBoards:152 - board STM32MP157D-EV1 / document id not found: 16637
+2022-08-18 17:13:20,790 [WARN] DbBoards:152 - board STM32MP157D-EV1 / document id not found: 18137
+2022-08-18 17:13:20,790 [WARN] DbBoards:157 - board STM32MP157D-EV1 has no document !
+2022-08-18 17:13:20,791 [WARN] DbBoards:152 - board STM32MP157F-DK2 / document id not found: 16755
+2022-08-18 17:13:20,791 [WARN] DbBoards:152 - board STM32MP157F-DK2 / document id not found: 18008
+2022-08-18 17:13:20,791 [WARN] DbBoards:152 - board STM32MP157F-DK2 / document id not found: 18127
+2022-08-18 17:13:20,791 [WARN] DbBoards:157 - board STM32MP157F-DK2 has no document !
+2022-08-18 17:13:20,791 [WARN] DbBoards:152 - board STM32MP157F-EV1 / document id not found: 16637
+2022-08-18 17:13:20,791 [WARN] DbBoards:152 - board STM32MP157F-EV1 / document id not found: 18137
+2022-08-18 17:13:20,791 [WARN] DbBoards:157 - board STM32MP157F-EV1 has no document !
+2022-08-18 17:13:20,792 [WARN] DbBoards:152 - board B-L4S5I-IOT01A / document id not found: 4612
+2022-08-18 17:13:20,792 [WARN] DbBoards:152 - board B-L4S5I-IOT01A / document id not found: 4613
+2022-08-18 17:13:20,792 [WARN] DbBoards:157 - board B-L4S5I-IOT01A has no document !
+2022-08-18 17:13:20,792 [WARN] DbBoards:152 - board NUCLEO-WB55RG / document id not found: 16890
+2022-08-18 17:13:20,792 [WARN] DbBoards:152 - board STM32G0C1E-EV / document id not found: 16888
+2022-08-18 17:13:20,792 [WARN] DbBoards:152 - board STM32G0C1E-EV / document id not found: 18035
+2022-08-18 17:13:20,793 [WARN] DbBoards:157 - board STM32G0C1E-EV has no document !
+2022-08-18 17:13:20,793 [WARN] DbBoards:152 - board NUCLEO-WB15CC / document id not found: 16890
+2022-08-18 17:13:20,793 [WARN] DbBoards:152 - board NUCLEO-WB15CC / document id not found: 18058
+2022-08-18 17:13:20,793 [WARN] DbBoards:152 - board STM32WB5MM-DK / document id not found: 16891
+2022-08-18 17:13:20,793 [WARN] DbBoards:152 - board STM32WB5MM-DK / document id not found: 18042
+2022-08-18 17:13:20,793 [WARN] DbBoards:157 - board STM32WB5MM-DK has no document !
+2022-08-18 17:13:20,793 [WARN] DbBoards:152 - board B-U585I-IOT02A / document id not found: 16892
+2022-08-18 17:13:20,793 [WARN] DbBoards:152 - board B-U585I-IOT02A / document id not found: 18389
+2022-08-18 17:13:20,793 [WARN] DbBoards:157 - board B-U585I-IOT02A has no document !
+2022-08-18 17:13:20,793 [WARN] DbBoards:152 - board NUCLEO-U575ZI-Q / document id not found: 18138
+2022-08-18 17:13:20,794 [WARN] DbBoards:152 - board STM32U575I-EV / document id not found: 18132
+2022-08-18 17:13:20,794 [WARN] DbBoards:152 - board STM32U575I-EV / document id not found: 18391
+2022-08-18 17:13:20,794 [WARN] DbBoards:157 - board STM32U575I-EV has no document !
+2022-08-18 17:13:20,794 [WARN] DbBoards:130 - board STEVAL-STWINKT1B has no document id list !
+2022-08-18 17:13:20,794 [WARN] DbBoards:130 - board STEVAL-IDP005V1 has no document id list !
+2022-08-18 17:13:20,794 [WARN] DbBoards:130 - board STEVAL-IDP005V2 has no document id list !
+2022-08-18 17:13:20,795 [WARN] DbBoards:130 - board STEVAL-STWINKT1 has no document id list !
+2022-08-18 17:13:20,849 [ERROR] DbBoards:192 - Image file not found for board NUCLEO-F413ZH: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/boards/nucleo-f413zh_small.jpg
+2022-08-18 17:13:21,121 [ERROR] DbBoards:192 - Image file not found for board P-NUCLEO-WB55: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/boards/p-nucleo-wb55_small.jpg
+2022-08-18 17:13:21,210 [ERROR] DbBoards:192 - Image file not found for board B-G474E-DPOW1: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/boards/B-G474E-DPOW1_small.jpg
+2022-08-18 17:13:21,375 [ERROR] DbBoards:192 - Image file not found for board STM32G0316-DISCO: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/boards/stm32g0316discovery_small.jpg
+2022-08-18 17:13:21,666 [ERROR] DbBoards:192 - Image file not found for board B-L462E-CELL1: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/boards/B-L462E-CELL1_small.jpg
+2022-08-18 17:13:21,672 [ERROR] DbBoards:192 - Image file not found for board NUCLEO-L552ZE-Q: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/boards/nucleo_l552ze_q_small.jpg
+2022-08-18 17:13:21,672 [ERROR] DbBoards:192 - Image file not found for board NUCLEO-WL55JC: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/boards/nucleo-wl55jc-small.jpg
+2022-08-18 17:13:21,672 [ERROR] DbBoards:192 - Image file not found for board STM32H735G-DK: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/boards/STM32H735G_DK_small.jpg
+2022-08-18 17:13:21,672 [ERROR] DbBoards:192 - Image file not found for board STM32H7B3I-DK: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/boards/stm32h7b3i-dk_small.jpg
+2022-08-18 17:13:21,672 [ERROR] DbBoards:192 - Image file not found for board STM32H7B3I-EVAL: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/boards/stm32h7b3ieval_small.jpg
+2022-08-18 17:13:21,673 [ERROR] DbBoards:192 - Image file not found for board STM32L552E-EV: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/boards/stm32l552e-ev_small.jpg
+2022-08-18 17:13:21,673 [ERROR] DbBoards:192 - Image file not found for board STM32L562E-DK: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/boards/stm32l562e-dk_small.jpg
+2022-08-18 17:13:21,676 [ERROR] DbBoards:192 - Image file not found for board STM32L4P5G-DK: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/boards/stm32l4p5g-dk_small.jpg
+2022-08-18 17:13:21,689 [ERROR] DbBoards:192 - Image file not found for board B-L4S5I-IOT01A: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/boards/B-L4S5I-IOT01A_small.jpg
+2022-08-18 17:13:21,693 [ERROR] DbBoards:192 - Image file not found for board NUCLEO-WB55RG: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/boards/nucleo-wb55rg_small.jpg
+2022-08-18 17:13:21,698 [ERROR] DbBoards:192 - Image file not found for board STM32G0C1E-EV: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/boards/stm32g0c1e-eval_small.jpg
+2022-08-18 17:13:21,698 [ERROR] DbBoards:192 - Image file not found for board NUCLEO-WB15CC: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/boards/nucleo-wb15cc_small.jpg
+2022-08-18 17:13:21,698 [ERROR] DbBoards:192 - Image file not found for board STM32WB5MM-DK: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/boards/STM32WB5MM-DK_small.jpg
+2022-08-18 17:13:21,698 [ERROR] DbBoards:192 - Image file not found for board B-U585I-IOT02A: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/boards/B-U585I-IOT02A_small.jpg
+2022-08-18 17:13:21,699 [ERROR] DbBoards:192 - Image file not found for board NUCLEO-U575ZI-Q: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/boards/nucleo-u575zi-q_small.jpg
+2022-08-18 17:13:21,699 [ERROR] DbBoards:192 - Image file not found for board STM32U575I-EV: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/boards/stm32u575i-ev_small.jpg
+2022-08-18 17:13:21,699 [ERROR] DbBoards:192 - Image file not found for board STEVAL-STWINKT1B: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/boards/steval-stwinkt1b_small.jpg
+2022-08-18 17:13:21,699 [ERROR] DbBoards:192 - Image file not found for board STEVAL-IDP005V1: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/boards/steval-bfa001v1b.jpg
+2022-08-18 17:13:21,699 [ERROR] DbBoards:192 - Image file not found for board STEVAL-IDP005V2: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/boards/steval-bfa001v2b.jpg
+2022-08-18 17:13:21,700 [ERROR] DbBoards:192 - Image file not found for board STEVAL-STWINKT1: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/boards/steval-stwinkt1_small.jpg
+2022-08-18 17:13:21,700 [INFO] ApiDb:158 - Load user favorites file C:\Users\henrikass/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2022-08-18 17:13:21,701 [INFO] ApiDb:163 - User favorites Boards=[]
+2022-08-18 17:13:21,701 [INFO] DbBoards:209 - Set 0 / 0 favorites Boards
+2022-08-18 17:13:21,704 [INFO] BoardFilterPanel:211 - Update 0 favorites Boards
+2022-08-18 17:13:21,855 [INFO] LoadUrlFilesThread:147 - End of LoadServerUrlFiles without Thread
+2022-08-18 17:13:21,857 [INFO] McuFilterPanel:282 - Update 0 favorites MCUs
+2022-08-18 17:13:22,058 [INFO] LoadUrlFilesThread:147 - End of LoadServerUrlFiles without Thread
+2022-08-18 17:13:22,059 [INFO] BoardDetailPanel:179 - Set advertising image to C:/Users/henrikass/STM32Cube/Repository/\PRSTM32MP10219-01-med.jpg
+2022-08-18 17:13:22,075 [INFO] BoardFilterPanel:211 - Update 0 favorites Boards
+2022-08-18 17:13:22,177 [INFO] CrossSelectorPresenter:1319 - Cross Selector saved comparison directory: C:\Users\henrikass\.stmcufinder\plugins\mcufinder\mcu\cs_comparisons_mx
+2022-08-18 17:13:57,029 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] withoutVersionV1.24.2
+2022-08-18 17:13:57,030 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] withoutVersionV1.24.1
+2022-08-18 17:13:57,031 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] withoutVersionV1.24.0
+2022-08-24 10:02:52,509 [INFO] Activator:176 - 
+
+
+2022-08-24 10:02:52,514 [INFO] Activator:177 - !SESSION log4j initialized
