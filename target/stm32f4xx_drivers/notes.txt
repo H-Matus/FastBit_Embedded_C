@@ -1,0 +1,47 @@
+To create a driver for a specific board:
+1. Create a board level header (stm32f407xx.h)
+    Place all base addresses for:
+        1. Memory (SRAM, FLASH ROM, ROM)
+        2. Buses in use (AHBx, APBx, etc.)
+    Define peripheral addresses on each bus.
+    Define peripheral register definition structures.
+    Define clock register definition structure.
+    Define peripherals (and clock) using peripheral addresses (while pointing to register definition)
+    Create a clock definition;
+    Define clock enable macros for peripherals by setting the correct bit on bus enable register which is pointed at by clock base address pointer (RCC->);
+    Define clock disable macros.
+    Define generic macros.
+2. Create peripheral specific header (stm32f407xx_gpio_driver.h)
+    Define config struct for peripheral (GPIO pins)
+    Define handler struct for peripheral
+    Define mode macros.
+        For all registers that are to be used: MODE, TYPE, etc.
+    Define peripheral function prototypes.
+3. Create peripheral specific source
+    Write the logic for peripheral functions.
+
+
+GPIO_Init():
+
+GPIO handler structure consists of the actual register address and GPIO pin config.
+The config is used to take the data from user input on which GPIOs should be used and how.
+Then during Init(), the config is passed into the register.
+
+Before setting the GPIO register, we need to clear the value from the pin bits, which shall be set.
+
+
+GPIO_DeInit():
+
+We are aiming to reset all registers, for which we will be using the bus (AHBx, APBx) peripheral reset register.
+In reset register, I need to set the bit of the register and revert it to 0 quickly.
+Otherwise the register will be in reset state always.
+
+do while loop is used to execute multiple statements in function macro.
+
+
+GPIO_ReadFromInputPin():
+
+Right shift the register until the required bit is the LSB. Mask it using 0x00000001 to get only the required bit.
+And pass it out of the function.
+
+

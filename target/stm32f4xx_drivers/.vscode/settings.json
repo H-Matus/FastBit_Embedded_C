@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "stm32f407xx_gpio_driver.h": "c",
-        "stm32f407xx.h": "c"
+        "stm32f407xx.h": "c",
+        "stdint.h": "c"
     }
 }
