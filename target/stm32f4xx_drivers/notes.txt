@@ -44,4 +44,35 @@ GPIO_ReadFromInputPin():
 Right shift the register until the required bit is the LSB. Mask it using 0x00000001 to get only the required bit.
 And pass it out of the function.
 
+GPIO Interrupts:
 
+If the interrupt is registered and the CPU is already running an ISR, then priority will be compared.
+The ISR with higher priority will be executed. If the running ISR is of lower priority, it will be put on hold.
+
+Even if the interrupt is disabled, the interrupt arrives and gets registered in the Pending Register (PR),
+though the ISR will not be executed.
+
+Action steps of implementing an ISR function:
+    1. Implement the ISR function. (just a C function)
+    2. Store the address of your ISR at the vector address location corresponding to the IRQ number, for which you have written the ISR.
+
+Weak ISRs:
+A lot of ISRs have already been implemented as weak ISRs in startup code, which means that I have to override them manually.
+
+ISRs should be implemented in the application level.
+I should use the IRQ handler name based on the ones defined in startup code, as function name and inside of it, call the 
+according peripheral IRQHandling().
+
+Example:
+void EXTI0_IRQHandler(void)
+{
+    GPIO_IRQHandling(0); /* 0 is the pin number, which will be detecting interrupt requests (IRQs) */
+}
+
+The address of EXTI0_IRQHandler() function should be stored at the vector address of the corresponding IRQ number.
+
+
+STM32 GPIO Pin Specifications:
+Vdd is the main power supply of the micrcontroller. Provided externally through Vdd pins of the microcontroller.
+Vdd is 1.8V <= Vdd <= 3.6V; Max Voltage = 4V.
+Vss is ground reference and should be kept at 0V.

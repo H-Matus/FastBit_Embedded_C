@@ -1,0 +1,20 @@
+ /*
+ * main.c
+ *
+ *  Created on: 6 Sep 2022
+ *      Author: henrikass
+ */
+
+void wait_for_user_input(void);
+
+int main(void)
+{
+
+}
+
+void wait_for_user_input()
+{
+	printf("Please enter any key to continue:\n");
+	getchar();
+	getchar();
+}

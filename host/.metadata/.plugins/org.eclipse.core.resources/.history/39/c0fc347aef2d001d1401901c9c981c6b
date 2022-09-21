@@ -1,0 +1,62 @@
+ /*
+ * main.c
+ *
+ *  Created on: 6 Sep 2022
+ *      Author: henrikass
+ */
+
+#include <stdint.h>
+#include <stdio.h>
+
+struct Packet
+{
+	uint8_t crc : 2;
+	uint8_t status : 1;
+	uint16_t payload : 12;
+	uint8_t bat : 3;
+	uint8_t sensor : 3;
+	uint8_t longAddr : 8;
+	uint8_t shortAddr : 2;
+	uint8_t addrMode : 1;
+};
+
+struct Packet packet;
+
+void wait_for_user_input(void);
+
+int main(void)
+{
+	uint32_t input;
+	printf("Please enter the 32bit packet: ");
+	scanf("%X\n", &input);
+
+	packet.crc = (uint8_t)(input & 0x3);
+	packet.status = (uint8_t)((input >> 2) & 0x1);
+	packet.payload = (uint16_t)((input >> 3) & 0xFFF);
+	packet.bat = (uint8_t)((input >> 15) & 0x7);
+	packet.sensor = (uint8_t)((input >> 18)& 0x7);
+	packet.longAddr = (uint8_t)((input >> 21) & 0xFF);
+	packet.shortAddr = (uint8_t)((input >> 29) & 0x3);
+	packet.addrMode = (uint8_t)((input >> 31) & 0x1);
+
+	printf("crc: %X\n", packet.crc);
+	printf("status: %X\n", packet.status);
+	printf("payload: %X\n", packet.payload);
+	printf("bat: %X\n", packet.bat);
+	printf("sensor: %X\n", packet.sensor);
+	printf("longAddr: %X\n", packet.longAddr);
+	printf("shortAddr: %X\n", packet.shortAddr);
+	printf("addrMode: %X\n", packet.addrMode);
+
+	getchar();
+	getchar();
+	wait_for_user_input();
+
+}
+
+void wait_for_user_input()
+{
+	printf("Please enter any key to continue:\n");
+	getchar();
+	getchar();
+}

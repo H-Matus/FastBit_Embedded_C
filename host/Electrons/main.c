@@ -1,0 +1,30 @@
+/*
+ * main.c
+ *
+ *  Created on: Sep 2, 2022
+ *      Author: henrikass
+ */
+
+#include <stdio.h>
+#include <stdint.h>
+
+int main(void)
+{
+
+	uint8_t GivenCharge = 0;
+	double ElectronCharge = 1.60217663e-19;
+
+	printf("Please insert the given charge: \n");
+	scanf("%hhd", &GivenCharge);
+
+	printf("The number of electrons = %el\n", (GivenCharge / ElectronCharge));
+
+	printf("lmao\n");
+	while(getchar() != '\n')
+	{
+
+	}
+	getchar();
+
+	return 0;
+}

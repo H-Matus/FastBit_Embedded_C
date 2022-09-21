@@ -1,0 +1,38 @@
+ /*
+ * main.c
+ *
+ *  Created on: 6 Sep 2022
+ *      Author: henrikass
+ */
+
+#include <stdint.h>
+#include <stdio.h>
+
+void wait_for_user_input(void);
+
+struct carModel
+{
+	unsigned int carNumber;
+	uint32_t carPrice;
+	uint16_t carMaxSpeed;
+	float carWeight;
+};
+
+int main(void)
+{
+	struct carModel car1 = {2021, 15000, 220, 1330};
+	struct carModel car2 = {4031, 35000, 160, 1900.96};
+
+	printf("Car Number: %d", car1.carNumber);
+	printf("Car Price: %d", car1.carPrice);
+	printf("Car Max Speed: %d", car1.carMaxSpeed);
+	printf("Car Weight: %f", car1.carWeight);
+
+}
+
+void wait_for_user_input()
+{
+	printf("Please enter any key to continue:\n");
+	getchar();
+	getchar();
+}

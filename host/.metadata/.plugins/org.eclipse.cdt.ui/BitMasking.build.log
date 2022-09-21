@@ -1,0 +1,6 @@
+13:13:44 **** Incremental Build of configuration Debug for project BitMasking ****
+Info: Internal Builder is used for build
+gcc -o BitMasking.exe main.o 
+
+13:13:45 Build Finished. 0 errors, 0 warnings. (took 428ms)
+

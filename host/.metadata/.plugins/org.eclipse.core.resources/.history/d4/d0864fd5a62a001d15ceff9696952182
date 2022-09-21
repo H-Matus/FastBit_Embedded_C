@@ -1,0 +1,30 @@
+/*
+ * main.c
+ *
+ *  Created on: Sep 2, 2022
+ *      Author: henrikass
+ */
+
+#include <stdint.h>
+#include <stdio.h>
+
+int main(void)
+{
+	double num1 = 0.0;
+	double num2 = 0.0;
+	double num3 = 0.0;
+
+	scanf("%lf %lf %lf", &num1, &num2, &num3);
+
+	double result = (num1 + num2 + num3)/3;
+
+	printf("Result = %f\n", result);
+
+	printf("Please enter any key to exit the application.");
+	while(getchar() != '\n')
+	{
+
+	}
+
+	return 0;
+}

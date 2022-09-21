@@ -1,0 +1,14 @@
+/*
+ * main.c
+ *
+ *  Created on: Sep 5, 2022
+ *      Author: henrikass
+ */
+
+#include <stdint.h>
+#include <stdio.h>
+
+int main(void)
+{
+	return 0;
+}

@@ -1,0 +1,27 @@
+/*
+ * main.c
+ *
+ *  Created on: Sep 2, 2022
+ *      Author: henrikass
+ */
+
+#include <stdint.h>
+#include <stdio.h>
+
+#define NUM_OF_NUMS 3
+
+double average(float num1, float num2, float num3);
+
+int main(void)
+{
+	double arr[NUM_OF_NUMS];
+
+
+
+	return 0;
+}
+
+double average(float num1, float num2, float num3)
+{
+	return (num1 + num2 + num3)/3;
+}

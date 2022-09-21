@@ -1,0 +1,28 @@
+/*
+ * main.c
+ *
+ *  Created on: Sep 2, 2022
+ *      Author: henrikass
+ */
+
+#include <stdint.h>
+#include <stdio.h>
+
+int main(void)
+{
+	double num1, num2, num3;
+
+	scanf("%lf %lf %lf", num1, num2, num3);
+
+	result = (num1 + num2 + num3)/3;
+
+	printf("Result = %f", average(arr[0], arr[1], arr[2]));
+
+	printf("Please enter any key to exit the application.");
+	while(getchar() != '\n')
+	{
+
+	}
+
+	return 0;
+}

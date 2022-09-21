@@ -1,0 +1,27 @@
+/*
+ * main.c
+ *
+ *  Created on: Sep 5, 2022
+ *      Author: henrikass
+ */
+
+#include <stdint.h>
+#include <stdio.h>
+
+void wait_for_user_input(void);
+
+int main(void)
+{
+
+
+
+	wait_for_user_input();
+
+	return 0;
+}
+
+void wait_for_user_input()
+{
+	getchar();
+	getchar();
+}

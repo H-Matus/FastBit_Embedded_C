@@ -17,17 +17,7 @@ int main(void)
 	GpioLed.GPIO_PinConfig.GPIO_PinPuPdControl = GPIO_NO_PUPD;
 	GpioLed.GPIO_PinConfig.GPIO_PinOPType = GPIO_OP_TYPE_OD;
 
-	GPIO_Handle_t GpioLed;
-	GpioLed.pGPIOx = GPIOD;
-	GpioLed.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_12;
-	GpioLed.GPIO_PinConfig.GPIO_PinMode = GPIO_MODE_OUT;
-	GpioLed.GPIO_PinConfig.GPIO_PinSpeed = GPIO_SPEED_FAST;
-	GpioLed.GPIO_PinConfig.GPIO_PinPuPdControl = GPIO_NO_PUPD;
-	GpioLed.GPIO_PinConfig.GPIO_PinOPType = GPIO_OP_TYPE_OD;
-
-	GPIO_PeriClockControl(GPIOA, ENABLE);
-	GPIO_PeriClockControl(GPIOB, ENABLE);
-	GPIO_Init(&GpioLed);
+	GPIO_PeriClockControl(GPIOD, ENABLE);
 	GPIO_Init(&GpioLed);
 
 	for(;;)

@@ -1,0 +1,30 @@
+ /*
+ * main.c
+ *
+ *  Created on: 6 Sep 2022
+ *      Author: henrikass
+ */
+
+#include <stdint.h>
+#include <stdio.h>
+
+void wait_for_user_input(void);
+
+struct DataSet
+{
+
+};
+
+int main(void)
+{
+
+	printf("Sizeof of struct carModel is %I64llu\n", sizeof(car1));
+
+}
+
+void wait_for_user_input()
+{
+	printf("Please enter any key to continue:\n");
+	getchar();
+	getchar();
+}

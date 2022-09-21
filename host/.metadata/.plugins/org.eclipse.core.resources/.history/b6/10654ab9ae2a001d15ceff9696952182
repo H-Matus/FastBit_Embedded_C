@@ -1,0 +1,26 @@
+/*
+ * main.c
+ *
+ *  Created on: Sep 2, 2022
+ *      Author: henrikass
+ */
+
+#include <stdio.h>
+#include <stdint.h>
+
+
+
+int main(void)
+{
+	char val = 100;
+	printf("Address of the val = %d\n", &val);
+
+	char *ptrVal = &val;
+
+	printf("Read operation yield from ptrVal = %s\n", *ptrVal);
+	*ptrVal = 65;
+
+	printf("Address of the val = %d\n", &val);
+
+
+}

@@ -1,0 +1,17 @@
+/*
+ * main.c
+ *
+ *  Created on: Sep 2, 2022
+ *      Author: henrikass
+ */
+
+#include <stdio.h>
+#include <stdint.h>
+
+
+
+int main(void)
+{
+	char val = 100;
+	printf("Address of the val = %d\n");
+}

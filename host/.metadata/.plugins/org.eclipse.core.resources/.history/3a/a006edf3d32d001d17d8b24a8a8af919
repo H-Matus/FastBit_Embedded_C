@@ -1,0 +1,31 @@
+ /*
+ * main.c
+ *
+ *  Created on: 6 Sep 2022
+ *      Author: henrikass
+ */
+
+#include <stdint.h>
+#include <stdio.h>
+
+void wait_for_user_input(void);
+
+struct carModel
+{
+	unsigned int carNumber;
+	uint32_t carPrice;
+	uint16_t carMaxSpeed;
+	float carWeight;
+};
+
+int main(void)
+{
+
+}
+
+void wait_for_user_input()
+{
+	printf("Please enter any key to continue:\n");
+	getchar();
+	getchar();
+}

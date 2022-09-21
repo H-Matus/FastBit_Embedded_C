@@ -1,0 +1,20 @@
+/*
+ * main.c
+ *
+ *  Created on: Sep 2, 2022
+ *      Author: henrikass
+ */
+
+#include <stdio.h>
+#include <stdint.h>
+
+int main(void)
+{
+
+	uint8_t GivenCharge = 0;
+
+	printf("Please insert the given charge: ");
+	scanf();
+
+	return 0;
+}

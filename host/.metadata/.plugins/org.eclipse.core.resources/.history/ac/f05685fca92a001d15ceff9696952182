@@ -1,0 +1,17 @@
+/*
+ * main.c
+ *
+ *  Created on: Sep 2, 2022
+ *      Author: henrikass
+ */
+
+#include <stdio.h>
+#include <stdint.h>
+
+int main(void)
+{
+
+	printf("Please insert the given charge: \n");
+
+	return 0;
+}

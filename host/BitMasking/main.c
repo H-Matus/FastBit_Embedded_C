@@ -1,0 +1,38 @@
+/*
+ * main.c
+ *
+ *  Created on: Sep 5, 2022
+ *      Author: henrikass
+ */
+
+#include <stdint.h>
+#include <stdio.h>
+
+/* Bitmask to clear 4th, 5th ,6th bit positions of a given number: */
+#define BITMASK 0x38
+
+void wait_for_user_input(void);
+
+int main(void)
+{
+	int32_t num1;
+	printf("Enter a number:");
+	scanf("%d", &num1);
+
+	printf("num1 = %x\n", num1);
+
+	num1 &= (~BITMASK);
+
+	printf("num1 = %x\n", num1);
+
+	wait_for_user_input();
+
+	return 0;
+}
+
+void wait_for_user_input()
+{
+	printf("Please enter any key to continue:\n");
+	getchar();
+	getchar();
+}
