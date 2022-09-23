@@ -75,4 +75,37 @@ The address of EXTI0_IRQHandler() function should be stored at the vector addres
 STM32 GPIO Pin Specifications:
 Vdd is the main power supply of the micrcontroller. Provided externally through Vdd pins of the microcontroller.
 Vdd is 1.8V <= Vdd <= 3.6V; Max Voltage = 4V.
-Vss is ground reference and should be kept at 0V.
+Vss is ground reference and should be kept at 0V. Minimum Vss is -0.3V.
+
+Most pins on STM32 boards are either TT (Three-volt Tolerant) or FT (Five-volt Tolerant) pins.
+Three-volt Tolerant pins are operating under -0.3V <= Vin(TTa) <= Vdd+0.3V
+
+I/O source current is 25mA Max.
+
+Sink current is a max current which can be sunk in to Vss by a GPIO output pin when LOW.
+Sink current is 25 mA. If it's more then the pin might get damaged.
+Ivdd is 240 mA, so the maximum current drawn by all pins can be 240 mA.
+If I configure board pins to output 1 on 20 pins, then each pin will output 12mA of current, as 240/20 = 12.
+The sum of all currents that are being sinked, has to be lower than 240 mA.
+
+Injection current is the current that is being forced into a pin by an input voltage (Vin) higher than the positive supply (Vdd) or lower than ground (Vss).
+Injection current higher than given specification causes a current flow inside the device and affects its reliability. Even tiny current exceeding the specified
+limit is not allowed.
+
+Negative-injection current is the current induced when Vin < Vss.
+The maximum negative injected current is -5mA, and the minimum Vin voltage level acceptable on the GPIO is -0.3V for TT and FT GPIO.
+
+Positive-injection current is the current induced when Vin > Vdd.
+For STM32 devices, the max positive-injection current on FT GPIO is defined as N/A or 0 mA.
+
+===================================================================================================================
+SPI:
+
+SPI is used to communicate between the MCU and peripherals, such as sensors, EEPROM, SDCard, display, Bluetooth, etc.
+It has 4 lines:
+    1. SCLK - clock
+    2. MOSI - output
+    3. MISO - input
+    4. SS - slave select - selects which peripheral the MCU is talking to.
+
+
