@@ -164,6 +164,19 @@ typedef struct
     __vo uint32_t CFGR;
 }SYSCFG_RegDef_t;
 
+typedef struct
+{
+    __vo uint32_t CR1;
+    __vo uint32_t CR2; 
+    __vo uint32_t SR;
+    __vo uint32_t DR;
+    __vo uint32_t CRCPR;
+    __vo uint32_t RXCRCR;
+    __vo uint32_t TXCRCR;
+    __vo uint32_t I2SCFGR;
+    __vo uint32_t I2SPR;
+}SPI_RegDef_t;
+
 /*
     Peripheral definitions.
 */
@@ -182,6 +195,10 @@ typedef struct
 #define EXTI        ((EXTI_RegDef_t *)EXTI_BASEADDR)
 
 #define SYSCFG      ((SYSCFG_RegDef_t *)SYSCFG_BASEADDR)
+
+#define SPI1        ((SPI_RegDef_t *)SPI1_BASEADDR)
+#define SPI2        ((SPI_RegDef_t *)SPI2_BASEADDR)
+#define SPI3        ((SPI_RegDef_t *)SPI3_BASEADDR)
 
 /*
     Clock enable macros for GPIOx peripherals
