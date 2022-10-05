@@ -108,4 +108,28 @@ It has 4 lines:
     3. MISO - input
     4. SS - slave select - selects which peripheral the MCU is talking to.
 
+===================================================================================================================
+Three-state logic:
 
+Tri-state allows an output or input pin/pad to assume a high impedance state, which basically disconnects the pin/pad from the external circuit,
+in addition to the 0 and 1 logic levels.
+
+This allows multiple circuits to share the same output line or lines. (Like a bus which cannot listen to more than one device at a time)
+
+===================================================================================================================
+
+SPI (continued):
+
+Communication protocols such as I2C, SPI, USB, etc. have 3 different types of data transmitting or receiving methodologies:
+    1. Polling based (blocking call)
+    2. Interrupt based (non-blocking type call)
+    3. DMA based
+
+Each of the peripheral has one or two control registers.
+
+In the reference manual, communication peripheral control registers have a BR bit field, which stands for Baudrate.
+It defines at what speed the peripheral is operating.
+
+MSTR will be 0 by default, which means that the peripheral will be configured in peripheral mode automatically.
+I have to make it as 1 in order to make my peripheral a Main. Only when I make it as a Main, it will produce the serial clock.
+DEBUGGING TIP: If I see that the peripheral is not producing clock, then it should be in peripheral/slave mode.
