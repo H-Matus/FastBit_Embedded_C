@@ -133,3 +133,29 @@ It defines at what speed the peripheral is operating.
 MSTR will be 0 by default, which means that the peripheral will be configured in peripheral mode automatically.
 I have to make it as 1 in order to make my peripheral a Main. Only when I make it as a Main, it will produce the serial clock.
 DEBUGGING TIP: If I see that the peripheral is not producing clock, then it should be in peripheral/slave mode.
+
+If I want a simplex communication, then I may have to check the 10th bit, as it describes RX ONLY bit.
+Some bits are combined like RXONLY, BIDI MODE, BIDIOE:
+    1. BIDI MODE defines if bidirectional data is enabled or 2 line unidirectional is enabled.
+    2. BIDIOE defines whether the direction is RX or TX (this only works with bidirectional mode).
+    3. RXONLY is combined with BIDI MODE in 2-line unidirectional mode to say whether the mode is Full duplex or output is disabled (RX only).
+
+If I want to have SIMPLEX only communication, I have to make RXONLY bit as 1.
+
+FULL DUPLEX communication has 2 unidirectional lines:
+    1. MISO -> MISO
+    2. MOSI -> MOSI
+
+To make SIMPLEX out of FULL DUPLEX just disconnect the MISO line.
+To make SIMPLEX receive only out of FULL DUPLEX, we can't just disconnect the MOSI line, we have to activate the SCLK line as well.
+    In SPI Communication, slave will not initiate data transfer unless master produces clock.
+
+Since the MOSI is deactivated, master will not produce clock on serial clock, because in SPI communication, the clock is produced 
+only when data is produced on the MOSI line.
+Because of this we have to force the main to produce clock on SCLK.
+We do that by setting the RXONLY bit, to the receive only mode.
+
+Software Peripheral Management (SSM) is disabled by default, which means that peripherals are selected using hardware wires.
+
+SPI Init:
+The device mode is defined in MSTR bit field of Control Register (CR1).
