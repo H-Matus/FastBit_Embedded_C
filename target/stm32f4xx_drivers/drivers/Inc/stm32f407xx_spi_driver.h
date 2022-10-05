@@ -48,8 +48,7 @@ typedef struct
  */
 #define SPI_BUS_CONFIG_FD               1
 #define SPI_BUS_CONFIG_HD               2
-#define SPI_BUS_CONFIG_SIMPLEX_TXONLY   3
-#define SPI_BUS_CONFIG_SIMPLEX_RXONLY   4
+#define SPI_BUS_CONFIG_SIMPLEX_RXONLY   3
 
 /**
  * @SPI_SclkSpeed 
@@ -89,8 +88,8 @@ typedef struct
  * @SPI_SSM
  * 
  */
-#define SPI_SSM_HW  1
-#define SPI_SSM_SW  0
+#define SPI_SSM_EN  1
+#define SPI_SSM_DI  0
 
 /**
  * @brief Peripheral Clock setup

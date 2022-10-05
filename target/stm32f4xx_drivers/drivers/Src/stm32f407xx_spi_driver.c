@@ -54,9 +54,64 @@ void SPI_PeriClockControl(SPI_RegDef_t *pSPIx, uint8_t EnorDi)
  */
 void SPI_Init(SPI_Handle_t *pSPIHandle)
 {
-    uint32_t temp = 0;
+    uint32_t tempreg = 0;
 
-    
+    // 1. Configure the device mode
+    tempreg |= pSPIHandle->SPIConfig.SPI_DeviceMode << 2;
+
+    // 2. Configure the bus config
+    if(pSPIHandle->SPIConfig.SPI_BusConfig == SPI_BUS_CONFIG_FD)
+    {
+        // bidi mode should be cleared
+        tempreg &= ~( 1 << 15 );
+    }
+    else if(pSPIHandle->SPIConfig.SPI_BusConfig == SPI_BUS_CONFIG_HD)
+    {
+        // bidi mode should be set
+        tempreg |= ( 1 << 15 );
+    }
+    else if(pSPIHandle->SPIConfig.SPI_BusConfig == SPI_BUS_CONFIG_SIMPLEX_RXONLY)
+    {
+        // bidi mode should be cleared
+        tempreg &= ~( 1 << 15 );
+
+        // RXONLY bit must be set
+        tempreg |= ( 1 << 10 );
+    }
+
+    // 3. Configure the clock speed
+    if(pSPIHandle->SPIConfig.SPI_SclkSpeed == SPI_SCLK_SPEED_DIV2)
+    {
+        tempreg &= ~( 1 << 3 );
+    }
+    else if(pSPIHandle->SPIConfig.SPI_SclkSpeed == SPI_SCLK_SPEED_DIV4)
+    {
+        tempreg |= ( 1 <<  )
+    }
+    else if(pSPIHandle->SPIConfig.SPI_SclkSpeed == SPI_SCLK_SPEED_DIV8)
+    {
+
+    }
+    else if(pSPIHandle->SPIConfig.SPI_SclkSpeed == SPI_SCLK_SPEED_DIV16)
+    {
+
+    }
+    else if(pSPIHandle->SPIConfig.SPI_SclkSpeed == SPI_SCLK_SPEED_DIV32)
+    {
+
+    }
+    else if(pSPIHandle->SPIConfig.SPI_SclkSpeed == SPI_SCLK_SPEED_DIV64)
+    {
+
+    }
+    else if(pSPIHandle->SPIConfig.SPI_SclkSpeed == SPI_SCLK_SPEED_DIV128)
+    {
+
+    }
+    else if(pSPIHandle->SPIConfig.SPI_SclkSpeed == SPI_SCLK_SPEED_DIV256)
+    {
+
+    }
 
 }
 
