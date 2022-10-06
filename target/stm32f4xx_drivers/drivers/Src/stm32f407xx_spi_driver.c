@@ -115,3 +115,24 @@ void SPI_DeInit(SPI_RegDef_t *pSPIx)
         SPI3_REG_RESET();
     }
 }
+
+uint8_t SPI_GetFlagStatus(SPI_RegDef_t *pSPIx, uint32_t FlagName)
+{
+    while( !(pSPIx->SR & ( 1 << SPI_SR_TXE )));
+    return FLAG_RESET;
+}
+
+/**
+ * @brief SPI Send Data API
+ * 
+ * @param pSPIx 
+ * @param pTxBuffer 
+ * @param Len 
+ */
+void SPI_SendData(SPI_RegDef_t *pSPIx, uint8_t *pTxBuffer, uint32_t Len)
+{
+    while(Len > 0)
+    {
+        while( SPI_GetFlagStatus(pSPIx, SPI_TXE_FLAG) == FLAG_RESET );
+    }
+}

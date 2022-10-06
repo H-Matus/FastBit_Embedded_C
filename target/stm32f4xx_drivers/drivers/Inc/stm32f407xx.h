@@ -337,6 +337,8 @@ typedef struct
 #define RESET           DISABLE
 #define GPIO_PIN_SET    SET
 #define GPIO_PIN_RESET  RESET
+#define FLAG_RESET      RESET
+#define FLAG_SET        SET
 
 /**
  * Bit position definitions of SPI peripheral
@@ -365,14 +367,14 @@ typedef struct
 #define SPI_CR2_TXEIE       7
 
 #define SPI_SR_RXNE         0
-#define SPI_SR_TXE          0
-#define SPI_SR_CHSIDE       0
-#define SPI_SR_UDR          0
-#define SPI_SR_CRCERR       0
-#define SPI_SR_MODF         0
-#define SPI_SR_OVR          0
-#define SPI_SR_BSY          0
-#define SPI_SR_FRE          0
+#define SPI_SR_TXE          1
+#define SPI_SR_CHSIDE       2
+#define SPI_SR_UDR          3
+#define SPI_SR_CRCERR       4
+#define SPI_SR_MODF         5
+#define SPI_SR_OVR          6
+#define SPI_SR_BSY          7
+#define SPI_SR_FRE          8
 
 #include "stm32f407xx_gpio_driver.h"
 
