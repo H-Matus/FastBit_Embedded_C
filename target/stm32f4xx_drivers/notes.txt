@@ -159,3 +159,4 @@ Software Peripheral Management (SSM) is disabled by default, which means that pe
 
 SPI Init:
 The device mode is defined in MSTR bit field of Control Register (CR1).
+test
