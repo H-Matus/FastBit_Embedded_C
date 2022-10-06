@@ -159,4 +159,9 @@ Software Peripheral Management (SSM) is disabled by default, which means that pe
 
 SPI Init:
 The device mode is defined in MSTR bit field of Control Register (CR1).
-test
+
+SPI Data Send:
+Firmware does not have access to buffers, thus it is accessed by using SPI_DR register (Data Register).
+In receiving mode, the data comes from RX buffer into the Data Register from where the firmware reads it.
+In transmission mode, the data from Data Register is copied over to the TX buffer.
+Before writing to the Data Register, make sure that the TX buffer is empty - check the TXE flag and before reading the register, check the RXNE flag.
