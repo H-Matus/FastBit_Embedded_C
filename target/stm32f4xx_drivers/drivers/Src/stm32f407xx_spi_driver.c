@@ -63,56 +63,35 @@ void SPI_Init(SPI_Handle_t *pSPIHandle)
     if(pSPIHandle->SPIConfig.SPI_BusConfig == SPI_BUS_CONFIG_FD)
     {
         // bidi mode should be cleared
-        tempreg &= ~( 1 << 15 );
+        tempreg &= ~( 1 << SPI_CR1_BIDIMODE );
     }
     else if(pSPIHandle->SPIConfig.SPI_BusConfig == SPI_BUS_CONFIG_HD)
     {
         // bidi mode should be set
-        tempreg |= ( 1 << 15 );
+        tempreg |= ( 1 << SPI_CR1_BIDIMODE );
     }
     else if(pSPIHandle->SPIConfig.SPI_BusConfig == SPI_BUS_CONFIG_SIMPLEX_RXONLY)
     {
         // bidi mode should be cleared
-        tempreg &= ~( 1 << 15 );
+        tempreg &= ~( 1 << SPI_CR1_BIDIMODE );
 
         // RXONLY bit must be set
-        tempreg |= ( 1 << 10 );
+        tempreg |= ( 1 << SPI_CR1_RXONLY );
     }
 
     // 3. Configure the clock speed
-    if(pSPIHandle->SPIConfig.SPI_SclkSpeed == SPI_SCLK_SPEED_DIV2)
-    {
-        tempreg &= ~( 1 << 3 );
-    }
-    else if(pSPIHandle->SPIConfig.SPI_SclkSpeed == SPI_SCLK_SPEED_DIV4)
-    {
-        tempreg |= ( 1 <<  )
-    }
-    else if(pSPIHandle->SPIConfig.SPI_SclkSpeed == SPI_SCLK_SPEED_DIV8)
-    {
+    tempreg |= pSPIHandle->SPIConfig.SPI_SclkSpeed << SPI_CR1_BR;
 
-    }
-    else if(pSPIHandle->SPIConfig.SPI_SclkSpeed == SPI_SCLK_SPEED_DIV16)
-    {
+    // 4. Configure the DFF
+    tempreg |= pSPIHandle->SPIConfig.SPI_DFF << SPI_CR1_DFF;
 
-    }
-    else if(pSPIHandle->SPIConfig.SPI_SclkSpeed == SPI_SCLK_SPEED_DIV32)
-    {
+    // 5. Configure the CPOL
+    tempreg |= pSPIHandle->SPIConfig.SPI_CPOL << SPI_CR1_CPOL;
 
-    }
-    else if(pSPIHandle->SPIConfig.SPI_SclkSpeed == SPI_SCLK_SPEED_DIV64)
-    {
+    // 6. Configure the CPHA
+    tempreg |= pSPIHandle->SPIConfig.SPI_CPHA << SPI_CR1_CPHA;
 
-    }
-    else if(pSPIHandle->SPIConfig.SPI_SclkSpeed == SPI_SCLK_SPEED_DIV128)
-    {
-
-    }
-    else if(pSPIHandle->SPIConfig.SPI_SclkSpeed == SPI_SCLK_SPEED_DIV256)
-    {
-
-    }
-
+    pSPIHandle->pSPIx->CR1 = tempreg;
 }
 
 /**
