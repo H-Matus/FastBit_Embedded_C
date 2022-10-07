@@ -92,6 +92,14 @@ typedef struct
 #define SPI_SSM_DI  0
 
 /**
+ * @brief SPI related status flags definitions
+ * 
+ */
+#define SPI_TXE_FLAG    ( 1 << SPI_SR_TXE )
+#define SPI_RXNE_FLAG   ( 1 << SPI_SR_RXNE )
+#define SPI_BUSY_FLAG   ( 1 << SPI_SR_BSY )
+
+/**
  * @brief Peripheral Clock setup
  * 
  */
@@ -119,5 +127,10 @@ void SPI_IRQInterruptConfig(uint8_t IRQNumber, uint8_t EnorDi);
 void SPI_IRQPriorityConfig(uint8_t IRQNumber, uint8_t IRQPriority);
 void SPI_IRQHandling(SPI_Handle_t *pHandle);
 
+/**
+ * @brief Flag Status function
+ * 
+ */
+uint8_t SPI_GetFlagStatus(SPI_RegDef_t *pSPIx, uint32_t FlagName);
 
 #endif /* INC_STM32F407XX_SPI_DRIVER_H_ */
