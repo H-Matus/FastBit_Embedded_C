@@ -56,6 +56,9 @@ void SPI_Init(SPI_Handle_t *pSPIHandle)
 {
     uint32_t tempreg = 0;
 
+    // Enable SPI clock so that the user wouldn't have to do it themselves
+    SPI_PeriClockControl(pSPIHandle->pSPIx, ENABLE);
+
     // 1. Configure the device mode
     tempreg |= pSPIHandle->SPIConfig.SPI_DeviceMode << 2;
 
