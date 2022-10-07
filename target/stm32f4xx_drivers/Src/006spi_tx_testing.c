@@ -6,6 +6,7 @@
  */
 
 #include "stm32f407xx.h"
+#include <string.h>
 
 /**
  * PB14 --> SPI2_MISO
@@ -35,12 +36,12 @@ void SPI2_GPIOInits(void)
     GPIO_Init(&SPIPins);
 
     // MISO
-    SPIPins.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_14;
-    GPIO_Init(&SPIPins);
+    // SPIPins.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_14;
+    // GPIO_Init(&SPIPins);
 
     // NSS
-    SPIPins.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_12;
-    GPIO_Init(&SPIPins);
+    // SPIPins.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_12;
+    // GPIO_Init(&SPIPins);
 }
 
 void SPI2_Inits(void)
@@ -61,8 +62,18 @@ void SPI2_Inits(void)
 
 int main(void)
 {
+    char user_data[] = "Hello World";
+
     SPI2_GPIOInits();
 
     SPI2_Inits();
+
+    // Enable SPI2 peripheral
+    SPI_PeripheralControl(SPI2, ENABLE);
+
+    SPI_SendData(SPI2, (uint8_t*)user_data, strlen(user_data));
+
+    while(1);
+
     return 0;
 }
