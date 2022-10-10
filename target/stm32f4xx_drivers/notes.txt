@@ -210,4 +210,20 @@ If TXEIE is set to 1 in control register, then the interrupt will be triggered w
 By default, TXEIE is 0, which means that by default TXE flag will not set off an interrupt.
 
 SPI_1 is connected to NVIC at some IRQ number. If we have 5 SPI peripherals, then we will have 5 different IRQ lines connected to NVIC.
+
+SPI ISR handling:
+    1. Enter ISR
+    2. Understand which event caused interrupt to trigger (check SR)
+        a. Interrupt is due to setting of RXNE flag -> Handle RXNE event
+        b. Interrupt is due to setting of TXE flag -> Handle TXE flag
+        c. Interrupt is due Setting of ERROR flag -> Handle Error
+
+Handling TXE Interrupt:
+    1. 8-bit or 16-bit mode?
+        8-bit: Write one byte to SPI Data Register (DR) -> Decrement Len by 1
+        16-bit: Write 2 byte to SPI Data Register (DR) -> Decrement Len by 2
+    2. Is Len = 0?
+        Yes: Close the SPI TX
+        No: Wait till another TXE interrupt
+
 =========================================================================================================================================================
