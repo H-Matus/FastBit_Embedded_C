@@ -161,6 +161,33 @@ void SPI_SendData(SPI_RegDef_t *pSPIx, uint8_t *pTxBuffer, uint32_t Len)
     }
 }
 
+void SPI_ReceiveData(SPI_RegDef_t *pSPIx, uint8_t *pRxBuffer, uint32_t Len)
+{
+    while(Len > 0)
+    {
+        // 1. Wait until TXE is set
+        while( SPI_GetFlagStatus(pSPIx, SPI_RXNE_FLAG) == FLAG_RESET );
+
+        // 2. Check the DFF bit in CR2
+        if(pSPIx->CR1 & ( 1 << SPI_CR1_DFF ))
+        {
+            // 16-bit DFF
+            *((uint16_t*)pRxBuffer) = pSPIx->DR; 
+            Len--;
+            Len--;
+            (uint16_t*)pRxBuffer++;
+        }
+        else
+        {
+            // 8-bit DFF
+            *(pRxBuffer) = pSPIx->DR;
+            Len--;
+            pRxBuffer++;
+        }
+    }
+
+}
+
 void SPI_PeripheralControl(SPI_RegDef_t *pSPIx, uint8_t EnOrDi)
 {
     if(EnOrDi == ENABLE)
@@ -171,4 +198,95 @@ void SPI_PeripheralControl(SPI_RegDef_t *pSPIx, uint8_t EnOrDi)
     {
         pSPIx->CR1 &= ~( 1 << SPI_CR1_SPE );
     }
+}
+
+void SPI_IRQInterruptConfig(uint8_t IRQNumber, uint8_t EnorDi)
+{
+    if(EnorDi == ENABLE)
+    {
+        if(IRQNumber <= 31)
+        {
+            *NVIC_ISER0 |= ( 1 << IRQNumber );
+        }
+        else if(IRQNumber > 31 && IRQNumber < 64)
+        {
+            *NVIC_ISER1 |= ( 1 << (IRQNumber % 32) );
+        }
+        else if(IRQNumber > 64 && IRQNumber < 96)
+        {
+            *NVIC_ISER2 |= ( 1 << (IRQNumber % 64) );
+        }
+    }
+    else
+    {
+        if(IRQNumber <= 31)
+        {
+            *NVIC_ICER0 |= ( 1 << IRQNumber );
+        }
+        else if(IRQNumber > 31 && IRQNumber < 64)
+        {
+            *NVIC_ICER1 |= ( 1 << (IRQNumber % 32) );
+        }
+        else if(IRQNumber > 64 && IRQNumber < 96)
+        {
+            *NVIC_ICER2 |= ( 1 << (IRQNumber % 64) );
+        }
+    }
+}
+
+void SPI_IRQPriorityConfig(uint8_t IRQNumber, uint8_t IRQPriority)
+{
+    uint8_t iprx = IRQNumber / 4;
+    uint8_t iprx_section = IRQNumber % 4;
+
+    uint8_t shift_amount = (8 * iprx_section) + (8 - NO_PR_BITS_IMPLEMENTED); /* We add the last part, as we need to shift from the beginning of not implemented bits. in Interrupt priority registers. */
+    *(NVIC_PR_BASE_ADDR + (iprx * 4)) |= (IRQPriority << shift_amount);
+}
+
+uint8_t SPI_SendDataIT(SPI_Handle_t *pSPIHandle, uint8_t *pTxBuffer, uint32_t Len)
+{
+    uint8_t state = pSPIHandle->TxState;
+
+    if(state != SPI_BUSY_IN_TX)
+    {
+        // 1. Save the Tx buffer address and Len information in some global variables
+        pSPIHandle->pTxBuffer = pTxBuffer;
+        pSPIHandle->TxLen = Len;
+
+        // 2. Mark the SPI state as busy in transmission so that
+        //      no other code can take over same SPI peripheral until transmission is over
+        pSPIHandle->TxState = SPI_BUSY_IN_TX;
+
+        // 3. Enable the TXEIE control bit to get interrupt whenever TXE flag is set in SR
+        pSPIHandle->pSPIx->CR2 |= ( 1 << SPI_CR2_TXEIE );
+    }
+
+    return state;
+}
+
+uint8_t SPI_ReceiveDataIT(SPI_Handle_t *pSPIHandle, uint8_t *pRxBuffer, uint32_t Len)
+{
+    uint8_t state = pSPIHandle->RxState;
+
+    if(state != SPI_BUSY_IN_RX)
+    {
+        // 1. Save the Tx buffer address and Len information in some global variables
+        pSPIHandle->pRxBuffer = pRxBuffer;
+        pSPIHandle->RxLen = Len;
+
+        // 2. Mark the SPI state as busy in transmission so that
+        //      no other code can take over same SPI peripheral until transmission is over
+        pSPIHandle->RxState = SPI_BUSY_IN_RX;
+
+        // 3. Enable the TXEIE control bit to get interrupt whenever TXE flag is set in SR
+        pSPIHandle->pSPIx->CR2 |= ( 1 << SPI_CR2_RXNEIE );
+    }
+
+    return state;
+
+}
+
+void SPI_IRQHandling(SPI_Handle_t *pHandle)
+{
+
 }
