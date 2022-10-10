@@ -235,4 +235,5 @@ Read operation of SPI_DR returns the frame previously received.
 
 To clear the OVR bit, we need to perform read access to the SPI_DR register followed by a read access to the SPI_SR register.
 
+(Private functions should have their prototypes in source files (.c), as they are not supposed to be used as API by users)
 =========================================================================================================================================================
