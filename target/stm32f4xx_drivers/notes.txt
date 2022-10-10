@@ -226,4 +226,13 @@ Handling TXE Interrupt:
         Yes: Close the SPI TX
         No: Wait till another TXE interrupt
 
+Overrun error definition:
+Overrun condition occurs when the master or the slave completes the reception of the next data frame,
+while the read operation of the previous frame from the Rx buffer has not completed (case RXNE flag is set).
+In such case the SPI peripheral will discard the new data byte that is arrived and we will lose the data.
+
+Read operation of SPI_DR returns the frame previously received.
+
+To clear the OVR bit, we need to perform read access to the SPI_DR register followed by a read access to the SPI_SR register.
+
 =========================================================================================================================================================
