@@ -7,6 +7,10 @@
 
 #include "stm32f407xx_spi_driver.h"
 
+static void spi_txe_interrupt_handle(SPI_Handle_t *pSPIHandle);
+static void spi_rxne_interrupt_handle(SPI_Handle_t *pSPIHandle);
+static void spi_ovr_err_interrupt_handle(SPI_Handle_t *pSPIHandle);
+
 /**
  * @brief SPI Clock init
  * 
@@ -288,5 +292,112 @@ uint8_t SPI_ReceiveDataIT(SPI_Handle_t *pSPIHandle, uint8_t *pRxBuffer, uint32_t
 
 void SPI_IRQHandling(SPI_Handle_t *pHandle)
 {
+    uint8_t temp1, temp2;
+    
+    // check for TXE
+    temp1 = pHandle->pSPIx->SR & ( 1 << SPI_SR_TXE );
+    temp2 = pHandle->pSPIx->CR2 & ( 1 << SPI_CR2_TXEIE);
+
+    if(temp1 && temp2)
+    {
+        // Handle TXE
+        spi_txe_interrupt_handle(pHandle);
+    } 
+
+    // check for RXNE
+    temp1 = pHandle->pSPIx->SR & ( 1 << SPI_SR_RXNE);
+    temp2 = pHandle->pSPIx->CR2 & ( 1 << SPI_CR2_RXNEIE);
+
+    if(temp1 && temp2)
+    {
+        // Handle RXNE
+        spi_rxne_interrupt_handle(pHandle);
+    }
+
+    // check for OVR
+    temp1 = pHandle->pSPIx->SR & ( 1 << SPI_SR_OVR);
+    temp2 = pHandle->pSPIx->CR2 & ( 1 << SPI_CR2_ERRIE);
+
+    if(temp1 && temp2)
+    {
+        spi_ovr_err_interrupt_handle(pHandle);
+    }
+}
+
+// Helper function definitions
+static void spi_txe_interrupt_handle(SPI_Handle_t *pSPIHandle)
+{
+    // Check for DFF
+    if(pSPIHandle->pSPIx->CR1 & ( 1 << SPI_CR1_DFF ))
+    {
+        // 16-bit DFF
+        pSPIHandle->pSPIx->DR = *((uint16_t*)pSPIHandle->pTxBuffer); 
+        pSPIHandle->TxLen--;
+        (uint16_t*)pSPIHandle->pTxBuffer++;
+    }
+    else
+    {
+        // 8-bit DFF
+        pSPIHandle->pSPIx->DR = *pSPIHandle->pTxBuffer;
+        pSPIHandle->TxLen--;
+        pSPIHandle->pTxBuffer++;
+    }
+
+    if(!pSPIHandle->TxLen)
+    {
+        // TxLen is zero, so close the spi transmission and inform the application that TX is over.
+        // This prevents interrupts from setting up the TXE flag
+        pSPIHandle->pSPIx->CR2 &= ~( 1 << SPI_CR2_TXEIE );
+        pSPIHandle->pTxBuffer = NULL;
+        pSPIHandle->TxLen = 0;
+        pSPIHandle->TxState = SPI_READY;
+        SPI_ApplicationEventCallback(pSPIHandle, SPI_EVENT_TX_CMPLT);
+    }
+}
+
+static void spi_rxne_interrupt_handle(SPI_Handle_t *pSPIHandle)
+{
+    // 2. Check the DFF bit in CR2
+    if(pSPIHandle->pSPIx->CR1 & ( 1 << SPI_CR1_DFF ))
+    {
+        // 16-bit DFF
+        *((uint16_t*)pSPIHandle->pRxBuffer) = pSPIHandle->pSPIx->DR; 
+        pSPIHandle->RxLen--;
+        pSPIHandle->RxLen--;
+        (uint16_t*)pSPIHandle->pRxBuffer++;
+    }
+    else
+    {
+        // 8-bit DFF
+        *(pSPIHandle->pRxBuffer) = pSPIHandle->pSPIx->DR;
+        pSPIHandle->RxLen--;
+        pSPIHandle->pRxBuffer++;
+    }
+
+    if(!pSPIHandle->RxLen)
+    {
+        // TxLen is zero, so close the spi transmission and inform the application that TX is over.
+        // This prevents interrupts from setting up the TXE flag
+        pSPIHandle->pSPIx->CR2 &= ~( 1 << SPI_CR2_RXNEIE );
+        pSPIHandle->pRxBuffer = NULL;
+        pSPIHandle->RxLen = 0;
+        pSPIHandle->RxState = SPI_READY;
+        SPI_ApplicationEventCallback(pSPIHandle, SPI_EVENT_RX_CMPLT);
+    }
+}
+
+static void spi_ovr_err_interrupt_handle(SPI_Handle_t *pSPIHandle)
+{
+    uint8_t temp;
+
+    // 1. Clear the ovr bit
+    if(pSPIHandle->TxState != SPI_BUSY_IN_TX)
+    {
+        temp = pSPIHandle->pSPIx->DR;
+        temp = pSPIHandle->pSPIx->SR;
+    }
+   
+    // 2. inform the application
+    SPI_ApplicationEventCallback(pSPIHandle, SPI_EVENT_OVR_ERR);
 
 }
