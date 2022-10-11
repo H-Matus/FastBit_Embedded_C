@@ -12,6 +12,7 @@
 #include <stddef.h>
 
 #define __vo volatile
+#define __weak __attribute__((weak))
 
 /***
  * ARM Cortex Mx Processor NVIC ISERx register addresses

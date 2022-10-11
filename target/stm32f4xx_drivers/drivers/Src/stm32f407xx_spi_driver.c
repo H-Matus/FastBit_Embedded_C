@@ -347,10 +347,7 @@ static void spi_txe_interrupt_handle(SPI_Handle_t *pSPIHandle)
     {
         // TxLen is zero, so close the spi transmission and inform the application that TX is over.
         // This prevents interrupts from setting up the TXE flag
-        pSPIHandle->pSPIx->CR2 &= ~( 1 << SPI_CR2_TXEIE );
-        pSPIHandle->pTxBuffer = NULL;
-        pSPIHandle->TxLen = 0;
-        pSPIHandle->TxState = SPI_READY;
+        SPI_CloseTransmission(pSPIHandle);
         SPI_ApplicationEventCallback(pSPIHandle, SPI_EVENT_TX_CMPLT);
     }
 }
@@ -378,10 +375,7 @@ static void spi_rxne_interrupt_handle(SPI_Handle_t *pSPIHandle)
     {
         // TxLen is zero, so close the spi transmission and inform the application that TX is over.
         // This prevents interrupts from setting up the TXE flag
-        pSPIHandle->pSPIx->CR2 &= ~( 1 << SPI_CR2_RXNEIE );
-        pSPIHandle->pRxBuffer = NULL;
-        pSPIHandle->RxLen = 0;
-        pSPIHandle->RxState = SPI_READY;
+        SPI_CloseReception(pSPIHandle);
         SPI_ApplicationEventCallback(pSPIHandle, SPI_EVENT_RX_CMPLT);
     }
 }
@@ -396,8 +390,38 @@ static void spi_ovr_err_interrupt_handle(SPI_Handle_t *pSPIHandle)
         temp = pSPIHandle->pSPIx->DR;
         temp = pSPIHandle->pSPIx->SR;
     }
+    (void)temp;
    
     // 2. inform the application
     SPI_ApplicationEventCallback(pSPIHandle, SPI_EVENT_OVR_ERR);
 
+}
+
+void SPI_CloseTransmission(SPI_Handle_t *pSPIHandle)
+{
+    pSPIHandle->pSPIx->CR2 &= ~( 1 << SPI_CR2_TXEIE );
+    pSPIHandle->pTxBuffer = NULL;
+    pSPIHandle->TxLen = 0;
+    pSPIHandle->TxState = SPI_READY;
+}
+
+void SPI_CloseReception(SPI_Handle_t *pSPIHandle)
+{
+    pSPIHandle->pSPIx->CR2 &= ~( 1 << SPI_CR2_RXNEIE );
+    pSPIHandle->pRxBuffer = NULL;
+    pSPIHandle->RxLen = 0;
+    pSPIHandle->RxState = SPI_READY;
+}
+
+void SPI_ClearOVRFlag(SPI_RegDef_t *pSPIx)
+{
+    uint8_t temp;
+    temp = pSPIx->DR;
+    temp = pSPIx->SR;
+    (void)temp;
+}
+
+__weak void SPI_ApplicationEventCallback(SPI_Handle_t *pSPIHandle, uint8_t AppEv)
+{
+    // This is a weak implementation, the application may override this function.
 }

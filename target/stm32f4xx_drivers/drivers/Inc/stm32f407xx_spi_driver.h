@@ -45,7 +45,6 @@ typedef struct
  * @brief SPI Application States 
  * 
  */
-*/
 #define SPI_READY       0
 #define SPI_BUSY_IN_RX  1
 #define SPI_BUSY_IN_TX  2
@@ -169,5 +168,12 @@ void SPI_SSIConfig(SPI_RegDef_t *pSPIx, uint8_t EnOrDi);
 void SPI_SSOEConfig(SPI_RegDef_t *pSPIx, uint8_t EnOrDi);
 void SPI_ClearOVRFlag(SPI_RegDef_t *pSPIx);
 void SPI_CloseTransmission(SPI_Handle_t *pSPIHandle);
+void SPI_CloseReception(SPI_Handle_t *pSPIHandle);
+
+/**
+ * @brief Application Callback
+ * 
+ */
+void SPI_ApplicationEventCallback(SPI_Handle_t *pSPIHandle, uint8_t AppEv);
 
 #endif /* INC_STM32F407XX_SPI_DRIVER_H_ */
