@@ -236,4 +236,35 @@ Read operation of SPI_DR returns the frame previously received.
 To clear the OVR bit, we need to perform read access to the SPI_DR register followed by a read access to the SPI_SR register.
 
 (Private functions should have their prototypes in source files (.c), as they are not supposed to be used as API by users)
+
+After operations with temp variable, I can typecast it to (void), as it is unused.
+
 =========================================================================================================================================================
+Common Problems with SPI and debugging tips:
+
+Master moed bit must be enabled in the configuration register if you are configurating the peripheral as master.
+SPI peripheral enable bit must be enabled.
+SPI peripheral clock must be enabled. By default clocks to almost all peripheral in the microcontroller will be disabled to save power.
+
+Cases:
+    1. Master is not able to produce clock and data.
+        a. GPIOs are not configured properly for SPI (Alternate) functionality -> Recheck the GPIO Configuration registers to see what values they have.
+        b. Because of Configuration Overriding -> Dump out all the required register contents just before you begin the transmission.
+    2. Master is sending data, but slave is not receiving data;
+        a. Not pulling down the slave select pin to ground before sending data to the slave -> probe through the logic analyser to confirm 
+            slave select line is really low during data communication.
+        b. GPIOs are not configured properly (alternate functionality) -> probe the alternate function register
+        c. Not enabling the peripheral IRQ number in the NVIC -> Probe the NVIC interrupt mask register to see whether the bit position corresponding to the IRQ number.
+    3. SPI interrupts are not getting triggered.
+        a. Not enabling the TXE or RXNE interrupt in the SPI configuration register -> Check the SPI configuration register 
+            to see TXEIE and RXNEIE bits are really set to enable the interrupt.
+        b. Not enabling the peripheral IRQ number in the NVIC -> Probe the NVIC Interrupt Mask Register 
+            to see whether the bit position corresponding to the IRQ number is set or not.
+    4. Master is producing right data but slave is receiving the different data.
+        a. Using long wires in high frequency communication -> use shorter wires or reduce the SPI serial frequency to 500kHz to check things work well.
+        
+==============================================================================================================================================================
+
+
+        
+ 
