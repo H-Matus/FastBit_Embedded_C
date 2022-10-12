@@ -254,7 +254,8 @@ Cases:
         a. Not pulling down the slave select pin to ground before sending data to the slave -> probe through the logic analyser to confirm 
             slave select line is really low during data communication.
         b. GPIOs are not configured properly (alternate functionality) -> probe the alternate function register
-        c. Not enabling the peripheral IRQ number in the NVIC -> Probe the NVIC interrupt mask register to see whether the bit position corresponding to the IRQ number.
+        c. Not enabling the peripheral IRQ number in the NVIC -> Probe the NVIC interrupt mask register to see whether the bit position
+            corresponding to the IRQ number.
     3. SPI interrupts are not getting triggered.
         a. Not enabling the TXE or RXNE interrupt in the SPI configuration register -> Check the SPI configuration register 
             to see TXEIE and RXNEIE bits are really set to enable the interrupt.
@@ -264,7 +265,100 @@ Cases:
         a. Using long wires in high frequency communication -> use shorter wires or reduce the SPI serial frequency to 500kHz to check things work well.
         
 ==============================================================================================================================================================
+I2C:
+It is a protocol to achieve serial data communication between integrated circuits (ICs) which are very close to each other.
+It's a more serious protocol than SPI because companies have come forward to design a specification for it.
+
+I2C protocol details (how data should be sent, received, what's the handshake, error handling, etc.) are more complex than SPI. 
+(SPI is simple when compared to I2C)
+
+I2C spec is designed by NXP. SPI doesn't have a spec.
+
+I2C protocol is multi-master capable, whereas SPI has no guidelines to achieve this, but depends on MCU designers.
+STM SPI peripherals can be used in multi master configuration but arbitration should be handled by software code.
+
+I2C hardware automatically ACKs (acknowledges) every byte received. SPI does not support any automatic ACKing.
+
+I2C requires only 2 pins: SDA and SCL.
+I2C master talks to peripherals based on peripheral addresses, whereas in SPI dedicated pin is used to select the slave.
+
+I2C is half duplex, whereas SPI is full duplex.
+
+I2C max speed is 4MHz in ultra speed plus mode. For some STM microcontrollers the max speed is just 400 kHz.
+SPI max speed is Fpclk/2. That means if the peripheral clock is 20 MHz, then speed can be 10 MHz.
+
+In I2C, peripheral can make controller wait by holding the clock down if it's busy, thanks to clock streching feature of I2C.
+In SPI, peripheral has no control over clock, programmers may use their own tricks to overcome this situation.
+
+Data rate is a number of bits transferred from sender to receiver in 1 sec.
+SPI is a lot faster in this regard than I2C.
+
+Terminology:
+    1. Controller - the device which initiates a transfer, generates clock signals and terminates a transfer.
+    2. Peripheral - the device addressed by a master.
+    3. Multi-controller - more than one controller can attempt to control the bus at the same time without corrupting the message.
+    4. Arbitration - procedure to ensure that, if more than one controller simultaneously tries to control the bus, only one is allowed to do so 
+        and the winning message is not corrupted.
+    5. Synchronization - procedure to synchronize clock signals of two or more devices.
+
+Both SDA and SCL are bidirectional lines connected to a positive supply voltage via pull-up resistors. When the bus is free, both lines are held at HIGH.
+The output stages of devices connected to the bus must have an open-drain or open-collector configuration.
+The bus capacitance limits the number of interfaces connected to the bus.
+
+For I2C pins to function properly, pull-up resistor value shall be calculated according to the I2C formula.
+
+SDA and SCL pins have to be in Open-Drain configuration with either an internal or external pull-up resistor.
+
+When the bus is idle, both SDA and SCL are pulled to +Vdd.
+Whenever you face problems in I2C, probe the SDA and SCL lines after I2C initialisation. It must be held at HIGH. (3.3V or 1.8V)
+
+I2C modes:
+    1. Standard     - Up to 100 Kbits/s - Supported by STMf2F4x
+    2. Fast         - Up to 400 Kbits/s - Supported by STMf2F4x
+    3. Fast+        - Up to   1 Mbits/s - Supported by some STMf2F4x MCUs (refer to RM)
+    4. High Speed   - Up to 3.4 Mbits/s - Not supported by F4x
+
+Standard mode was the first mode released with I2C.
+Standard mode devices are not upward compatible, as they can't communicate with devices of fast mode or above.
+
+Fast-mode devices are downward-compatible and can communicate with standard-mode devices in a 0-100 kbit/s I2C bus system.
+Standard-mode devices should not be introduced in a fast-mode I2C-bus system. Such introduction can cause unpredictable states.
+To achieve higher data transfer rates, I2C devices shall be put in to a fast mode in configs.
 
 
-        
- 
+Basics of I2C protocol:
+The data transfer is always initiated by the controller on SDA line. 
+
+The process of SDA:
+    1. Controller initiates the data transfer by first producing the start condition.
+    2. Address phase starts, during which first 7 bits is the address of the peripheral.
+    3. The remaining last bit decides the read or write operation.
+        If bit is 0 -> controller is going to write the data (WRITE)
+        If bit is 1 -> controller is going to read the data (READ)
+
+Every iteration put on SDA line, must be 8 bits long.
+Each byte must be followed by an ACK bit.
+    When peripheral gets the 8bits, it then sends back an ACK bit, which the controller receives.
+    If the R/W bit is 0 (WRITE), then after ACK, peripheral receives data byte, after which the peripheral sends an ACK again, 
+    saying that it received the data byte.
+Data is transferred with the Most Significant Bit (MSB) first.
+
+When controller decides to stop communication with peripheral, then STOP condition is generated.
+When stop condition is generated, then the controller is no longer in control of the bus and another controller/same controller can take control of it.
+
+Address phase is the combination of peripheral address and R/W bit.
+
+
+START and STOP:
+All comms begin with a START (S) and a STOP (P).
+
+A HIGH to LOW transition on the SDA line while SCL is HIGH defines a START condition.
+A LOW to HIGH transition on the SDA line while SCL is LOW defines a STOP condition.
+
+Once controller generates the START condition successfully it actually claims the bus so that no other controller can claim the bus.
+Other controllers should wait until bus is released.
+
+After STOP condition, both SDA and SCL are released -> they are in pull-up condition.
+
+When SDA is low, then it is activated, because by default it is pulled high.
+If the state of SDA is low at this position then it is considered as ACK otherwise it's NACK.
