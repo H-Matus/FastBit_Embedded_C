@@ -446,4 +446,57 @@ I2Cx Peripheral Configurable items:
     3. I2C_ACKControl
     4. I2C_FMDutyCycle
 
+Steps for I2C Init (Generic):
+    1. Configure the Mode (standard or fast)
+    2. Configure the speed of the serial clock (SCL)
+    3. Configure the device address (applicable only when device is a peripheral)
+    4. Enable the ACKing
+    5. Configure the rise time for I2C pins 
 
+When we use higher frequencies, we can't driver I2C bus over longer distances.
+The rise time is the time for the signal to reach from ground level to the VCC level.
+
+The peripheral must first be disabled to change the config!!!
+
+
+I2C Serial Clock Config:
+Value of APB bus clock goes into the I2C CR2 FREQ field.
+
+The process of generating 100kHz clock from APB1 16MHz clock: (Standard mode)
+    1. Configure the mode in CCR register (15th bit)
+    2. Program FREQ field of CR2 with the value of PCLK1
+    3. Calculate and Program CCR value in CCR field of CCR register
+
+In FM mode -> process of generating 200kHz clock from APB1 16MHz clock:
+    1. Configure the mode in CCR register
+    2. Select the duty cycle of Fast mode SCL in CCR register
+    3. Program FREQ field of CR2 with the value of PCLK1
+    4. Calculate and Program CCR value in CCR field of CCR register
+
+In fast mode, 2 types of duty cycles are possible when the mode is Fast.
+In STM32F4x I2C Standard Mode -> Tlow = Thigh of the clock period.
+In Fast Mode ->
+    1. Tlow = 2 x Thigh
+    2. Tlow = 1.8 x Thigh
+
+According to the I2C spec, in Standard Mode Tlow is advised to be 4.7 microseconds, whereas Thigh = 4.0 microseconds (minimum).
+In Fast Mode, Tlow = 1.3 uSeconds, Thigh = 0.6 uSeconds.
+
+Refer to Section 54 in MCU1 course for calculations.
+
+
+Clock Stretching:
+Clock Stretching is a state when the clock is held to 0 or ground level.
+
+The moment clock is held at low, then the whole I2C interface pauses until clock is given to its normal operation level.
+
+I2C devices, either Controller or Peripheral, use Clock Stretching to slow down the communication by stretching SCL to low,
+    which prevents the clock to rise High again and the I2C communication stops for a while.
+
+There are situations where an I2C peripheral is not able to co-operate with the clock speed given 
+    by the Controller and needs to slow down a little.
+
+If peripheral needs time, then it takes the advantage of clock stretching and by holding clock at low,
+    it momentarily pauses the I2C operation.
+
+Clock stretching and unstretching is automatically controlled by the I2C hardware. I just have to enable it.
