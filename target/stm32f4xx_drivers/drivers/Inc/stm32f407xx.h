@@ -179,6 +179,21 @@ typedef struct
     __vo uint32_t I2SPR;
 }SPI_RegDef_t;
 
+typedef struct
+{
+    __vo uint32_t CR1;
+    __vo uint32_t CR2;
+    __vo uint32_t OAR1;
+    __vo uint32_t OAR2;
+    __vo uint32_t DR; 
+    __vo uint32_t SR1;
+    __vo uint32_t SR2;
+    __vo uint32_t CCR;
+    __vo uint32_t TRISE;
+    __vo uint32_t FLTR;
+}I2C_RegDef_t;
+
+
 /*
     Peripheral definitions.
 */
@@ -201,6 +216,10 @@ typedef struct
 #define SPI1        ((SPI_RegDef_t *)SPI1_BASEADDR)
 #define SPI2        ((SPI_RegDef_t *)SPI2_BASEADDR)
 #define SPI3        ((SPI_RegDef_t *)SPI3_BASEADDR)
+
+#define I2C1        ((I2C_RegDef_t *)I2C1_BASEADDR)
+#define I2C2        ((I2C_RegDef_t *)I2C2_BASEADDR)
+#define I2C3        ((I2C_RegDef_t *)I2C3_BASEADDR)
 
 /*
     Clock enable macros for GPIOx peripherals
@@ -380,6 +399,16 @@ typedef struct
 #define SPI_SR_OVR          6
 #define SPI_SR_BSY          7
 #define SPI_SR_FRE          8
+
+/**
+ * Bit positions for I2C peripheral
+ * 
+ */
+#define I2C_CR1_PE          0
+#define I2C_CR1_SMBUS       1
+#define I2C_CR1_SMBTYPE     3
+#define I2C_CR1_ENARP       4
+#define I2C_CR1_ENPEC       5
 
 #include "stm32f407xx_gpio_driver.h"
 #include "stm32f407xx_spi_driver.h"
