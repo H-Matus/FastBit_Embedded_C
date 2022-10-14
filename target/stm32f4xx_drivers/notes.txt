@@ -423,10 +423,27 @@ How controller is reading data from a peripheral?:
 When peripheral receives ACK, it's an indication for the peripheral to send one more byte to controller.
 When controller receives ACK, it means that the peripheral has received the data.
 
-
+ 
 Repeated Start (Sr):
 In cases when a task of a controller requires more than one read and/or write, instead of ending each data transmission with
     a stop condition, the controller can initiate a START condition again to show that the new transmission is going to take place
     and not release the bus for any other controller to claim it.
 
 This only makes sense if the bus has multiple controllers, whereas in a single controller bus it wouldn't matter.
+
+I2C driver APIs:
+    1. I2C Init
+    2. I2C Controller Tx
+    3. I2C Controller Rx
+    4. I2C Peripheral Tx
+    5. I2C Peripheral Rx
+    6. I2C Error Interrupt handling
+    7. I2C Event Interrupt handling
+
+I2Cx Peripheral Configurable items:
+    1. I2C_SCLSpeed
+    2. I2C_DeviceAddress
+    3. I2C_ACKControl
+    4. I2C_FMDutyCycle
+
+
