@@ -353,7 +353,7 @@ START and STOP:
 All comms begin with a START (S) and a STOP (P).
 
 A HIGH to LOW transition on the SDA line while SCL is HIGH defines a START condition.
-A LOW to HIGH transition on the SDA line while SCL is LOW defines a STOP condition.
+A LOW to HIGH transition on the SDA line while SCL is HIGH defines a STOP condition.
 
 Once controller generates the START condition successfully it actually claims the bus so that no other controller can claim the bus.
 Other controllers should wait until bus is released.
@@ -404,3 +404,29 @@ The data on the SDA line must be stable during the HIGH period of the clock. The
     the clock signal on the SCL line is LOW. One clock pulse is generated for each data bit transferred.
 
 Data changes only when the clock is high.
+
+How a controller is writing data to a peripheral?:
+    1. Controller generates the start condition and after that comes the address phase. (7 bit address)
+    2. SDA is pulled high or low based on ACK response from peripheral.
+    3. After ACK, Controller writes 1 byte of data followed by ACK/NACK from peripheral.
+    4. Controller keeps writing 1 byte data followed by ACK/NACK until controller initiates a stop condition (SDA goes from LOW to HIGH when SCL is HIGH)
+
+How controller is reading data from a peripheral?:
+    1. Controller generates a start condition.
+    2. Controller puts peripheral address on SDA line.
+    3. Controller defines the R/W bit.
+    4. Peripheral puts 1 byte of data for a controller to read on the SDA line.
+    5. Controller produces ACK/NACK on SDA line.
+    6. Peripheral keeps sending bytes of data until it receives NACK from controller.
+    7. Controller initiates a stop condition.
+
+When peripheral receives ACK, it's an indication for the peripheral to send one more byte to controller.
+When controller receives ACK, it means that the peripheral has received the data.
+
+
+Repeated Start (Sr):
+In cases when a task of a controller requires more than one read and/or write, instead of ending each data transmission with
+    a stop condition, the controller can initiate a START condition again to show that the new transmission is going to take place
+    and not release the bus for any other controller to claim it.
+
+This only makes sense if the bus has multiple controllers, whereas in a single controller bus it wouldn't matter.
