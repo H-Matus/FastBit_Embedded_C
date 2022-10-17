@@ -575,3 +575,16 @@ BTF is a bit in SR, which says whether the Data Byte transfer is finished. (Read
 When both TxE = 1 and Data Register is NULL, and Shift Register, 
     then BTF becomes 1 and clock will be stretched to avoid under run error during transmission.
 
+=========================================================================================================================================================
+I2C Pull-up Resistance
+
+In I2C, LOW-level output voltage is considered to be from 0V to 0.4V. 
+
+To get Vol for pull-up resistance calculation, go to page 47 of I2C specification and check Table 9.
+
+Rise time is defined as the amount of time taken by the rising edge to reach 70% amplitude from 30% aplitude for either SDA and SCL.
+
+Higher PU resistor increases the rise time value, which is unacceptable if it crosses max limit mentioned in the spec.
+Lower value decreases, but they also lead to higher current consumption, which is bad.
+
+If very high PU value is used, the signal may not reach the Vih limit (Input Level High Voltage)
