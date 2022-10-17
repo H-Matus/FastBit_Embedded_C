@@ -114,6 +114,33 @@ void I2C_Init(I2C_Handle_t *pI2CHandle)
     tempreg |= pI2CHandle->I2C_Config.I2C_DeviceAddress << 1;
     tempreg |= ( 1 << 14 );
     pI2CHandle->pI2Cx->OAR1 = tempreg;
+
+    // Init CCR (CCR calculations)
+    uint16_t ccr_value = 0;
+    tempreg = 0;
+    if(pI2CHandle->I2C_Config.I2C_SCLSpeed <= I2C_SCL_SPEED_SM)
+    {
+        // mode is standard
+        ccr_value = (RCC_GetPCLK1Value() / (2 * pI2CHandle->I2C_Config.I2C_SCLSpeed));
+        tempreg |= (ccr_value & 0xFFF); // Masking out other bits, as CCR is only 12-bit length, whereas ccr_value is 16-bit
+    }
+    else
+    {
+        // mode is fast
+        tempreg |= ( 1 << 15 ); // Fast mode is configured
+        tempreg |= (pI2CHandle->I2C_Config.I2C_FMDutyCycle << 14);
+
+        if(pI2CHandle->I2C_Config.I2C_FMDutyCycle == I2C_FM_DUTY_2)
+        {
+            ccr_value = (RCC_GetPCLK1Value() / (3 * pI2CHandle->I2C_Config.I2C_SCLSpeed));
+        }
+        else
+        {
+            ccr_value = (RCC_GetPCLK1Value() / (25 * pI2CHandle->I2C_Config.I2C_SCLSpeed));
+        }
+        tempreg |= (ccr_value & 0xFFF);
+    }
+    pI2CHandle->pI2Cx->CCR = tempreg;
 }
 
 /**
