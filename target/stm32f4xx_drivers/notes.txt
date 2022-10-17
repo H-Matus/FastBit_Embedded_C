@@ -526,3 +526,52 @@ The PLL must be calculated by the driver.
 It's good to mask tempregs based on what bit fields are configured on for safety purposes.
 
 =========================================================================================================================================================
+
+If something is controlled by an application, then I have to copy the I2C Config from I2C Handle into a tempreg, which then shall be passed into
+a proper register in I2Cx peripheral, which is in I2C Handle.
+
+=========================================================================================================================================================
+I2C Send Data:
+
+Whoever initiates the data transfer first, becomes the controller.
+When a START condition is successfully triggered, then Event 5 will happen in STM32 MCU.
+    Event 5 sets the start bit to 1 in the Status Register.
+    This means that Controller has to wait until the SB becomes 1 to move to the address phase.
+When the Controller executes Address Phase, then the EV5 or SB1 will be automatically cleared.
+
+P.S. EV5, EV6, EV9, EV8_1 and EV8_2 events stretch SCL low until the end of the corresponding software sequence.
+    (Clock will be pulled low until SB is cleared)
+
+When the Address Phase is executed, ACK Phase takes place and ACK will only be set if the peripheral with corresponding address is on the bus.
+If ACK is received, then EV6 will happen, which means that ADDR of the Status Register will be set to 1. 
+    (If ADDR = 1, then peripheral received the request)
+    Setting ADDR = 1, also can stretch the clock to LOW.
+
+As soon as ADDR flag is cleared, EV8_1 will be executed.
+EV8_1 sets TxE to 1 and it means that shift register and data register are empty. It is cleared once the Data1 is written.
+    The data will be immediately copied into the shift register.
+
+Afterwards, EV8 will happen immediately, which means that:
+    TxE = 1
+    Shift register is not empty because it is transmitting data
+    data register is empty because the data was copied into the shift register
+    TxE is cleared by writing in Data Register, which means that it will be cleared when a new data byte is going to be written.
+Afterwards, Controller waits for ACK and once it is received, the Data 2, which has been written into DR during the time Data 1 is being transmitted,
+    will be moved to the shift register.
+
+And then Data 2 transmission begins, because TxE is set -> EV8 is executed.
+
+TxE means that the Data Register is empty and software is allowed to write the data into the Data Register without any corruption of data.
+
+In I2C, TxE is set only when data is successfully sent and ACK is received.
+
+After the last byte transmission, we receive an ACK and we have to wait until EV8_2 event.
+    We have to wait until TxE = 1
+    And we have to wait until BTF = 1
+    Once these two flags are set, we can initiate program stop request
+    TxE and BTF are cleared by hardware by the stop condition.
+
+BTF is a bit in SR, which says whether the Data Byte transfer is finished. (Read more in the reference manual)
+When both TxE = 1 and Data Register is NULL, and Shift Register, 
+    then BTF becomes 1 and clock will be stretched to avoid under run error during transmission.
+
