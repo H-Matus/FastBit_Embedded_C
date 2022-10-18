@@ -83,14 +83,14 @@ int main(void)
         I2C_ControllerSendData(&I2C1Handle, len_request, sizeof(uint8_t), 0x2);
         
         // Get the length 
-        I2C_ControllerReceiveData(&I2C1Handle, &pDataLength, DataLength, 0x2);
+        I2C_ControllerReceiveData(&I2C1Handle, &pDataLength, sizeof(uint8_t), 0x2);
         char data[DataLength];
 
         // Send request for data
         I2C_ControllerSendData(&I2C1Handle, data_request, sizeof(uint8_t), 0x2);
 
         // Get the data
-        I2C_ControllerReceiveData(&I2C1Handle, (uint8_t *)data, strlen(data), 0x2);
+        I2C_ControllerReceiveData(&I2C1Handle, (uint8_t *)data, DataLength, 0x2);
     }
 
     while(1);
