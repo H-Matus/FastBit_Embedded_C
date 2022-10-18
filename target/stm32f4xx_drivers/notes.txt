@@ -615,3 +615,11 @@ Notes on the sequence:
     7. Controller generates the STOP condition.
 
 The controller has to prepare to initiate STOP condition when last 2 bytes of data are remaining to be read on I2C.
+
+=========================================================================================================================================================
+I2C Interrupts:
+Because our APIs are polling based, we haven't enabled control bits for Interrupt Events, so that they wouldn't trigger interrupts.
+
+In I2C the overrun and underrun will not happen during clock stretching.
+
+BTF flag prevents underrun and overrun.
