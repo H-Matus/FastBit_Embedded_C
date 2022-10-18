@@ -587,4 +587,15 @@ Rise time is defined as the amount of time taken by the rising edge to reach 70%
 Higher PU resistor increases the rise time value, which is unacceptable if it crosses max limit mentioned in the spec.
 Lower value decreases, but they also lead to higher current consumption, which is bad.
 
-If very high PU value is used, the signal may not reach the Vih limit (Input Level High Voltage)
+If very high PU value is used, the signal may not reach the Vih limit (Input Level High Voltage), in which case I have to either:
+    1. decrease the PU resistance
+    2. decrease the bus capacitance
+
+Bus capacitance is a collection of all individual capacitance on the bus, such as:
+    1. between SDA and SCL;
+    2. parasitic capacitance;
+    3. bus length;
+    4. dielectric material;
+    5. etc.
+
+Table 10 shows the rise time and bus capacitance limits.
