@@ -599,3 +599,18 @@ Bus capacitance is a collection of all individual capacitance on the bus, such a
     5. etc.
 
 Table 10 shows the rise time and bus capacitance limits.
+
+=========================================================================================================================================================
+I2C Controller Receive Data API:
+Check the Transfer Sequence Diagram for Controller Receiver in the Reference Manual.
+
+Notes on the sequence:
+    1. During EV5 event, the setting of SB flag to 1 indicates that the start generation was successful.
+    2. Even though the Controller is receiving, the Controller is initiating the Address Phase and sending the 7-bit address with the R/W bit to the
+        Peripheral. Peripheral sends ACK back.
+    3. After EV6, data reception will happen -> shift register of the Controller will be filled with data bits.
+    4. After 1 byte is received, Controller sends ACK back to Peripheral.
+    5. The Controller code should always read the Data Register, only when the RXNE flag is set. (RXNE means Receive Buffer Not Empty)
+    6. After the last data byte Controller sends back a NACK -> indication to the Peripheral to stop sending data.
+    7. Controller generates the STOP condition.
+
