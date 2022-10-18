@@ -48,31 +48,33 @@ void Button_GPIOInit(void)
     GPIO_Init(&Button);
 }
 
-void I2C1_Inits(void)
+void I2C1_Inits(I2C_Handle_t *pI2C_Handle)
 {
-    I2C_Handle_t I2C1Handle;
+    pI2C_Handle->pI2Cx = I2C1;
+    pI2C_Handle->I2C_Config.I2C_SCLSpeed = I2C_SCL_SPEED_SM;
+    pI2C_Handle->I2C_Config.I2C_DeviceAddress = 0x1;
+    pI2C_Handle->I2C_Config.I2C_ACKControl = I2C_ACK_ENABLE; // Generates sclk of 8MHz
 
-    I2C1Handle.pI2Cx = I2C1;
-    I2C1Handle.I2C_Config.I2C_SCLSpeed = I2C_SCL_SPEED_SM;
-    I2C1Handle.I2C_Config.I2C_DeviceAddress = 0x1;
-    I2C1Handle.I2C_Config.I2C_ACKControl = I2C_ACK_ENABLE; // Generates sclk of 8MHz
-
-    I2C_Init(&I2C1Handle);
+    I2C_Init(pI2C_Handle);
 }
 
 int main(void)
 {
+    I2C_Handle_t I2C1Handle;
     char user_data[] = "Hello World";
 
     I2C1_GPIOInits();
     Button_GPIOInit();
 
-    I2C1_Inits();
+    I2C1_Inits(&I2C1Handle);
 
     // Enable I2C1 peripheral
     I2C_PeripheralControl(I2C1, ENABLE);
 
-    I2C_ControllerSendData(, (uint8_t*)user_data, strlen(user_data), 1);
+    if(GPIO_ReadFromInputPin(GPIOA, 0))
+    {
+        I2C_ControllerSendData(&I2C1Handle, (uint8_t*)user_data, strlen(user_data), 1);
+    }
 
     while(1);
 
