@@ -614,3 +614,4 @@ Notes on the sequence:
     6. After the last data byte Controller sends back a NACK -> indication to the Peripheral to stop sending data.
     7. Controller generates the STOP condition.
 
+The controller has to prepare to initiate STOP condition when last 2 bytes of data are remaining to be read on I2C.
