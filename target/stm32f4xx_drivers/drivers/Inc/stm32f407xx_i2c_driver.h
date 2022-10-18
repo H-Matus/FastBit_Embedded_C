@@ -81,6 +81,7 @@ void I2C_DeInit(I2C_RegDef_t *pI2Cx);
  * 
  */
 void I2C_ControllerSendData(I2C_Handle_t *pI2CHandle, uint8_t *pTxBuffer, uint8_t Len, uint8_t PeripheralAddr);
+void I2C_ControllerReceiveData(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer, uint8_t Len, uint8_t PeripheralAddr);
 
 /**
  * @brief IRQ Configuration and ISR handling

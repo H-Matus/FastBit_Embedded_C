@@ -257,6 +257,13 @@ void I2C_ControllerSendData(I2C_Handle_t *pI2CHandle, uint8_t *pTxBuffer, uint8_
     I2C_GenerateStopCondition(pI2CHandle->pI2Cx);
 }
 
+void I2C_ControllerReceiveData(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer, uint8_t Len, uint8_t PeripheralAddr)
+{
+    // 1. Generate START condition
+    I2C_GenerateStartCondition(pI2CHandle->pI2Cx);
+
+    //2.
+}
 
 /**
  * @brief 
