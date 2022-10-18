@@ -20,8 +20,16 @@ typedef struct
 
 typedef struct
 {
-    I2C_RegDef_t *pI2Cx;
-    I2C_Config_t I2C_Config;
+    I2C_RegDef_t    *pI2Cx;
+    I2C_Config_t    I2C_Config;
+    uint8_t         *pTxBuffer;
+    uint8_t         *pRxBuffer;
+    uint32_t        TxLen;
+    uint32_t        RxLen;
+    uint8_t         TxRxState;
+    uint8_t         DevAddr;
+    uint32_t        RxSize;
+    uint8_t         Sr;
 }I2C_Handle_t;
 
 /**
