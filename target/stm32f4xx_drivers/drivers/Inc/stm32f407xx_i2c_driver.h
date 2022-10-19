@@ -22,14 +22,14 @@ typedef struct
 {
     I2C_RegDef_t    *pI2Cx;
     I2C_Config_t    I2C_Config;
-    uint8_t         *pTxBuffer;
-    uint8_t         *pRxBuffer;
-    uint32_t        TxLen;
-    uint32_t        RxLen;
-    uint8_t         TxRxState;
-    uint8_t         DevAddr;
-    uint32_t        RxSize;
-    uint8_t         Sr;
+    uint8_t         *pTxBuffer; // Storing the app. Tx buffer address
+    uint8_t         *pRxBuffer; // Storing the app. Rx buffer address
+    uint32_t        TxLen;      // Storing Tx len
+    uint32_t        RxLen;      // Storing Rx len
+    uint8_t         TxRxState;  // Storing Communication state
+    uint8_t         DevAddr;    // Storing slave/device address
+    uint32_t        RxSize;     // Storing Rx size
+    uint8_t         Sr;         // Storing repeated START value
 }I2C_Handle_t;
 
 /**
@@ -53,6 +53,14 @@ typedef struct
  */
 #define I2C_FM_DUTY_2       0
 #define I2C_FM_DUTY_16_9    1
+
+/**
+ * @brief I2C Application States 
+ * 
+ */
+#define I2C_READY           0
+#define I2C_BUSY_IN_RX      1
+#define I2C_BUSY_IN_TX      2
 
 /**
  * @brief I2C related statys flag definitions 
@@ -90,6 +98,9 @@ void I2C_DeInit(I2C_RegDef_t *pI2Cx);
  */
 void I2C_ControllerSendData(I2C_Handle_t *pI2CHandle, uint8_t *pTxBuffer, uint8_t Len, uint8_t PeripheralAddr);
 void I2C_ControllerReceiveData(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer, uint8_t Len, uint8_t PeripheralAddr);
+
+uint8_t I2C_ControllerSendDataIT(I2C_Handle_t *pI2CHandle, uint8_t *pTxBuffer, uint8_t Len, uint8_t PeripheralAddr);
+uint8_t I2C_ControllerReceiveDataIT(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer, uint8_t Len, uint8_t PeripheralAddr);
 
 /**
  * @brief IRQ Configuration and ISR handling
