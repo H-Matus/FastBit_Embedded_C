@@ -79,6 +79,22 @@ typedef struct
 #define I2C_FLAG_ADDR       ( 1 << I2C_SR1_ADDR ) 
 #define I2C_FLAG_TIMEOUT    ( 1 << I2C_SR1_TIMEOUT )
 
+#define I2C_DISABLE_SR      RESET
+#define I2C_ENABLE_SR       SET
+
+/**
+ * @brief I2C application event macros 
+ * 
+ */
+#define I2C_EV_TX_COMPLETE  0
+#define I2C_EV_RX_CMPLT     1
+#define I2C_EV_STOP         2
+#define I2C_ERROR_BERR      3
+#define I2C_ERROR_ARLO      4
+#define I2C_ERROR_AF        5
+#define I2C_ERROR_OVR       6
+#define I2C_ERROR_TIMEOUT   7
+
 /**
  * @brief Peripheral Clock setup
  * 
@@ -101,6 +117,9 @@ void I2C_ControllerReceiveData(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer, uin
 
 uint8_t I2C_ControllerSendDataIT(I2C_Handle_t *pI2CHandle, uint8_t *pTxBuffer, uint8_t Len, uint8_t PeripheralAddr, uint8_t Sr);
 uint8_t I2C_ControllerReceiveDataIT(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer, uint8_t Len, uint8_t PeripheralAddr, uint8_t Sr);
+
+void I2C_CloseReceiveData(I2C_Handle_t *pI2CHandle);
+void I2C_CloseSendData(I2C_Handle_t *pI2CHandle);
 
 /**
  * @brief IRQ Configuration and ISR handling
