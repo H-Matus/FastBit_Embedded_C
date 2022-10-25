@@ -63,7 +63,7 @@ typedef struct
 #define I2C_BUSY_IN_TX      2
 
 /**
- * @brief I2C related statys flag definitions 
+ * @brief I2C related status flag definitions 
  * 
  */
 #define I2C_FLAG_TXE        ( 1 << I2C_SR1_TXE )
