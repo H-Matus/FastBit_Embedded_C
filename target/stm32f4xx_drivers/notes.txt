@@ -665,3 +665,64 @@ Controller is not able to produce clock:
 
 =========================================================================================================================================================
 UART:
+In synchronous transmission, the clock is separate from data and no start/stop bits are used. Therefore it is more efficient,
+    as it avoids the use of extra bits like start/stop.
+
+USART does not use a specific port, it works together with RS-232, RS-343, USB, etc.
+
+USART Hardware Components:
+    1. Baud rate generator
+    2. Tx and Rx shift registers
+    3. Tx/Rx control blocks
+    4. Tx/Rx buffers
+    5. FIFO buffer memory
+
+USART is very powerful, but very expensive as well.
+
+UART is bi-directional requiring at least 2 pins.
+UART RX engine continously samples this line to detect the start bit of a frame. When it is detected, the frame reception is initiated.
+
+RTS and CTS pins are required for hardware flow control.
+CTS - Clear To Send (active low pin - when hardware flow control is used, Tx happens only when CTS is pulled low)
+CTS has to be pulled low by another device.
+
+RTS - Request To Send (active low pin)
+
+One device's RTS is connected to another's CTS, which is why when RTS is pulled low, the CTS is pulled low as well, allowing for communication.
+
+The data frame of UART can be configured to be from 5 to 9 bits. Word length can be chosen to be 9 bits or 8 bits, if parity bit is chosen.
+
+Stop bit finishes the UART frame and it can be configured to be 1, 1.5 or 2 bit duration.
+
+=========================================================================================================================================================
+UART Baud Rate:
+
+Baud rate tells how fast the data is sent in bits per second bps.
+Inverting the baud rate shows how long it takes to transmit a single bit.
+
+Baud rates can be any value, but Tx and Rx devices should operate at the same rate. (There are limits to how fast data can be transferred.)
+Baud rates depend on the peripheral clock frequency of the UART peripheral.
+
+USART Control Register 2 has a field called STOP, which defines how long is the stop bit: 1, 1.5 or 2 bits long.
+If we have a high baudrate, then it might be wiser to have stop bit of 2 bits length.
+
+The Rx engine is smart enough to detect start bits from IDLE data line going from high to low and 
+    stop bits from ACTIVE data line going from low to high into IDLE state.
+
+=========================================================================================================================================================
+UART: Parity bit
+
+Parity bits are the simplest method of error detection.
+
+There can be 2 ways of parity:
+    1. Even parity
+    2. Odd parity
+
+In case of even parity -> the parity bit is set to a 0 or 1 depending whether there is an even number of 1s in the data byte.
+    1. If there is an odd number of 1s, then parity bit will be 1 to make the number of 1s into an even number.
+    2. If there is an even number of 1s, then parity bit will be 0.
+
+Parity bits work because, if a data byte is corrupted during data transmission, then we can look at the parity bit to see if it changed.
+What happens when the data gets corrupted but the amount of 1s doesn't change?
+
+=========================================================================================================================================================
