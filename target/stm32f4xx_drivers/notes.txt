@@ -644,3 +644,24 @@ If TXE = 1, then peripheral needs to send 1 byte of data.
 If RXNE = 1, then the application has received 1 byte.
 
 TRA bit in the Status Register helps see if the device is in receiver or transmitter mode.
+
+=========================================================================================================================================================
+Common problems with I2C:
+I2C Mandatory Tips: After I2C initialisation, probe SDA and SCL lines, as both must be held at HIGH voltage.
+
+In a case that SDA and SCL are not held high:
+    Check the activation of internal pull up resistors (software side: config reguster of I/O line)
+        Might need to dump register contents.
+
+ACK Failure can best be detected using a logic analyser.
+    1. Might be generating address phase with a wrong peripheral address.
+        This will cause a NACK -> verify the peripheral address.
+    2. Might be that I did not enable the ACKing feature in the I2C Control Register
+        Check the ACK enable field.
+
+Controller is not able to produce clock:
+    1. Check if I2C peripheral clock is enabled and set to at least 2MHz standard mode clock.
+    2. Check if GPIO alternate functionality is configured properly for SDA and SCL lines.
+
+=========================================================================================================================================================
+UART:
