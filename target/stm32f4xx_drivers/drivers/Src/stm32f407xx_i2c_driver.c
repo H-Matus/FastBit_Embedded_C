@@ -739,9 +739,19 @@ void I2C_EV_IRQHandling(I2C_Handle_t *pI2CHandle)
         // Check the device mode (only if device is controller, we can execute the Tx code)
         if(pI2CHandle->pI2Cx->SR2 & ( 1 << I2C_SR2_MSL ))
         {
+            // If the device is a controller
             if(pI2CHandle->TxRxState == I2C_BUSY_IN_TX)
             {
                 I2C_ControllerHandleTXEInterrupt(pI2CHandle);
+            }
+        }
+        else
+        {
+            // If the device is a peripheral
+            // Making sure if the device is in transmitter mode:
+            if(pI2CHandle->pI2Cx->SR2 & ( 1 << I2C_SR2_TRA ))
+            {
+                I2C_ApplicationEventCallback(pI2CHandle, I2C_EV_DATA_REQ);
             }
         }
     }
@@ -758,6 +768,15 @@ void I2C_EV_IRQHandling(I2C_Handle_t *pI2CHandle)
             if(pI2CHandle->TxRxState == I2C_BUSY_IN_RX)
             {
                 I2C_ControllerHandleRXNEInterrupt(pI2CHandle);
+            }
+        }
+        else
+        {
+            // device is a peripheral
+            // make sure that the peripheral is in receiver mode
+            if(!(pI2CHandle->pI2Cx->SR2 & ( 1 << I2C_SR2_TRA )))
+            {
+                I2C_ApplicationEventCallback(pI2CHandle, I2C_EV_DATA_RCV);
             }
         }
     }
