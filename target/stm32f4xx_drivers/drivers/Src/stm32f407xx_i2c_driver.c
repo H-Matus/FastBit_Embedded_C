@@ -579,6 +579,16 @@ uint8_t I2C_ControllerReceiveDataIT(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer
 	return busystate;
 }
 
+void I2C_PeripheralSendData(I2C_RegDef_t *pI2Cx, uint8_t data)
+{
+    pI2Cx->DR = data;
+}
+
+uint8_t I2C_PeripheralReceiveData(I2C_RegDef_t *pI2Cx)
+{
+    return (uint8_t)pI2Cx->DR;
+}
+
 static void I2C_ControllerHandleTXEInterrupt(I2C_Handle_t *pI2CHandle)
 {
     if(pI2CHandle->TxLen > 0)
