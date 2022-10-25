@@ -428,7 +428,7 @@ void I2C_IRQPriorityConfig(uint8_t IRQNumber, uint8_t IRQPriority)
 }
 
 /**
- * @brief 
+ * @brief Enabling or disabling an I2Cx peripheral ( based on MCU can be I2C1, I2C2, I2C3, etc. )
  * 
  * @param pI2Cx 
  * @param EnOrDi 
