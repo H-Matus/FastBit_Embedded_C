@@ -31,6 +31,15 @@ typedef struct
 {
 	USART_RegDef_t *pUSARTx;
 	USART_Config_t   USART_Config;
+    uint8_t         *pTxBuffer; // Storing the app. Tx buffer address
+    uint8_t         *pRxBuffer; // Storing the app. Rx buffer address
+    uint32_t        TxLen;      // Storing Tx len
+    uint32_t        RxLen;      // Storing Rx len
+    uint8_t         TxBusyState;  // Storing Communication state
+    uint8_t         RxBusyState;  // Storing Communication state
+    uint8_t         DevAddr;    // Storing slave/device address
+    uint32_t        RxSize;     // Storing Rx size
+    uint8_t         Sr;         // Storing repeated START value
 }USART_Handle_t;
 
 
@@ -94,7 +103,21 @@ typedef struct
 #define USART_HW_FLOW_CTRL_RTS    	2
 #define USART_HW_FLOW_CTRL_CTS_RTS	3
 
+/**
+ * @brief USART Application States 
+ * 
+ */
+#define USART_READY           0
+#define USART_BUSY_IN_RX      1
+#define USART_BUSY_IN_TX      2
 
+/**
+ * @brief USART related status flag definitions
+ * 
+ */
+#define USART_FLAG_TXE      ( 1 << USART_SR_TXE )
+#define USART_FLAG_RXNE     ( 1 << USART_SR_RXNE )
+#define USART_FLAG_TC       ( 1 << USART_SR_TC )
 
 /******************************************************************************************
  *								APIs supported by this driver
