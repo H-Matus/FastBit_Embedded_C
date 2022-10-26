@@ -776,3 +776,34 @@ USART Driver APIs:
     USART Interrupt Config & Handling
     Other USART management APIs
 
+=========================================================================================================================================================
+USART: Oversampling
+
+Oversampling is used to recover data by distinguishing between incoming data and noise.
+It can be either 8 or 16 times the baudrate.
+
+Oversampling by 16 means that the receiver engine takes 16 samples over 1 bit time. Oversampling by 8 -> takes 8 samples.
+
+The sampled value is 3 bit long, which means it can go up to 8.
+If the sampled value is 0 or 8, then the received bit value is going to be 0 or 1.
+If sample value is something else in between, the received bit will be either 0 or 1 (based on the "Noise Detection from Sampled Data" table),
+    but most importantly, the Noise Error flag will be set to 1 (otherwise it's 0).
+
+=========================================================================================================================================================
+USART: Noise Error
+
+When noise is detected in the frame:
+    1. The Noise Error flag is set
+    2. Invalid data is pushed into the DR
+    3. It may be discarded or kept based on the application logic.
+
+Depending on the oversampling method USART can work differently:
+    1. If we are oversampling by 8,
+        + we can reach higher baudrate
+        - but the maximum receiver tolerance to clock deviation will be reduced.
+    2. If we are oversampling by 16,
+        + we get increased maximum receiver tolerance to clock deviation
+        - we have smaller baudrate.
+
+In very noisy environment, use the oversampling by 16.
+
