@@ -42,8 +42,6 @@ typedef struct
     uint8_t         Sr;         // Storing repeated START value
 }USART_Handle_t;
 
-
-
 /*
  *@USART_Mode
  *Possible options for USART_Mode
@@ -68,7 +66,6 @@ typedef struct
 #define USART_STD_BAUD_921600 				921600
 #define USART_STD_BAUD_2M 					2000000
 #define SUART_STD_BAUD_3M 					3000000
-
 
 /*
  *@USART_ParityControl
@@ -118,6 +115,15 @@ typedef struct
 #define USART_FLAG_TXE      ( 1 << USART_SR_TXE )
 #define USART_FLAG_RXNE     ( 1 << USART_SR_RXNE )
 #define USART_FLAG_TC       ( 1 << USART_SR_TC )
+
+/**
+ * @brief USART Related Error Flags
+ * 
+ */
+#define USART_EVENT_TX_CMPLT        0
+#define USART_EVENT_RX_CMPLT        1
+#define USART_EVENT_CTS             2
+#define USART_EVENT_IDLE            3
 
 /******************************************************************************************
  *								APIs supported by this driver
