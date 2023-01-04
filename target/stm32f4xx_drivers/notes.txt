@@ -807,3 +807,9 @@ Depending on the oversampling method USART can work differently:
 
 In very noisy environment, use the oversampling by 16.
 
+====================================================================================
+
+To supply the clock externally, it is possible to output clock signal via GPIO pins using RCC_CFGR register (RCC clock configuration register).
+the RCC_CFGR register defines which clock is selected.
+
+When turning on the External Oscillator, we need to wait until the HSE is ready by enabling the while loop to wait for the HSERDY bit is set.
