@@ -823,3 +823,17 @@ We need to check busy flag (BSY) for that in the Status Register (SR).
 Dummy byte is necessary to be sent via SPI to the peripheral to fetch the response from the slave, so that we would see that the peripheral can ACK the request to communicate. Dummy byte is sent after the Command request to push out the ACK or NACK from the peripheral shift register.
 
 If I am using 16 bit communication, then the dummy byte has to be 2 bytes in order to push out the ACK/NACK from peripheral.
+
+SPI communication flow:
+    1. Init GPIO and SPI and other peripherals.
+    2. Config SSOE or SSI.
+    3. Before sending data, enable the peripheral.
+    4. Send the data
+        When MCU sends data, it automatically receives garbage data from the other end. Let's say it sends 1 byte, it also receives 1 Byte
+        of garbage data and RXNE status bit is set, which needs to be cleared to send new data. Therefore, we need to dummy read the MCU's
+        Data Register to clear the RXNE bit.
+    5. In order to receive some sort of response from the peripheral, we need to send a dummy byte or 2 bytes (depending on DFF) to
+        push out the ACK/NACK response byte from the shift register of the peripheral. This way the ACK/NACK is received by the MCU which requested
+        the data.
+
+NOTE: SPI DOES NOT INITIATE COMMUNICATION.
