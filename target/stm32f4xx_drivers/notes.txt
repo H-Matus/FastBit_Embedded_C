@@ -813,3 +813,13 @@ To supply the clock externally, it is possible to output clock signal via GPIO p
 the RCC_CFGR register defines which clock is selected.
 
 When turning on the External Oscillator, we need to wait until the HSE is ready by enabling the while loop to wait for the HSERDY bit is set.
+
+=======================
+SPI:
+
+After sending data via SPI, we need to wait until the last byte is sent and only then close the SPI peripheral.
+We need to check busy flag (BSY) for that in the Status Register (SR).
+
+Dummy byte is necessary to be sent via SPI to the peripheral to fetch the response from the slave, so that we would see that the peripheral can ACK the request to communicate. Dummy byte is sent after the Command request to push out the ACK or NACK from the peripheral shift register.
+
+If I am using 16 bit communication, then the dummy byte has to be 2 bytes in order to push out the ACK/NACK from peripheral.
