@@ -81,22 +81,22 @@ int main(void)
     uint8_t data_request = 0x52;
 
     uint8_t *pDataLength = &DataLength;
-    if(GPIO_ReadFromInputPin(GPIOA, 0))
-    {
-        // Ask for length
-        I2C_ControllerSendData(&I2C1Handle, len_request, sizeof(uint8_t), 0x2);
+
+    while( ! GPIO_ReadFromInputPin(GPIOA,GPIO_PIN_NO_0));
+
+    // Ask for length
+    while(I2C_ControllerSendDataIT(&I2C1Handle, len_request, sizeof(uint8_t), 0x2, I2C_ENABLE_SR) != I2C_READY);
         
-        // Get the length 
-        I2C_ControllerReceiveData(&I2C1Handle, &pDataLength, sizeof(uint8_t), 0x2);
+    // Get the length 
+    while(I2C_ControllerReceiveDataIT(&I2C1Handle, &pDataLength, sizeof(uint8_t), 0x2, I2C_ENABLE_SR) != I2C_READY);
 
-        // Send request for data
-        I2C_ControllerSendData(&I2C1Handle, data_request, sizeof(uint8_t), 0x2);
+    // Send request for data
+    while(I2C_ControllerSendDataIT(&I2C1Handle, data_request, sizeof(uint8_t), 0x2, I2C_ENABLE_SR) != I2C_READY);
 
-        // Get the data
-        I2C_ControllerReceiveData(&I2C1Handle, (uint8_t *)data, DataLength, 0x2);
+    // Get the data
+    while(I2C_ControllerReceiveDataIT(&I2C1Handle, DataLength, sizeof(uint8_t), 0x2, I2C_DISABLE_SR) != I2C_READY);
 
-        data[DataLength+1] = '\0';
-    }
+    data[DataLength+1] = '\0';
 
     while(1);
 
