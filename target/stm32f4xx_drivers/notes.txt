@@ -837,3 +837,6 @@ SPI communication flow:
         the data.
 
 NOTE: SPI DOES NOT INITIATE COMMUNICATION.
+
+Peripheral takes some time to read the analog value, thus the controller must wait some time before generating the dummy byte to fetch the result.
+200 ms delay is too much usually for this analog read, but for Arduino it's ok.
