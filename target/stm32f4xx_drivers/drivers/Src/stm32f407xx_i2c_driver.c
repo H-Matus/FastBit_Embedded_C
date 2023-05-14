@@ -80,6 +80,22 @@ void I2C_GenerateStopCondition(I2C_RegDef_t *pI2Cx)
     pI2Cx->CR1 |= ( 1 << I2C_CR1_STOP );
 }
 
+void I2C_PeriEnableDisableCallbackEvents(I2C_RegDef_t *pI2Cx, uint8_t EnOrDi)
+{
+    if(EnOrDi == ENABLE)
+    {                
+        pI2Cx->CR2 |= ( 1 << I2C_CR2_ITEVTEN);
+        pI2Cx->CR2 |= ( 1 << I2C_CR2_ITBUFEN);
+        pI2Cx->CR2 |= ( 1 << I2C_CR2_ITERREN);
+    }
+    else
+    {
+        pI2Cx->CR2 &= ~( 1 << I2C_CR2_ITEVTEN);
+        pI2Cx->CR2 &= ~( 1 << I2C_CR2_ITBUFEN);
+        pI2Cx->CR2 &= ~( 1 << I2C_CR2_ITERREN);
+    }
+}
+
 void I2C_PeriClockControl(I2C_RegDef_t *pI2Cx, uint8_t EnorDi)
 {
     if(EnorDi == ENABLE)
@@ -129,6 +145,7 @@ void I2C_Init(I2C_Handle_t *pI2CHandle)
     pI2CHandle->pI2Cx->CR2 = ( tempreg & 0x3F ); // We are bit masking the first 6 bits for safety purposes.
 
     // Program device's own address (OAR1)
+    tempreg = 0;
     tempreg |= pI2CHandle->I2C_Config.I2C_DeviceAddress << 1;
     tempreg |= ( 1 << 14 );
     pI2CHandle->pI2Cx->OAR1 = tempreg;
