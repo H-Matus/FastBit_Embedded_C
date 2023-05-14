@@ -12,7 +12,6 @@ static void I2C_GenerateStartCondition(I2C_RegDef_t *pI2Cx);
 static void I2C_ExecuteAddressPhase_Write(I2C_RegDef_t *pI2Cx, uint8_t PeripheralAddr);
 static void I2C_ExecuteAddressPhase_Read(I2C_RegDef_t *pI2Cx, uint8_t PeripheralAddr);
 static void I2C_ClearADDRFlag(I2C_Handle_t *pI2CHandle);
-static void I2C_GenerateStopCondition(I2C_RegDef_t *pI2Cx);
 static void I2C_ControllerHandleTXEInterrupt(I2C_Handle_t *pI2CHandle);
 static void I2C_ControllerHandleRXNEInterrupt(I2C_Handle_t *pI2CHandle);
 
@@ -76,7 +75,7 @@ static void I2C_ClearADDRFlag(I2C_Handle_t *pI2CHandle)
     }
 }
 
-static void I2C_GenerateStopCondition(I2C_RegDef_t *pI2Cx)
+void I2C_GenerateStopCondition(I2C_RegDef_t *pI2Cx)
 {
     pI2Cx->CR1 |= ( 1 << I2C_CR1_STOP );
 }
@@ -823,5 +822,10 @@ void I2C_ER_IRQHandling(I2C_Handle_t *pI2CHandle)
 		//Implement the code to notify the application about the error 
 	    I2C_ApplicationEventCallback(pI2CHandle,I2C_ERROR_TIMEOUT);
 	}
+
+}
+
+void I2C_PeriEnDisCallbacks(I2C_RegDef_t *pI2Cx, uint8_t EnorDi)
+{
 
 }

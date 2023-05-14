@@ -147,6 +147,9 @@ uint8_t I2C_GetFlagStatus(I2C_RegDef_t *pI2Cx, uint32_t FlagName);
  */
 void I2C_PeripheralControl(I2C_RegDef_t *pI2Cx, uint8_t EnOrDi);
 void I2C_ManageACKing(I2C_RegDef_t *pI2Cx, uint8_t EnOrDi);
+void I2C_GenerateStopCondition(I2C_RegDef_t *pI2Cx);
+
+void I2C_PeriEnDisCallbacks(I2C_RegDef_t *pI2Cx, uint8_t EnorDi);
 
 /**
  * @brief Application Callback
