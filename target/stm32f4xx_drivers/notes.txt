@@ -663,6 +663,11 @@ Controller is not able to produce clock:
     1. Check if I2C peripheral clock is enabled and set to at least 2MHz standard mode clock.
     2. Check if GPIO alternate functionality is configured properly for SDA and SCL lines.
 
+=====================================================================================
+I2C Interrupts:
+
+We need to wait until the receive completes fully before moving on.
+
 =========================================================================================================================================================
 UART:
 In synchronous transmission, the clock is separate from data and no start/stop bits are used. Therefore it is more efficient,

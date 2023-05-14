@@ -14,6 +14,16 @@
  * Alternate mode function = 4
  */
 
+extern void initialise_monitor_handles();
+
+// Flag variable:
+uint8_t rxComplt = RESET;
+
+#define MY_ADDR     0x61
+#define PERI_ADDR   0x68
+
+I2C_Handle_t I2C1Handle;
+
 void I2C1_GPIOInits(void)
 {
     GPIO_Handle_t I2CPins;
@@ -60,13 +70,24 @@ void I2C1_Inits(I2C_Handle_t *pI2C_Handle)
 
 int main(void)
 {
-    // Configs
-    I2C_Handle_t I2C1Handle;
+    uint8_t DataLength = 0;
+    char data[DataLength];
+    uint8_t len_request = 0x51;
+    uint8_t data_request = 0x52;
 
+    uint8_t *pDataLength = &DataLength;
+
+    initialise_monitor_handles();
+
+    // Configs
     I2C1_GPIOInits();
     Button_GPIOInit();
 
     I2C1_Inits(&I2C1Handle);
+
+    // I2C IRQ Configs
+    I2C_IRQInterruptConfig(IRQ_NO_I2C1_EV, ENABLE);
+    I2C_IRQInterruptConfig(IRQ_NO_I2C1_ER, ENABLE);
 
     // Enable I2C1 peripheral
     I2C_PeripheralControl(I2C1, ENABLE);
@@ -75,31 +96,66 @@ int main(void)
     I2C_ManageACKing(I2C1, I2C_ACK_ENABLE);
 
     // Main code
-    uint8_t DataLength = 0;
-    char data[DataLength];
-    uint8_t len_request = 0x51;
-    uint8_t data_request = 0x52;
+    while(1)
+    {
+        while( ! GPIO_ReadFromInputPin(GPIOA,GPIO_PIN_NO_0));
 
-    uint8_t *pDataLength = &DataLength;
+        // Ask for length
+        while(I2C_ControllerSendDataIT(&I2C1Handle, len_request, sizeof(uint8_t), 0x2, I2C_ENABLE_SR) != I2C_READY);
 
-    while( ! GPIO_ReadFromInputPin(GPIOA,GPIO_PIN_NO_0));
+        // Get the length 
+        while(I2C_ControllerReceiveDataIT(&I2C1Handle, data, sizeof(uint8_t), 0x2, I2C_ENABLE_SR) != I2C_READY);
 
-    // Ask for length
-    while(I2C_ControllerSendDataIT(&I2C1Handle, len_request, sizeof(uint8_t), 0x2, I2C_ENABLE_SR) != I2C_READY);
-        
-    // Get the length 
-    while(I2C_ControllerReceiveDataIT(&I2C1Handle, &pDataLength, sizeof(uint8_t), 0x2, I2C_ENABLE_SR) != I2C_READY);
+        // Send request for data
+        while(I2C_ControllerSendDataIT(&I2C1Handle, data_request, sizeof(uint8_t), 0x2, I2C_ENABLE_SR) != I2C_READY);
 
-    // Send request for data
-    while(I2C_ControllerSendDataIT(&I2C1Handle, data_request, sizeof(uint8_t), 0x2, I2C_ENABLE_SR) != I2C_READY);
+        // Get the data
+        while(I2C_ControllerReceiveDataIT(&I2C1Handle, data, sizeof(uint8_t), 0x2, I2C_DISABLE_SR) != I2C_READY);
 
-    // Get the data
-    while(I2C_ControllerReceiveDataIT(&I2C1Handle, DataLength, sizeof(uint8_t), 0x2, I2C_DISABLE_SR) != I2C_READY);
+        rxComplt = RESET;
 
-    data[DataLength+1] = '\0';
+        // We need to wait until the receive completes:
+        while(rxComplt != SET){ };
 
-    while(1);
+        data[DataLength+1] = '\0';
+
+        rxComplt = RESET;
+    }
 
     return 0;
 }
 
+void I2C1_EV_IRQHandler(void)
+{
+    I2C_EV_IRQHandling(&I2C1Handle);
+}
+
+void I2C1_ER_IRQHandler(void)
+{
+    I2C_ER_IRQHandling(&I2C1Handle);
+}
+
+void I2C_ApplicationEventCallback(I2C_Handle_t *pI2CHandle, uint8_t AppEv)
+{
+    if(AppEv == I2C_EV_TX_COMPLETE)
+    {
+        printf("Tx is completed.\n");
+    }
+    else if(AppEv == I2C_EV_RX_CMPLT)
+    {
+        printf("Rx is completed.\n");
+        rxComplt = SET;
+    }
+    else if(AppEv == I2C_ERROR_AF)
+    {
+        printf("Error: Acknowledgement failure.\n");
+        // If main ack failure happens, then peripheral fails to send ack for the byte sent by the main.
+        I2C_CloseSendData(pI2CHandle);
+
+        // Generate the stop condition to release the bus
+        I2C_GenerateStopCondition(I2C1);
+
+        // Hang in an infinite loop
+        while(1);
+    }
+}
