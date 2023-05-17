@@ -12,6 +12,25 @@ char msg[1024] = "UART Tx testing...\n\r";
 
 USART_Handle_t usart1_handle;
 
+void delay(void)
+{
+    for(uint32_t i = 0; i < 500000/2; i++);
+}
+
+void GPIO_ButtonInit(void)
+{
+    GPIO_Handle_t Button;
+
+    Button.pGPIOx = GPIOA;
+    Button.GPIO_PinConfig.GPIO_PinMode = GPIO_MODE_IN;
+    Button.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_0;
+    Button.GPIO_PinConfig.GPIO_PinOPType = GPIO_OP_TYPE_PP;
+    Button.GPIO_PinConfig.GPIO_PinPuPdControl = GPIO_PD;
+    Button.GPIO_PinConfig.GPIO_PinSpeed = GPIO_SPEED_FAST;
+
+    GPIO_Init(&Button);
+}
+
 void USART1_Init(void)
 {
     usart1_handle.pUSARTx = USART1;
@@ -46,10 +65,19 @@ void USART1_GPIOInit(void)
 
 int main(void)
 {
+    GPIO_ButtonInit();
+
 	USART1_GPIOInit();
     USART1_Init();
 
     USART_PeripheralControl(USART1, ENABLE);
+
+    // wait till the button is pressed
+    while(! GPIO_ReadFromInputPin(GPIOA, GPIO_PIN_NO_0));
+
+    // to avoid button debouncing
+    delay();
+
     USART_SendData(&usart1_handle, (uint8_t*)msg, strlen(msg));
 
     while(1);
