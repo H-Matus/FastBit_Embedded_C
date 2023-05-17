@@ -72,15 +72,17 @@ int main(void)
 
     USART_PeripheralControl(USART1, ENABLE);
 
-    // wait till the button is pressed
-    while(! GPIO_ReadFromInputPin(GPIOA, GPIO_PIN_NO_0));
 
-    // to avoid button debouncing
-    delay();
+    while(1)
+    {
+        // wait till the button is pressed
+        while(! GPIO_ReadFromInputPin(GPIOA, GPIO_PIN_NO_0));
 
-    USART_SendData(&usart1_handle, (uint8_t*)msg, strlen(msg));
+        // to avoid button debouncing
+        delay();
 
-    while(1);
+        USART_SendData(&usart1_handle, (uint8_t*)msg, strlen(msg));
+    }
 
 	return 0;
 }
