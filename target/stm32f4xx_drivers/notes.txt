@@ -845,3 +845,22 @@ NOTE: SPI DOES NOT INITIATE COMMUNICATION.
 
 Peripheral takes some time to read the analog value, thus the controller must wait some time before generating the dummy byte to fetch the result.
 200 ms delay is too much usually for this analog read, but for Arduino it's ok.
+
+=====================================================================
+RTC LCD:
+
+The RTC module has SCL Clock Frequency of 100 kHz max, thus we can't run the STM32 at fast speed, we need to run at standard speed.
+
+Rise time of both SDA and SCL signals, which is 1000 ns, and capacitance load for each bus line, which is 400 pF, can be used to calculate the pull up resistor.
+
+BSP (Board Support Package) layer contains API for user to control devices which are connected to the board (LCD, etc.) - it abstracts the usage of RTC and LCD.
+
+BSP/ds1307.h contains device (RTC) related information:
+    1. I2C address
+    2. Register address
+    3. Data structure to handle the information
+    4. Function prototypes which are exposed to applications
+    5. Application configurable items
+
+
+
