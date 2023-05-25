@@ -862,5 +862,4 @@ BSP/ds1307.h contains device (RTC) related information:
     4. Function prototypes which are exposed to applications
     5. Application configurable items
 
-
-
+CH bit is a clock halt bit, which if set to 1, the oscillator gets disabled.

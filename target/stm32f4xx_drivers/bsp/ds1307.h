@@ -17,7 +17,7 @@
 #define DS1307_I2C_SDA_PIN      GPIO_PIN_NO_7
 #define DS1307_I2C_GPIO_PORT    GPIOB
 #define DS1307_I2C_SPEED        I2C_SCL_SPEED_SM
-#define DS1307_I2C_PUPD         GPIO_NO_PUPD
+#define DS1307_I2C_PUPD         GPIO_PU
 
 /* Register addresses */
 #define DS1307_ADDR_SEC     0x00
