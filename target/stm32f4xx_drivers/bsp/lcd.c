@@ -8,6 +8,8 @@
 #include "lcd.h"
 
 static void write_4_bits(uint8_t value);
+static void udelay(uint32_t cnt);
+static void mdelay(uint32_t cnt);
 
 /* Sending command code on what command we want from LCD */
 void lcd_send_command(uint8_t cmd)
@@ -43,6 +45,14 @@ void lcd_send_char(uint8_t data)
     write_4_bits(data >> 4);     // Writing the higher nibble
     write_4_bits(data >> 0x0F);  // Writing the lower nibble
 
+}
+
+void lcd_print_string(char *message)
+{
+    do
+    {
+        lcd_print_char((uint8_t)*message++);
+    } while (*message != '\0');
 }
 
 static void lcd_enable()
@@ -134,4 +144,14 @@ static void write_4_bits(uint8_t value)
     GPIO_WriteToOutputPin(LCD_GPIO_PORT, LCD_GPIO_D4, ((value >> 3) & 0x1));
 
     lcd_enable();
+}
+
+static void mdelay(uint32_t cnt)
+{
+    for(uint32_t i=0; i < (cnt * 1000); i++);
+}
+
+static void udelay(uint32_t cnt)
+{
+    for(uint32_t i=0; i < (cnt * 1); i++);
 }

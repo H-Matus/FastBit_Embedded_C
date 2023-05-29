@@ -5,7 +5,8 @@
  *      Author: Admin
  */
 #include <stdio.h>
-#include "ds1307.h"
+#include "../bsp/ds1307.h"
+#include "lcd.h"
 
 #define SYSTICK_TIM_CLK 16000000
 
