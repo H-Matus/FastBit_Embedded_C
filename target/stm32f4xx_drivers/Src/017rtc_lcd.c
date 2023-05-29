@@ -7,6 +7,8 @@
 #include <stdio.h>
 #include "ds1307.h"
 
+#define SYSTICK_TIM_CLK 16000000
+
 // System generated interrupt every 1 second.
 void init_systick_timer(uint32_t tick_hz)
 {
@@ -47,6 +49,8 @@ int main(void)
         printf("RTC init has failed\n");
         while(1){};
     }
+
+    init_systick_timer(1); // The '1' means 1 interrupt per every second.
 
     current_date.day = MONDAY;
     current_date.date = 29;
