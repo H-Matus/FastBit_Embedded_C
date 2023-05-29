@@ -39,18 +39,34 @@ uint8_t ds1307_init(void)
     return ((clock_state >> 7) & 0x1);
 }
 
-uint8_t binary_to_bcd(uint8_t binary)
+static uint8_t binary_to_bcd(uint8_t value)
 {
     uint8_t bcd;
+    uint8_t m, n;
+
+    // if value < 10 then it's the same as bcd
+    bcd = value;
+
+    // binary to bcd algorithm
+    if(value >= 10)
+    {
+        m = value / 10;
+        n = value % 10;
+        bcd = (uint8_t) ((m << 4) | n);
+    }
 
     return bcd;
 }
 
-uint8_t bcd_to_binary(uint8_t bcd)
+static uint8_t bcd_to_binary(uint8_t value)
 {
     uint8_t binary;
+    uint8_t m, n;
 
-    return binary;
+    m = (uint8_t)((value >> 4) * 10);
+    n = value & (uint8_t)0x0F;
+
+    return (m+n);
 }
 
 void ds1307_set_current_time(RTC_time_t *rtc_time)
