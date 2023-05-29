@@ -11,6 +11,7 @@
 #include "stm32f407xx.h"
 
 void lcd_init(void);
+void lcd_send_command(uint8_t cmd);
 
 
 // User configurable macros

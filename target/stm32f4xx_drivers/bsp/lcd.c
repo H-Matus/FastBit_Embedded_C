@@ -7,6 +7,52 @@
 
 #include "lcd.h"
 
+static void write_4_bits(uint8_t value);
+
+/* Sending command code on what command we want from LCD */
+void lcd_send_command(uint8_t cmd)
+{
+    // sending command for instructing the LCD what to do.
+    /* RS = 0, for LCD command */
+    GPIO_WriteToOutputPin(LCD_GPIO_PORT, LCD_GPIO_RS, GPIO_PIN_RESET);
+
+    /* RW = 0, writing to LCD */
+    GPIO_WriteToOutputPin(LCD_GPIO_PORT, LCD_GPIO_RW, GPIO_PIN_RESET);
+
+    write_4_bits(cmd >> 4);     // Writing the higher nibble
+    write_4_bits(cmd >> 0x0F);  // Writing the lower nibble
+}
+
+/**
+ * @brief
+ * This function sends a character to the LCD.
+ * Here we used 4 bit parallel data transmission.
+ * First higher nibble of the data will be sent on to the data lines D4, D5, D6, D7
+ * Then lower nibble of the data will be set on to the data lines D4, D5, D6, D7
+ * 
+ * @param data 
+ */
+void lcd_send_char(uint8_t data)
+{
+    /* RS = 0, for LCD command */
+    GPIO_WriteToOutputPin(LCD_GPIO_PORT, LCD_GPIO_RS, GPIO_PIN_RESET);
+
+    /* RW = 0, writing to LCD */
+    GPIO_WriteToOutputPin(LCD_GPIO_PORT, LCD_GPIO_RW, GPIO_PIN_RESET);
+
+    write_4_bits(cmd >> 4);     // Writing the higher nibble
+    write_4_bits(cmd >> 0x0F);  // Writing the lower nibble
+
+}
+
+static void lcd_enable()
+{
+    GPIO_WriteToOutputPin(LCD_GPIO_PORT, LCD_GPIO_EN, GPIO_PIN_SET);
+    udelay(10);
+    GPIO_WriteToOutputPin(LCD_GPIO_PORT, LCD_GPIO_EN, GPIO_PIN_RESET);
+    udelay(100);
+}
+
 void lcd_init(void)
 {
     // 1. Configure gpio pins which are used for lcd connections
@@ -47,5 +93,73 @@ void lcd_init(void)
     GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D7, GPIO_PIN_RESET);
 
     // 2. Do LCD initialisation
+    mdelay(40);
+
+    /* RS = 0, for LCD command */
+    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_RS, GPIO_PIN_RESET);
+
+    /* RW = 0, writing to LCD */
+    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_RW, GPIO_PIN_RESET);
+
+    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D7, GPIO_PIN_RESET);
+
+    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D6, GPIO_PIN_RESET);
+
+    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D5, GPIO_PIN_SET);
+
+    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D4, GPIO_PIN_SET);
+
+    lcd_enable();
+
+    mdelay(5);
+
+    /* RS = 0, for LCD command */
+    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_RS, GPIO_PIN_RESET);
+
+    /* RW = 0, writing to LCD */
+    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_RW, GPIO_PIN_RESET);
+
+    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D7, GPIO_PIN_RESET);
+
+    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D6, GPIO_PIN_RESET);
+
+    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D5, GPIO_PIN_SET);
+
+    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D4, GPIO_PIN_SET);
+
+    udelay(150);
+
+    /* RS = 0, for LCD command */
+    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_RS, GPIO_PIN_RESET);
+
+    /* RW = 0, writing to LCD */
+    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_RW, GPIO_PIN_RESET);
+
+    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D7, GPIO_PIN_RESET);
+
+    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D6, GPIO_PIN_RESET);
+
+    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D5, GPIO_PIN_SET);
+
+    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D4, GPIO_PIN_SET);
+
+    // -------------
+
+    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D7, GPIO_PIN_RESET);
+
+    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D6, GPIO_PIN_RESET);
+
+    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D5, GPIO_PIN_SET);
+
+    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D4, GPIO_PIN_RESET);
 }
 
+static void write_4_bits(uint8_t value)
+{
+    GPIO_WriteToOutputPin(LCD_GPIO_PORT, LCD_GPIO_D7, ((value >> 0) & 0x1));
+    GPIO_WriteToOutputPin(LCD_GPIO_PORT, LCD_GPIO_D6, ((value >> 1) & 0x1));
+    GPIO_WriteToOutputPin(LCD_GPIO_PORT, LCD_GPIO_D5, ((value >> 2) & 0x1));
+    GPIO_WriteToOutputPin(LCD_GPIO_PORT, LCD_GPIO_D4, ((value >> 3) & 0x1));
+
+    lcd_enable();
+}
