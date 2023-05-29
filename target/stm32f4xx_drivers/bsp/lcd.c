@@ -98,60 +98,32 @@ void lcd_init(void)
     /* RS = 0, for LCD command */
     GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_RS, GPIO_PIN_RESET);
 
-    /* RW = 0, writing to LCD */
-    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_RW, GPIO_PIN_RESET);
-
-    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D7, GPIO_PIN_RESET);
-
-    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D6, GPIO_PIN_RESET);
-
-    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D5, GPIO_PIN_SET);
-
-    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D4, GPIO_PIN_SET);
-
-    lcd_enable();
+    write_4_bits(0x3);
 
     mdelay(5);
 
-    /* RS = 0, for LCD command */
-    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_RS, GPIO_PIN_RESET);
-
-    /* RW = 0, writing to LCD */
-    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_RW, GPIO_PIN_RESET);
-
-    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D7, GPIO_PIN_RESET);
-
-    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D6, GPIO_PIN_RESET);
-
-    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D5, GPIO_PIN_SET);
-
-    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D4, GPIO_PIN_SET);
+    write_4_bits(0x3);
 
     udelay(150);
 
-    /* RS = 0, for LCD command */
-    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_RS, GPIO_PIN_RESET);
+    write_4_bits(0x3);
+    write_4_bits(0x2);
 
-    /* RW = 0, writing to LCD */
-    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_RW, GPIO_PIN_RESET);
+    // function send command
+    lcd_send_command(LCD_CMD_4DL_2N_5X8F);
 
-    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D7, GPIO_PIN_RESET);
+    // display on or off control
+    lcd_send_command(LCD_CMD_DON_CURON);
 
-    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D6, GPIO_PIN_RESET);
+    // display clear
+    lcd_send_command(LCD_CMD_DIS_CLEAR);
 
-    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D5, GPIO_PIN_SET);
+    // After DIS_CLEAR command, we need to wait for 2ms
+    mdelay(10);
 
-    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D4, GPIO_PIN_SET);
+    // entry mode set
+    lcd_send_command(LCD_CMD_INCADD);
 
-    // -------------
-
-    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D7, GPIO_PIN_RESET);
-
-    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D6, GPIO_PIN_RESET);
-
-    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D5, GPIO_PIN_SET);
-
-    GPIO_WriteToOutputPin(lcd_signal.pGPIOx, LCD_GPIO_D4, GPIO_PIN_RESET);
 }
 
 static void write_4_bits(uint8_t value)
