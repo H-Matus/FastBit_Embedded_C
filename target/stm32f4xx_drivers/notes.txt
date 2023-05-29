@@ -863,3 +863,11 @@ BSP/ds1307.h contains device (RTC) related information:
     5. Application configurable items
 
 CH bit is a clock halt bit, which if set to 1, the oscillator gets disabled.
+
+Systick timer goes at 16MHz (HSI). It is counting down to zero and at zero, it issues an interrupt.
+Every down counting occurs at 0.0625 us.
+
+16MHz means that 1 tick is 0.0625 seconds.
+We need to figure out how many ticks will make up 1 second.
+
+x = (1/0.0625*10^-6) = 16*10^6 Hz (in frequency domain, which basically is the systick timer speed)
