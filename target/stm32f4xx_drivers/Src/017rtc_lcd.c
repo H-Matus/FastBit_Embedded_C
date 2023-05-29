@@ -7,6 +7,30 @@
 #include <stdio.h>
 #include "ds1307.h"
 
+// System generated interrupt every 1 second.
+void init_systick_timer(uint32_t tick_hz)
+{
+	uint32_t *pSRVR = (uint32_t*)0xE000E014;
+	uint32_t *pSCSR = (uint32_t*)0xE000E010;
+
+    /* calculation of reload value */
+    uint32_t count_value = (SYSTICK_TIM_CLK/tick_hz)-1;
+
+    //Clear the value of SVR
+    *pSRVR &= ~(0x00FFFFFFFF);
+
+    //load the value in to SVR
+    *pSRVR |= count_value;
+
+    //do some settings
+    *pSCSR |= ( 1 << 1); //Enables SysTick exception request:
+    *pSCSR |= ( 1 << 2);  //Indicates the clock source, processor clock source
+
+    //enable the systick
+    *pSCSR |= ( 1 << 0); //enables the counter
+
+}
+
 char* get_day_of_week(uint8_t i);
 char* time_to_string(RTC_time_t *rtc_time);
 char* date_to_string(RTC_date_t *rtc_date);
