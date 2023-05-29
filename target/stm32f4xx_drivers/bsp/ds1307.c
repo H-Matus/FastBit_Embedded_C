@@ -60,7 +60,6 @@ static uint8_t binary_to_bcd(uint8_t value)
 
 static uint8_t bcd_to_binary(uint8_t value)
 {
-    uint8_t binary;
     uint8_t m, n;
 
     m = (uint8_t)((value >> 4) * 10);
