@@ -40,8 +40,8 @@ void lcd_send_char(uint8_t data)
     /* RW = 0, writing to LCD */
     GPIO_WriteToOutputPin(LCD_GPIO_PORT, LCD_GPIO_RW, GPIO_PIN_RESET);
 
-    write_4_bits(cmd >> 4);     // Writing the higher nibble
-    write_4_bits(cmd >> 0x0F);  // Writing the lower nibble
+    write_4_bits(data >> 4);     // Writing the higher nibble
+    write_4_bits(data >> 0x0F);  // Writing the lower nibble
 
 }
 

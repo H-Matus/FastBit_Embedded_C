@@ -12,7 +12,7 @@
 
 void lcd_init(void);
 void lcd_send_command(uint8_t cmd);
-
+void lcd_send_char(uint8_t data);
 
 // User configurable macros
 #define LCD_GPIO_PORT   GPIOD
