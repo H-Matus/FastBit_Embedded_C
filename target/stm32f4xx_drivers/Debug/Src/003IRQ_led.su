@@ -1,2 +1,0 @@
-003IRQ_led.c:10:5:main	32	static
-003IRQ_led.c:40:6:EXTI0_IRQHandler	8	static

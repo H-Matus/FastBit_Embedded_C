@@ -13,7 +13,7 @@ uint16_t APB2_PreScaler[4] = {2, 4, 8, 16};
 
 uint32_t RCC_GetPLLOutput()
 {
-    return;
+    return 0;
 }
 
 uint32_t RCC_GetPCLK1Value(void)

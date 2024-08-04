@@ -101,16 +101,16 @@ int main(void)
         while( ! GPIO_ReadFromInputPin(GPIOA,GPIO_PIN_NO_0));
 
         // Ask for length
-        while(I2C_ControllerSendDataIT(&I2C1Handle, len_request, sizeof(uint8_t), 0x2, I2C_ENABLE_SR) != I2C_READY);
+        while(I2C_ControllerSendDataIT(&I2C1Handle, len_request, sizeof(uint8_t), 0x0, I2C_ENABLE_SR) != I2C_READY);
 
         // Get the length 
-        while(I2C_ControllerReceiveDataIT(&I2C1Handle, data, sizeof(uint8_t), 0x2, I2C_ENABLE_SR) != I2C_READY);
+        while(I2C_ControllerReceiveDataIT(&I2C1Handle, data, sizeof(uint8_t), 0x0, I2C_ENABLE_SR) != I2C_READY);
 
         // Send request for data
-        while(I2C_ControllerSendDataIT(&I2C1Handle, data_request, sizeof(uint8_t), 0x2, I2C_ENABLE_SR) != I2C_READY);
+        while(I2C_ControllerSendDataIT(&I2C1Handle, data_request, sizeof(uint8_t), 0x0, I2C_ENABLE_SR) != I2C_READY);
 
         // Get the data
-        while(I2C_ControllerReceiveDataIT(&I2C1Handle, data, sizeof(uint8_t), 0x2, I2C_DISABLE_SR) != I2C_READY);
+        while(I2C_ControllerReceiveDataIT(&I2C1Handle, data, sizeof(uint8_t), 0x0, I2C_DISABLE_SR) != I2C_READY);
 
         rxComplt = RESET;
 

@@ -21,8 +21,8 @@ void I2C1_GPIOInits(void)
     I2CPins.pGPIOx = GPIOB;
     I2CPins.GPIO_PinConfig.GPIO_PinMode = GPIO_MODE_ALTFN;
     I2CPins.GPIO_PinConfig.GPIO_PinAltFunMode = 4;
-    I2CPins.GPIO_PinConfig.GPIO_PinOPType = GPIO_OP_TYPE_PP;
-    I2CPins.GPIO_PinConfig.GPIO_PinPuPdControl = GPIO_NO_PUPD;
+    I2CPins.GPIO_PinConfig.GPIO_PinOPType = GPIO_OP_TYPE_OD;
+    I2CPins.GPIO_PinConfig.GPIO_PinPuPdControl = GPIO_PU;
     I2CPins.GPIO_PinConfig.GPIO_PinSpeed = GPIO_SPEED_FAST;
 
     // SCL
@@ -38,7 +38,7 @@ void I2C1_Inits(I2C_Handle_t *pI2C_Handle)
 {
     pI2C_Handle->pI2Cx = I2C1;
     pI2C_Handle->I2C_Config.I2C_SCLSpeed = I2C_SCL_SPEED_SM;
-    pI2C_Handle->I2C_Config.I2C_DeviceAddress = 0x1;
+    pI2C_Handle->I2C_Config.I2C_DeviceAddress = 0x0;
     pI2C_Handle->I2C_Config.I2C_ACKControl = I2C_ACK_ENABLE; // Generates sclk of 8MHz
 
     I2C_Init(pI2C_Handle);
@@ -56,25 +56,20 @@ int main(void)
     // Enable I2C1 peripheral
     I2C_PeripheralControl(I2C1, ENABLE);
 
-    // Main code
-    uint8_t len_request = 0x51;
-    uint8_t data_request = 0x52;
+    I2C_ManageACKing(I2C1,I2C_ACK_ENABLE);
 
-    uint8_t data_length = 29;
-    char data[29] = "This is STM32 board replying";
+    // Main code
+    //uint8_t len_request = 0x51;
+    //uint8_t data_request = 0x52;
+
+    //uint8_t data_length = 0x8;
+    //uint8_t data = 0x53;
+
+    char data_input[8] = "";
 
     while(1)
     {
-        if(I2C_PeripheralReceiveData(I2C1) == len_request)
-        {
-            I2C_PeripheralSendData(I2C1, data_length);
-        }
-
-        if(I2C_PeripheralReceiveData(I2C1) == data_request)
-        {
-            I2C_PeripheralSendData(I2C1, data);
-        }
-
+    	(void)I2C_PeripheralReceiveData2( &I2C1Handle, (uint8_t *)data_input, 8 );
     }
 
     return 0;

@@ -125,7 +125,7 @@ void I2C_CloseSendData(I2C_Handle_t *pI2CHandle);
 
 void I2C_PeripheralSendData(I2C_RegDef_t *pI2Cx, uint8_t data);
 uint8_t I2C_PeripheralReceiveData(I2C_RegDef_t *pI2Cx);
-
+uint8_t I2C_PeripheralReceiveData2(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer, uint8_t Len);
 /**
  * @brief IRQ Configuration and ISR handling
  * 
