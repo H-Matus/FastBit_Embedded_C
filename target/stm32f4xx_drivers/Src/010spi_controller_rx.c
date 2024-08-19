@@ -32,12 +32,12 @@ void SPI2_GPIOInits(void)
     GPIO_Init(&SPIPins);
 
     // MOSI
-    SPIPins.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_15;
-    GPIO_Init(&SPIPins);
+    // SPIPins.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_15;
+    // GPIO_Init(&SPIPins);
 
     // MISO
-    // SPIPins.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_14;
-    // GPIO_Init(&SPIPins);
+    SPIPins.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_14;
+    GPIO_Init(&SPIPins);
 
     // NSS
     // SPIPins.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_12;
@@ -51,7 +51,7 @@ void SPI2_Inits(void)
     SPI2Handle.pSPIx = SPI2;
     SPI2Handle.SPIConfig.SPI_BusConfig = SPI_BUS_CONFIG_FD;
     SPI2Handle.SPIConfig.SPI_DeviceMode = SPI_DEVICE_MODE_MAIN;
-    SPI2Handle.SPIConfig.SPI_SclkSpeed = SPI_SCLK_SPEED_DIV32; // Generates sclk of 8MHz
+    SPI2Handle.SPIConfig.SPI_SclkSpeed = SPI_SCLK_SPEED_DIV64; // Generates sclk of 8MHz
     SPI2Handle.SPIConfig.SPI_DFF = SPI_DFF_8BITS;
     SPI2Handle.SPIConfig.SPI_CPOL = SPI_CPOL_LOW;
     SPI2Handle.SPIConfig.SPI_CPHA = SPI_CPHA_LOW;
@@ -62,25 +62,27 @@ void SPI2_Inits(void)
 
 int main(void)
 {
-    char user_data[] = "Hello World";
+    char user_data[] = "";
+    char dummy_data[] = "";
 
     SPI2_GPIOInits();
 
     SPI2_Inits();
 
     SPI_SSIConfig(SPI2, ENABLE);
-    
+
     // Enable SPI2 peripheral
     SPI_PeripheralControl(SPI2, ENABLE);
 
-    SPI_SendData(SPI2, (uint8_t*)user_data, strlen(user_data));
+    SPI_SendData(SPI2, (uint8_t *)dummy_data, 2);
 
-    //lets confirm SPI is not busy
-    while( SPI_GetFlagStatus(SPI2,SPI_BUSY_FLAG) );
+    while(1)
+    {
+    	SPI_ReceiveData(SPI2, (uint8_t*)user_data, 2);
 
-    SPI_PeripheralControl(SPI2, DISABLE);
-
-    while(1);
+    	//lets confirm SPI is not busy
+    	while( SPI_GetFlagStatus(SPI2,SPI_BUSY_FLAG) );
+    }
 
     return 0;
 }

@@ -66,6 +66,7 @@ int main(void)
     char tx_data2[] = "Data.";
     char tx_err_data[] = "Error";
     uint8_t rx_data = 0x0;
+    char rx_data2[5] = "";
 
     SPI2_GPIOInits();
 
@@ -79,6 +80,7 @@ int main(void)
     SPI_PeripheralControl(SPI2, ENABLE);
 
     SPI_ReceiveData(SPI2, &rx_data, 1);
+    //SPI_ReceiveData(SPI2, (uint8_t *)rx_data, 4);
     while( SPI_GetFlagStatus(SPI2, SPI_BUSY_FLAG) );
 
     SPI_PeripheralControl(SPI2, DISABLE);
@@ -101,6 +103,13 @@ int main(void)
     }
 
     while( SPI_GetFlagStatus(SPI2, SPI_TXE_FLAG) == FLAG_RESET );
+    while( SPI_GetFlagStatus(SPI2, SPI_BUSY_FLAG) );
+
+    SPI_PeripheralControl(SPI2, DISABLE);
+    SPI2->CR1 &= ~( 1 << SPI_CR1_BIDIOE );
+    SPI_PeripheralControl(SPI2, ENABLE);
+
+    SPI_ReceiveData(SPI2, (uint8_t *)rx_data2, 5);
     while( SPI_GetFlagStatus(SPI2, SPI_BUSY_FLAG) );
 
     SPI_PeripheralControl(SPI2, DISABLE);

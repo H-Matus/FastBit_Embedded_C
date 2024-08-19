@@ -50,8 +50,8 @@ void SPI2_Inits(void)
 
     SPI2Handle.pSPIx = SPI2;
     SPI2Handle.SPIConfig.SPI_BusConfig = SPI_BUS_CONFIG_FD;
-    SPI2Handle.SPIConfig.SPI_DeviceMode = SPI_DEVICE_MODE_MAIN;
-    SPI2Handle.SPIConfig.SPI_SclkSpeed = SPI_SCLK_SPEED_DIV32; // Generates sclk of 8MHz
+    SPI2Handle.SPIConfig.SPI_DeviceMode = SPI_DEVICE_MODE_PERI;
+    SPI2Handle.SPIConfig.SPI_SclkSpeed = SPI_SCLK_SPEED_DIV64; // Generates sclk of 8MHz
     SPI2Handle.SPIConfig.SPI_DFF = SPI_DFF_8BITS;
     SPI2Handle.SPIConfig.SPI_CPOL = SPI_CPOL_LOW;
     SPI2Handle.SPIConfig.SPI_CPHA = SPI_CPHA_LOW;
@@ -62,21 +62,25 @@ void SPI2_Inits(void)
 
 int main(void)
 {
-    char user_data[] = "Hello World";
+    char user_data[8] = "";
 
     SPI2_GPIOInits();
 
     SPI2_Inits();
 
-    SPI_SSIConfig(SPI2, ENABLE);
-    
+    SPI_SSIConfig(SPI2, DISABLE);
+
+    SPI_MSTRToggle(SPI2, DISABLE);
+
+    SPI2->CR1 &= ~( 1 << SPI_CR1_MSTR );
+
     // Enable SPI2 peripheral
     SPI_PeripheralControl(SPI2, ENABLE);
 
-    SPI_SendData(SPI2, (uint8_t*)user_data, strlen(user_data));
+    SPI_ReceiveData(SPI2, (uint8_t*)user_data, 8);
 
     //lets confirm SPI is not busy
-    while( SPI_GetFlagStatus(SPI2,SPI_BUSY_FLAG) );
+     while( SPI_GetFlagStatus(SPI2,SPI_BUSY_FLAG) );
 
     SPI_PeripheralControl(SPI2, DISABLE);
 

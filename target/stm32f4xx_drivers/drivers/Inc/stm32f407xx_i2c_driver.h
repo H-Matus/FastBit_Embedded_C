@@ -78,6 +78,7 @@ typedef struct
 #define I2C_FLAG_BTF        ( 1 << I2C_SR1_BTF )
 #define I2C_FLAG_ADDR       ( 1 << I2C_SR1_ADDR ) 
 #define I2C_FLAG_TIMEOUT    ( 1 << I2C_SR1_TIMEOUT )
+#define I2C_FLAG_BSY		( 1 << I2C_SR2_BUSY )
 
 #define I2C_DISABLE_SR      RESET
 #define I2C_ENABLE_SR       SET

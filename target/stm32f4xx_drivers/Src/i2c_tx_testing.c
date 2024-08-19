@@ -21,8 +21,8 @@ void I2C1_GPIOInits(void)
     I2CPins.pGPIOx = GPIOB;
     I2CPins.GPIO_PinConfig.GPIO_PinMode = GPIO_MODE_ALTFN;
     I2CPins.GPIO_PinConfig.GPIO_PinAltFunMode = 4;
-    I2CPins.GPIO_PinConfig.GPIO_PinOPType = GPIO_OP_TYPE_PP;
-    I2CPins.GPIO_PinConfig.GPIO_PinPuPdControl = GPIO_NO_PUPD;
+    I2CPins.GPIO_PinConfig.GPIO_PinOPType = GPIO_OP_TYPE_OD;
+    I2CPins.GPIO_PinConfig.GPIO_PinPuPdControl = GPIO_PU;
     I2CPins.GPIO_PinConfig.GPIO_PinSpeed = GPIO_SPEED_FAST;
 
     // SCL
@@ -42,7 +42,7 @@ void Button_GPIOInit(void)
     Button.GPIO_PinConfig.GPIO_PinMode = GPIO_MODE_IN;
     Button.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_0;
     Button.GPIO_PinConfig.GPIO_PinOPType = GPIO_OP_TYPE_PP;
-    Button.GPIO_PinConfig.GPIO_PinPuPdControl = GPIO_PD;
+    Button.GPIO_PinConfig.GPIO_PinPuPdControl = GPIO_NO_PUPD;
     Button.GPIO_PinConfig.GPIO_PinSpeed = GPIO_SPEED_FAST;
 
     GPIO_Init(&Button);
@@ -51,6 +51,7 @@ void Button_GPIOInit(void)
 void I2C1_Inits(I2C_Handle_t *pI2C_Handle)
 {
     pI2C_Handle->pI2Cx = I2C1;
+    pI2C_Handle->I2C_Config.I2C_FMDutyCycle = I2C_FM_DUTY_2;
     pI2C_Handle->I2C_Config.I2C_SCLSpeed = I2C_SCL_SPEED_SM;
     pI2C_Handle->I2C_Config.I2C_DeviceAddress = 0x1;
     pI2C_Handle->I2C_Config.I2C_ACKControl = I2C_ACK_ENABLE; // Generates sclk of 8MHz
@@ -61,7 +62,7 @@ void I2C1_Inits(I2C_Handle_t *pI2C_Handle)
 int main(void)
 {
     I2C_Handle_t I2C1Handle;
-    char user_data[] = "Hello World";
+    char user_data[] = "Ayy Lmao";
 
     I2C1_GPIOInits();
     Button_GPIOInit();
@@ -71,12 +72,14 @@ int main(void)
     // Enable I2C1 peripheral
     I2C_PeripheralControl(I2C1, ENABLE);
 
-    if(GPIO_ReadFromInputPin(GPIOA, 0))
+    while(1)
     {
-        I2C_ControllerSendData(&I2C1Handle, (uint8_t*)user_data, strlen(user_data), 1);
-    }
+    	while( ! GPIO_ReadFromInputPin(GPIOA, GPIO_PIN_NO_0) );
 
-    while(1);
+    	for(int i = 0; i < 500000; i++) {};
+
+        I2C_ControllerSendData(&I2C1Handle, (uint8_t*)user_data, strlen(user_data), 0x0);
+    }
 
     return 0;
 }
